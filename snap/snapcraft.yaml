@@ -1,4 +1,4 @@
-name: cryptodezirecash
+name: GLPM
 version: master
 summary:   peer-to-peer network based digital currency
 description: |
@@ -13,23 +13,23 @@ confinement: strict
 
 apps:
   daemon:
-    command: cryptodezirecashd
+    command: GLPMd
     plugs: [network, network-bind]
     environment:
       XDG_DATA_DIRS: $SNAP_USER_DATA:$SNAP/usr/share:$XDG_DATA_DIRS
-    aliases: [cryptodezirecashd]
+    aliases: [GLPMd]
   qt:
-    command: desktop-launch cryptodezirecash-qt
+    command: desktop-launch GLPM-qt
     plugs: [network, network-bind, unity7]
-    aliases: [cryptodezirecash-qt]
-    desktop: cryptodezirecash.desktop
+    aliases: [GLPM-qt]
+    desktop: GLPM.desktop
   cli:
-    command: cryptodezirecash-cli
-    aliases: [cryptodezirecash-cli]
+    command: GLPM-cli
+    aliases: [GLPM-cli]
 
 parts:
-  cryptodezirecash:
-    source: https://github.com/cryptodezirecash/cryptodezirecash
+  GLPM:
+    source: https://github.com/GLPM/GLPM
     source-type: git
     source-tag: master
     plugin: autotools

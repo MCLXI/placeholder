@@ -3,9 +3,9 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/cryptodezirecash/cryptodezirecash/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/GLPM/GLPM/blob/master/doc/translation_process.md#synchronising-translations).
 
-* Update manpages, see [gen-manpages.sh](https://github.com/cryptodezirecash/cryptodezirecash/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update manpages, see [gen-manpages.sh](https://github.com/GLPM/GLPM/blob/master/contrib/devtools/README.md#gen-manpagessh).
 
 Before every minor and major release:
 
@@ -34,10 +34,10 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/cryptodezirecash/gitian.sigs.git
-    git clone https://github.com/cryptodezirecash/cryptodezirecash-detached-sigs.git
+    git clone https://github.com/GLPM/gitian.sigs.git
+    git clone https://github.com/GLPM/GLPM-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/cryptodezirecash/cryptodezirecash.git
+    git clone https://github.com/GLPM/GLPM.git
 
 ### Bitcoin maintainers/release engineers, suggestion for writing release notes
 
@@ -62,7 +62,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./cryptodezirecash
+    pushd ./GLPM
     export SIGNER=(your Gitian key, ie Crypto Dezire CashTor, etc) (_Here is GPG ID meant, not username_)
     export VERSION=(new version, e.g. 1.4.34)
     git fetch
@@ -96,7 +96,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../cryptodezirecash/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../GLPM/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -104,7 +104,7 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url cryptodezirecash=/path/to/cryptodezirecash,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url GLPM=/path/to/GLPM,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
@@ -112,39 +112,39 @@ The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 ### Build and sign Bitcoin Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --num-make 2 --memory 3000 --commit cryptodezirecash=v${VERSION} ../cryptodezirecash/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../cryptodezirecash/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/cryptodezirecash-*.tar.gz build/out/src/cryptodezirecash-*.tar.gz ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit GLPM=v${VERSION} ../GLPM/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../GLPM/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/GLPM-*.tar.gz build/out/src/GLPM-*.tar.gz ../
 
-    ./bin/gbuild --num-make 2 --memory 3000 --commit cryptodezirecash=v${VERSION} ../cryptodezirecash/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../cryptodezirecash/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/cryptodezirecash-*-win-unsigned.tar.gz inputs/cryptodezirecash-win-unsigned.tar.gz
-    mv build/out/cryptodezirecash-*.zip build/out/cryptodezirecash-*.exe ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit GLPM=v${VERSION} ../GLPM/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../GLPM/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/GLPM-*-win-unsigned.tar.gz inputs/GLPM-win-unsigned.tar.gz
+    mv build/out/GLPM-*.zip build/out/GLPM-*.exe ../
 
-    ./bin/gbuild --num-make 2 --memory 3000 --commit cryptodezirecash=v${VERSION} ../cryptodezirecash/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../cryptodezirecash/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/cryptodezirecash-*-osx-unsigned.tar.gz inputs/cryptodezirecash-osx-unsigned.tar.gz
-    mv build/out/cryptodezirecash-*.tar.gz build/out/cryptodezirecash-*.dmg ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit GLPM=v${VERSION} ../GLPM/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../GLPM/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/GLPM-*-osx-unsigned.tar.gz inputs/GLPM-osx-unsigned.tar.gz
+    mv build/out/GLPM-*.tar.gz build/out/GLPM-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`cryptodezirecash-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`cryptodezirecash-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`cryptodezirecash-${VERSION}-win[32|64]-setup-unsigned.exe`, `cryptodezirecash-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`cryptodezirecash-${VERSION}-osx-unsigned.dmg`, `cryptodezirecash-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`GLPM-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`GLPM-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`GLPM-${VERSION}-win[32|64]-setup-unsigned.exe`, `GLPM-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`GLPM-${VERSION}-osx-unsigned.dmg`, `GLPM-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
-Add other gitian builders keys to your gpg keyring, and/or refresh keys: See `../cryptodezirecash/contrib/gitian-keys/README.md`.
+Add other gitian builders keys to your gpg keyring, and/or refresh keys: See `../GLPM/contrib/gitian-keys/README.md`.
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../cryptodezirecash/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../cryptodezirecash/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../cryptodezirecash/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../GLPM/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../GLPM/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../GLPM/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
@@ -165,22 +165,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer cryptodezirecash-osx-unsigned.tar.gz to osx for signing
-    tar xf cryptodezirecash-osx-unsigned.tar.gz
+    transfer GLPM-osx-unsigned.tar.gz to osx for signing
+    tar xf GLPM-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf cryptodezirecash-win-unsigned.tar.gz
+    tar xf GLPM-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/cryptodezirecash-detached-sigs
+    cd ~/GLPM-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -193,25 +193,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [cryptodezirecash-detached-sigs](https://github.com/cryptodezirecash/cryptodezirecash-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [GLPM-detached-sigs](https://github.com/GLPM/GLPM-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../cryptodezirecash/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../cryptodezirecash/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../cryptodezirecash/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/cryptodezirecash-osx-signed.dmg ../cryptodezirecash-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../GLPM/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../GLPM/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../GLPM/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/GLPM-osx-signed.dmg ../GLPM-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../cryptodezirecash/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../cryptodezirecash/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../cryptodezirecash/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/cryptodezirecash-*win64-setup.exe ../cryptodezirecash-${VERSION}-win64-setup.exe
-    mv build/out/cryptodezirecash-*win32-setup.exe ../cryptodezirecash-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../GLPM/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../GLPM/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../GLPM/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/GLPM-*win64-setup.exe ../GLPM-${VERSION}-win64-setup.exe
+    mv build/out/GLPM-*win32-setup.exe ../GLPM-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -233,23 +233,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-cryptodezirecash-${VERSION}-aarch64-linux-gnu.tar.gz
-cryptodezirecash-${VERSION}-arm-linux-gnueabihf.tar.gz
-cryptodezirecash-${VERSION}-i686-pc-linux-gnu.tar.gz
-cryptodezirecash-${VERSION}-x86_64-linux-gnu.tar.gz
-cryptodezirecash-${VERSION}-osx64.tar.gz
-cryptodezirecash-${VERSION}-osx.dmg
-cryptodezirecash-${VERSION}.tar.gz
-cryptodezirecash-${VERSION}-win32-setup.exe
-cryptodezirecash-${VERSION}-win32.zip
-cryptodezirecash-${VERSION}-win64-setup.exe
-cryptodezirecash-${VERSION}-win64.zip
+GLPM-${VERSION}-aarch64-linux-gnu.tar.gz
+GLPM-${VERSION}-arm-linux-gnueabihf.tar.gz
+GLPM-${VERSION}-i686-pc-linux-gnu.tar.gz
+GLPM-${VERSION}-x86_64-linux-gnu.tar.gz
+GLPM-${VERSION}-osx64.tar.gz
+GLPM-${VERSION}-osx.dmg
+GLPM-${VERSION}.tar.gz
+GLPM-${VERSION}-win32-setup.exe
+GLPM-${VERSION}-win32.zip
+GLPM-${VERSION}-win64-setup.exe
+GLPM-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the cryptodezirecash.org server, nor put them in the torrent*.
+space *do not upload these to the GLPM.org server, nor put them in the torrent*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -259,49 +259,49 @@ rm SHA256SUMS
 (the digest algorithm is forced to sha256 to avoid confusion of the `Hash:` header that GPG adds with the SHA256 used for the files)
 Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spurious/nonsensical entry.
 
-- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the cryptodezirecash.org server
-  into `/var/www/bin/cryptodezirecash-${VERSION}`
+- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the GLPM.org server
+  into `/var/www/bin/GLPM-${VERSION}`
 
 - A `.torrent` will appear in the directory after a few minutes. Optionally help seed this torrent. To get the `magnet:` URI use:
 ```bash
 transmission-show -m <torrent file>
 ```
 Insert the magnet URI into the announcement sent to mailing lists. This permits
-people without access to `cryptodezirecash.org` to download the binary distribution.
+people without access to `GLPM.org` to download the binary distribution.
 Also put it into the `optional_magnetlink:` slot in the YAML file for
-cryptodezirecash.org (see below for cryptodezirecash.org update instructions).
+GLPM.org (see below for GLPM.org update instructions).
 
-- Update cryptodezirecash.org version
+- Update GLPM.org version
 
   - First, check to see if the Bitcoin.org maintainers have prepared a
-    release: https://github.com/cryptodezirecash-dot-org/cryptodezirecash.org/labels/Releases
+    release: https://github.com/GLPM-dot-org/GLPM.org/labels/Releases
 
       - If they have, it will have previously failed their Travis CI
         checks because the final release files weren't uploaded.
         Trigger a Travis CI rebuild---if it passes, merge.
 
   - If they have not prepared a release, follow the Bitcoin.org release
-    instructions: https://github.com/cryptodezirecash-dot-org/cryptodezirecash.org#release-notes
+    instructions: https://github.com/GLPM-dot-org/GLPM.org#release-notes
 
   - After the pull request is merged, the website will automatically show the newest version within 15 minutes, as well
     as update the OS download links. Ping @saivann/@harding (saivann/harding on Freenode) in case anything goes wrong
 
 - Announce the release:
 
-  - cryptodezirecash-dev and cryptodezirecash-dev mailing list
+  - GLPM-dev and GLPM-dev mailing list
 
-  - Bitcoin Core announcements list https://cryptodezirecashcore.org/en/list/announcements/join/
+  - Bitcoin Core announcements list https://GLPMcore.org/en/list/announcements/join/
 
-  - cryptodezirecashcore.org blog post
+  - GLPMcore.org blog post
 
-  - Update title of #cryptodezirecash on Freenode IRC
+  - Update title of #GLPM on Freenode IRC
 
   - Optionally twitter, reddit /r/Bitcoin, ... but this will usually sort out itself
 
-  - Notify BlueMatt so that he can start building [the PPAs](https://launchpad.net/~cryptodezirecash/+archive/ubuntu/cryptodezirecash)
+  - Notify BlueMatt so that he can start building [the PPAs](https://launchpad.net/~GLPM/+archive/ubuntu/GLPM)
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/cryptodezirecash/cryptodezirecash/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/GLPM/GLPM/releases/new) with a link to the archived release notes.
 
   - Celebrate

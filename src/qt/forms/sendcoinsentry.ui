@@ -64,7 +64,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../cryptodezirecash.qrc">
+         <iconset resource="../GLPM.qrc">
           <normaloff>:/icons/address-book</normaloff>:/icons/address-book</iconset>
         </property>
         <property name="shortcut">
@@ -81,7 +81,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../cryptodezirecash.qrc">
+         <iconset resource="../GLPM.qrc">
           <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
         </property>
         <property name="shortcut">
@@ -98,7 +98,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../cryptodezirecash.qrc">
+         <iconset resource="../GLPM.qrc">
           <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
         </property>
        </widget>
@@ -622,7 +622,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../cryptodezirecash.qrc">
+         <iconset resource="../GLPM.qrc">
           <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
         </property>
        </widget>
@@ -1163,7 +1163,7 @@ background-color: #45629a;
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../cryptodezirecash.qrc">
+         <iconset resource="../GLPM.qrc">
           <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
         </property>
        </widget>
@@ -1235,7 +1235,7 @@ background-color: #45629a;
   <tabstop>deleteButton_s</tabstop>
  </tabstops>
  <resources>
-  <include location="../cryptodezirecash.qrc"/>
+  <include location="../GLPM.qrc"/>
  </resources>
  <connections/>
 </ui>

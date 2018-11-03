@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CRYPTODEZIRECASH_QT_MULTISENDDIALOG_H
-#define CRYPTODEZIRECASH_QT_MULTISENDDIALOG_H
+#ifndef GLPM_QT_MULTISENDDIALOG_H
+#define GLPM_QT_MULTISENDDIALOG_H
 
 #include <QDialog>
 
@@ -39,4 +39,4 @@ private:
     WalletModel* model;
 };
 
-#endif // CRYPTODEZIRECASH_QT_MULTISENDDIALOG_H
+#endif // GLPM_QT_MULTISENDDIALOG_H

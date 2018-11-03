@@ -1,6 +1,6 @@
 ## Crypto Dezire Cash burn address creation script
 
-### burnaddress.py: create a cryptodezirecash burn address
+### burnaddress.py: create a GLPM burn address
 
   - Original author: James C. Stroud
   - This program requires [base58](https://pypi.python.org/pypi/base58/0.2.1).
@@ -28,5 +28,5 @@ An example template is accessible using "test" as the argument::
     Crypto Dezire CashBurnAddressBurnPremineXmtXTL
     ```
 
-Validate bitcoin burn addresses at [official cryptodezirecash blockexplorer](https://explorer.cryptodezirecash.com/address/)
+Validate bitcoin burn addresses at [official GLPM blockexplorer](https://explorer.GLPM.com/address/)
 

@@ -1,25 +1,25 @@
-# /etc/conf.d/cryptodezirecashd: config file for /etc/init.d/cryptodezirecashd
+# /etc/conf.d/GLPMd: config file for /etc/init.d/GLPMd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/cryptodezirecash/cryptodezirecash.conf"
+#BITCOIND_CONFIGFILE="/etc/GLPM/GLPM.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/cryptodezirecashd"
+#BITCOIND_PIDDIR="/var/run/GLPMd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/cryptodezirecashd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/GLPMd.pid"
 
-# Where to write cryptodezirecashd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/cryptodezirecashd"
+# Where to write GLPMd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/GLPMd"
 
-# User and group to own cryptodezirecashd process
-#BITCOIND_USER="cryptodezirecash"
-#BITCOIND_GROUP="cryptodezirecash"
+# User and group to own GLPMd process
+#BITCOIND_USER="GLPM"
+#BITCOIND_GROUP="GLPM"
 
-# Path to cryptodezirecashd executable
-#BITCOIND_BIN="/usr/bin/cryptodezirecashd"
+# Path to GLPMd executable
+#BITCOIND_BIN="/usr/bin/GLPMd"
 
-# Nice value to run cryptodezirecashd under
+# Nice value to run GLPMd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

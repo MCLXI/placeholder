@@ -125,7 +125,7 @@ UniValue blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool tx
         zcdzcObj.push_back(Pair(to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
     zcdzcObj.push_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
-    result.push_back(Pair("zCDZCsupply", zcdzcObj));
+    result.push_back(Pair("zGLPMsupply", zcdzcObj));
 
     return result;
 }
@@ -245,7 +245,7 @@ UniValue getrawmempool(const UniValue& params, bool fHelp)
             "{                           (json object)\n"
             "  \"transactionid\" : {       (json object)\n"
             "    \"size\" : n,             (numeric) transaction size in bytes\n"
-            "    \"fee\" : n,              (numeric) transaction fee in cryptodezirecash\n"
+            "    \"fee\" : n,              (numeric) transaction fee in GLPM\n"
             "    \"time\" : n,             (numeric) local time transaction entered pool in seconds since 1 Jan 1970 GMT\n"
             "    \"height\" : n,           (numeric) block height when transaction entered pool\n"
             "    \"startingpriority\" : n, (numeric) priority when transaction entered pool\n"
@@ -325,17 +325,17 @@ UniValue getblock(const UniValue& params, bool fHelp)
             "  \"previousblockhash\" : \"hash\",  (string) The hash of the previous block\n"
             "  \"nextblockhash\" : \"hash\"       (string) The hash of the next block\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zCDZCsupply\" :\n"
+            "  \"zGLPMsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zCDZC denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zCDZC denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zCDZC denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zCDZC denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zCDZC denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zCDZC denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zCDZC denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zCDZC denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zCDZC denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zGLPM denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zGLPM denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zGLPM denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zGLPM denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zGLPM denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zGLPM denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zGLPM denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zGLPM denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zGLPM denominations\n"
             "  }\n"
             "}\n"
 
@@ -487,8 +487,8 @@ UniValue gettxout(const UniValue& params, bool fHelp)
             "     \"hex\" : \"hex\",        (string) \n"
             "     \"reqSigs\" : n,          (numeric) Number of required signatures\n"
             "     \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n"
-            "     \"addresses\" : [          (array of string) array of cryptodezirecash addresses\n"
-            "     \"cryptodezirecashaddress\"   	 	(string) cryptodezirecash address\n"
+            "     \"addresses\" : [          (array of string) array of GLPM addresses\n"
+            "     \"GLPMaddress\"   	 	(string) GLPM address\n"
             "        ,...\n"
             "     ]\n"
             "  },\n"

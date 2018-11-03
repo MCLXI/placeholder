@@ -212,6 +212,6 @@
     <name>ZCdzcControlDialog</name>
     </context>
 <context>
-    <name>cryptodezirecash-core</name>
+    <name>GLPM-core</name>
     </context>
 </TS>

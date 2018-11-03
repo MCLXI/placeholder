@@ -184,9 +184,9 @@ public:
         assert(hashGenesisBlock == uint256("0x000005b30531c8d540e58a1a85afb65ab44028cf68f0b3d299565c9d41c3778b"));
         assert(genesis.hashMerkleRoot == uint256("0x4cc63d4be53fe2310024ff7137a755d5504abf9e94e95740288862aaa385e193"));
 
-        vSeeds.push_back(CDNSSeedData("1", "seed01.cryptodezirecash.com"));      // Crypto Dezire Cash's official seed 1
-        vSeeds.push_back(CDNSSeedData("2", "seed02.cryptodezirecash.com"));      // Crypto Dezire Cash's official seed 2
-        vSeeds.push_back(CDNSSeedData("3", "seed03.cryptodezirecash.com"));      // Crypto Dezire Cash's official seed 3
+        vSeeds.push_back(CDNSSeedData("1", "seed01.GLPM.com"));      // Crypto Dezire Cash's official seed 1
+        vSeeds.push_back(CDNSSeedData("2", "seed02.GLPM.com"));      // Crypto Dezire Cash's official seed 2
+        vSeeds.push_back(CDNSSeedData("3", "seed03.GLPM.com"));      // Crypto Dezire Cash's official seed 3
         vSeeds.push_back(CDNSSeedData("4", "149.28.236.40"));
         vSeeds.push_back(CDNSSeedData("5", "149.28.61.241"));
         vSeeds.push_back(CDNSSeedData("6", "139.180.207.56"));
@@ -308,11 +308,11 @@ public:
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 125);
         // Testnet private keys start with '9' or 'c' (Crypto Dezire Cash defaults)
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 177); 
-        // Testnet cryptodezirecash BIP32 pubkeys start with 'DRKV'
+        // Testnet GLPM BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet cryptodezirecash BIP32 prvkeys start with 'DRKP'
+        // Testnet GLPM BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet cryptodezirecash BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet GLPM BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
@@ -364,7 +364,7 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1518696183;             // GMT: Thursday, 15. February 2018 12:03:03
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 1;                // hex 57 47 52 in text = CDZC
+        genesis.nNonce = 1;                // hex 57 47 52 in text = GLPM
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 55006;

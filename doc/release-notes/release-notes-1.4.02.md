@@ -1,25 +1,25 @@
 Crypto Dezire Cash Core version 1.4.02 is now available from:
 
-  <https://github.com/cryptodezirecash/cryptodezirecash/releases>
+  <https://github.com/GLPM/GLPM/releases>
 
 This is a new minor-revision version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/cryptodezirecash/cryptodezirecash/issues>
+  <https://github.com/GLPM/GLPM/issues>
 
 Recommended Update
 ==============
 
-Crypto Dezire Cash Core v1.4.02 is a recommended, semi-mandatory update for all users. This release contains transaction creation bug fixes for zCDZC spends, automint calculation adjustments, and other various updates/fixes.
+Crypto Dezire Cash Core v1.4.02 is a recommended, semi-mandatory update for all users. This release contains transaction creation bug fixes for zGLPM spends, automint calculation adjustments, and other various updates/fixes.
 
-zCDZC spending requires this update.
+zGLPM spending requires this update.
 
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Crypto Dezire Cash-Qt (on Mac) or cryptodezirecashd/cryptodezirecash-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Crypto Dezire Cash-Qt (on Mac) or GLPMd/GLPM-qt (on Linux).
 
 Compatibility
 ==============
@@ -45,21 +45,21 @@ Notable Changes
 
 Auto Wallet Backup
 ---------------------
-In addition to the automatic wallet backup that is done at each start of the client, a new automatic backup function has been added that will, by default, create a backup of the wallet file during each zCDZC mint operation (zCDZC spends which re-mint their change are also included in this). This functionality is controlled by the `-backupzcdzc` command-line option, which defaults to `1` (enabled, auto-backup).
+In addition to the automatic wallet backup that is done at each start of the client, a new automatic backup function has been added that will, by default, create a backup of the wallet file during each zGLPM mint operation (zGLPM spends which re-mint their change are also included in this). This functionality is controlled by the `-backupzcdzc` command-line option, which defaults to `1` (enabled, auto-backup).
 
-Users that wish to prevent this behavior (not recommended) can pass `-backupzcdzc=0` at the command-line when starting the client, or add `backupzcdzc=0` to their `cryptodezirecash.conf` file.
+Users that wish to prevent this behavior (not recommended) can pass `-backupzcdzc=0` at the command-line when starting the client, or add `backupzcdzc=0` to their `GLPM.conf` file.
 
-zCDZC Automint Calculations
+zGLPM Automint Calculations
 ---------------------
-A bug in the automint calculations was made apparent on mainnet when block times exceeded expectations, resulting in zCDZC mint transactions that were in an unconfirmed state to still be treated as if they had never been minted. This caused automint to effectively mint more than what was intended.
+A bug in the automint calculations was made apparent on mainnet when block times exceeded expectations, resulting in zGLPM mint transactions that were in an unconfirmed state to still be treated as if they had never been minted. This caused automint to effectively mint more than what was intended.
 
-zCDZC Spending Fix
+zGLPM Spending Fix
 ---------------------
-The size of zCDZC spend transactions is knowingly larger than normal transactions, and while this was expected, a much stricter check against the scriptsig size is used for mainnet, causing the transactions to be rejected by the mempool, and thus not being packaged into any blocks.
+The size of zGLPM spend transactions is knowingly larger than normal transactions, and while this was expected, a much stricter check against the scriptsig size is used for mainnet, causing the transactions to be rejected by the mempool, and thus not being packaged into any blocks.
 
-zCDZC Transaction Recovery
+zGLPM Transaction Recovery
 ---------------------
-Due to the aforementioned issue with zCDZC spending, users may find that their attempted spends are now conflicted and zCDZC balances are not represented as expected. "Recovery" of these transactions can be done using the following methods:
+Due to the aforementioned issue with zGLPM spending, users may find that their attempted spends are now conflicted and zGLPM balances are not represented as expected. "Recovery" of these transactions can be done using the following methods:
 
 1. GUI:
 
@@ -90,13 +90,13 @@ git merge commit are mentioned.
 
 ### P2P Protocol and Network Code
 - #286 `85c0f53` [Main] Change sporkDB from smart ptr to ptr. (presstab)
-- #292 `feadab4` Additional checks for double spending of zCDZC serials. (presstab)
+- #292 `feadab4` Additional checks for double spending of zGLPM serials. (presstab)
 
 ### Wallet
 - #271 `5e9a086` [Wallet] Remove unused member wallet in UnlockContext inner class (Jon Spock)
 - #279 `e734010` Add -backupzcdzc startup flag. (presstab)
-- #280 `fdc182d` [Wallet] Fix zCDZC spending errors. (presstab)
-- #282 `310f216` [Wallet] Count pending zCDZC balance for automint. (presstab)
+- #280 `fdc182d` [Wallet] Fix zGLPM spending errors. (presstab)
+- #282 `310f216` [Wallet] Count pending zGLPM balance for automint. (presstab)
 - #290 `004d7b6` Include both pending and mature zerocoins for automint calculations (presstab)
 
 ### GUI
@@ -105,7 +105,7 @@ git merge commit are mentioned.
 - #270 `bd2328e` [Qt] Make lock icon clickable to toggle wallet lock state (Fuzzbawls)
 - #273 `f31136e` [Qt] Fix UI tab order and shortcuts (Mrs-X)
 - #287 `74a1c3c` [Qt] Don't allow the Esc key to close the privacy tab (Fuzzbawls)
-- #291 `cb314e6` [Qt] zCDZC control quantity/amount fixes (rejectedpromise)
+- #291 `cb314e6` [Qt] zGLPM control quantity/amount fixes (rejectedpromise)
 
 ### Miscellaneous
 - #266 `2d97b54` [Scripts] Fix location for aarch64 outputs in gitian-build.sh (Fuzzbawls)
@@ -125,4 +125,4 @@ Thanks to everyone who directly contributed to this release:
 - rejectedpromise
 - Warrows
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/cryptodezirecash-translations/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/GLPM-translations/).

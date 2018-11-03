@@ -176,16 +176,16 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CDZCs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer CDZCs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer GLPMs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Sind Sie sich sicher, dass Sie ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CDZC&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre CDZCs verlieren&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre GLPMs verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -610,16 +610,16 @@
         <translation>An eine Crypto Dezire Cash-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and cryptodezirecash: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und cryptodezirecash: URIs)</translation>
+        <source>Request payments (generates QR codes and GLPM: URIs)</source>
+        <translation>Zahlung anfordern (QR-Code Generierung und GLPM: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
         <translation>&amp;Privatsphäre</translation>
     </message>
     <message>
-        <source>Privacy Action for zCDZC and Obfuscation</source>
-        <translation>Privatsphäre Aktion für zCDZC und Verschleierung</translation>
+        <source>Privacy Action for zGLPM and Obfuscation</source>
+        <translation>Privatsphäre Aktion für zGLPM und Verschleierung</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -848,8 +848,8 @@ Adresse: %4</translation>
         <translation>TextEtikett</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (cryptodezirecash.conf).</source>
-        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "cryptodezirecash.conf" Konfigurationsdatei hinzufügen.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (GLPM.conf).</source>
+        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "GLPM.conf" Konfigurationsdatei hinzufügen.</translation>
     </message>
 </context>
 <context>
@@ -1539,32 +1539,32 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Bitte den gewünschten Privatsphäre Level auswählen.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CDZC</source>
-        <translation>2 separate Masternodes verwenden um bis zu 10000 CDZC zu mixen</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 GLPM</source>
+        <translation>2 separate Masternodes verwenden um bis zu 10000 GLPM zu mixen</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CDZC</source>
-        <translation>8 separate Masternodes verwenden um bis zu 10000 CDZC zu mixen</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 GLPM</source>
+        <translation>8 separate Masternodes verwenden um bis zu 10000 GLPM zu mixen</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16 separate Masternodes verwenden</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CDZC to anonymize 10000 CDZC</source>
-        <translation>Diese Option ist die schnellst und kostet ungefähr ~0.025 CDZC um 10000 CDZC zu anonymisieren </translation>
+        <source>This option is the quickest and will cost about ~0.025 GLPM to anonymize 10000 GLPM</source>
+        <translation>Diese Option ist die schnellst und kostet ungefähr ~0.025 GLPM um 10000 GLPM zu anonymisieren </translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CDZC to anonymize 10000 CDZC</source>
-        <translation>Diese Option ist angemessen schnell und kostet ungefähr  0.05 CDZC um 10000 CDZC zu anonymisieren</translation>
+        <source>This option is moderately fast and will cost about 0.05 GLPM to anonymize 10000 GLPM</source>
+        <translation>Diese Option ist angemessen schnell und kostet ungefähr  0.05 GLPM um 10000 GLPM zu anonymisieren</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Diese Option ist die langsamste und sicherste Option. Die Verwendung maximaler Anonymisierung kostet</translation>
     </message>
     <message>
-        <source>0.1 CDZC per 10000 CDZC you anonymize.</source>
-        <translation>0.1 CDZC per 10000 CDZC die anonymisiert werden.</translation>
+        <source>0.1 GLPM per 10000 GLPM you anonymize.</source>
+        <translation>0.1 GLPM per 10000 GLPM die anonymisiert werden.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1698,29 +1698,29 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</source>
+https://www.transifex.com/GLPM/GLPM-translations</source>
         <translation>Sprache fehlt oder ist unvollständig? Helfe mit und trage zur Übersetzung hier bei:
-https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</translation>
+https://www.transifex.com/GLPM/GLPM-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Port mit &amp;UPnP mappen</translation>
     </message>
     <message>
-        <source>Percentage of incoming CDZC which get automatically converted to zCDZC via Zerocoin Protocol (min: 10%)</source>
-        <translation>Anteil des einkommenden CDZC, welcher automatisch zu zCDZC via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
+        <source>Percentage of incoming GLPM which get automatically converted to zGLPM via Zerocoin Protocol (min: 10%)</source>
+        <translation>Anteil des einkommenden GLPM, welcher automatisch zu zGLPM via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCDZC</source>
-        <translation>Prozentsatz der automatisierten zCDZC</translation>
+        <source>Percentage of autominted zGLPM</source>
+        <translation>Prozentsatz der automatisierten zGLPM</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CDZC for this denomination is available</source>
-        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend CDZC für diese Stückelung verfügbar ist</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough GLPM for this denomination is available</source>
+        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend GLPM für diese Stückelung verfügbar ist</translation>
     </message>
     <message>
-        <source>Preferred Automint zCDZC Denomination</source>
-        <translation>Bevorzugte automatisierte zCDZC Stückelung </translation>
+        <source>Preferred Automint zGLPM Denomination</source>
+        <translation>Bevorzugte automatisierte zGLPM Stückelung </translation>
     </message>
     <message>
         <source>Connect to the Crypto Dezire Cash network through a SOCKS5 proxy.</source>
@@ -1854,8 +1854,8 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
         <translation>Formular</translation>
     </message>
     <message>
-        <source>CDZC Balances</source>
-        <translation>CDZC Bilanzen</translation>
+        <source>GLPM Balances</source>
+        <translation>GLPM Bilanzen</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1922,12 +1922,12 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
         <translation>Kombinierte Bilanz (einschließlich unreifer Coins)</translation>
     </message>
     <message>
-        <source>CDZC:</source>
-        <translation>CDZC:</translation>
+        <source>GLPM:</source>
+        <translation>GLPM:</translation>
     </message>
     <message>
-        <source>zCDZC:</source>
-        <translation>zCDZC:</translation>
+        <source>zGLPM:</source>
+        <translation>zGLPM:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1969,7 +1969,7 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
         <translation>Zahlungsaufforderungadresse %1</translation>
     </message>
     <message>
-        <source>Cannot start cryptodezirecash: click-to-pay handler</source>
+        <source>Cannot start GLPM: click-to-pay handler</source>
         <translation>Kann Crypto Dezire Cash nicht starten: click-to-pay Handler</translation>
     </message>
     <message>
@@ -2055,12 +2055,12 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>CDZC which were anonymized via Zerocin Protocol</source>
-        <translation>CDZC, die über das Zerocin-Protokoll anonymisiert wurden</translation>
+        <source>GLPM which were anonymized via Zerocin Protocol</source>
+        <translation>GLPM, die über das Zerocin-Protokoll anonymisiert wurden</translation>
     </message>
     <message>
-        <source>Zerocoin CDZC (zCDZC)</source>
-        <translation>Zerocoin CDZC (zCDZC)</translation>
+        <source>Zerocoin GLPM (zGLPM)</source>
+        <translation>Zerocoin GLPM (zGLPM)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2083,16 +2083,16 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
         <translation>0</translation>
     </message>
     <message>
-        <source>zCDZC</source>
-        <translation>zCDZC</translation>
+        <source>zGLPM</source>
+        <translation>zGLPM</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>Verfügbar für Prägung:</translation>
     </message>
     <message>
-        <source>0.000 000 00 CDZC</source>
-        <translation>0.000 000 00 CDZC</translation>
+        <source>0.000 000 00 GLPM</source>
+        <translation>0.000 000 00 GLPM</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2151,8 +2151,8 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
         <translation>Verfügbare Bilanz:</translation>
     </message>
     <message>
-        <source>0 zCDZC</source>
-        <translation>0 zCDZC</translation>
+        <source>0 zGLPM</source>
+        <translation>0 zGLPM</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2387,8 +2387,8 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
         <translation>Erfolgreich geprägt</translation>
     </message>
     <message>
-        <source> zCDZC in </source>
-        <translation> zCDZC in </translation>
+        <source> zGLPM in </source>
+        <translation> zGLPM in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2482,7 +2482,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zCdzc Spend #: </source>
-        <translation>zCDZC Ausgeben #:</translation>
+        <translation>zGLPM Ausgeben #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -3063,7 +3063,7 @@ Bitte haben Sie Geduld...</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>CDZCs überweisen</translation>
+        <translation>GLPMs überweisen</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -3134,8 +3134,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>UTXO Größe:</translation>
     </message>
     <message>
-        <source>0 CDZC</source>
-        <translation>0 CDZC</translation>
+        <source>0 GLPM</source>
+        <translation>0 GLPM</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3186,12 +3186,12 @@ Bitte haben Sie Geduld...</translation>
         <translation>Coins automatisch ausgewählt</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCDZCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCDZCs in fee,&lt;br /&gt;while "at least" pays 1000 uCDZCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uCDZCs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uCDZCs an Gebühr,&lt;br /&gt;während man "mindestens" 1000 uCDZCs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uGLPMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uGLPMs in fee,&lt;br /&gt;while "at least" pays 1000 uGLPMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uGLPMs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uGLPMs an Gebühr,&lt;br /&gt;während man "mindestens" 1000 uGLPMs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCDZCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCDZCs in fee,&lt;br /&gt;while "total at least" pays 1000 uCDZCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uCDZCs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uCDZCs an Gebühr,&lt;br /&gt;während man "insgesamt mindestens" 1000 uCDZCs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uGLPMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uGLPMs in fee,&lt;br /&gt;while "total at least" pays 1000 uGLPMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uGLPMs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uGLPMs an Gebühr,&lt;br /&gt;während man "insgesamt mindestens" 1000 uGLPMs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Crypto Dezire Cash transactions than the network can process.</source>
@@ -3242,8 +3242,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Empfänge&amp;r hinzufügen</translation>
     </message>
     <message>
-        <source>Anonymized CDZC</source>
-        <translation>Anonymisierte CDZC</translation>
+        <source>Anonymized GLPM</source>
+        <translation>Anonymisierte GLPM</translation>
     </message>
     <message>
         <source>SwiftTX</source>
@@ -3817,7 +3817,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Erzeugte CDZCs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine CDZCs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
+        <translation>Erzeugte GLPMs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine GLPMs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3963,23 +3963,23 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Converted Cdzc to zCdzc</source>
-        <translation>Umgewandeltes CDZC zu zCDZC</translation>
+        <translation>Umgewandeltes GLPM zu zGLPM</translation>
     </message>
     <message>
         <source>Spent zCdzc</source>
-        <translation>Ausgeben zCDZC</translation>
+        <translation>Ausgeben zGLPM</translation>
     </message>
     <message>
         <source>Received Cdzc from zCdzc</source>
-        <translation>Empfangene CDZC von zCDZC</translation>
+        <translation>Empfangene GLPM von zGLPM</translation>
     </message>
     <message>
         <source>Minted Change as zCdzc from zCdzc Spend</source>
-        <translation>Geprägtes Wechselgeld als zCDZC von zCDZC Ausgabe</translation>
+        <translation>Geprägtes Wechselgeld als zGLPM von zGLPM Ausgabe</translation>
     </message>
     <message>
         <source>Converted zCdzc to Cdzc</source>
-        <translation>Umgewandeltes zCDZC zu CDZC</translation>
+        <translation>Umgewandeltes zGLPM zu GLPM</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3987,7 +3987,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zCdzc Accumulator</source>
-        <translation>zCDZC Speicher</translation>
+        <translation>zGLPM Speicher</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4098,7 +4098,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Received Cdzc from zCdzc</source>
-        <translation>Empfangen CDZC von zCDZC</translation>
+        <translation>Empfangen GLPM von zGLPM</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4110,7 +4110,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zCdzc</source>
-        <translation>Zerocoin Ausgabe, Wechselgeld in zCDZC</translation>
+        <translation>Zerocoin Ausgabe, Wechselgeld in zGLPM</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4231,11 +4231,11 @@ Bitte haben Sie Geduld...</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>CDZCs überweisen</translation>
+        <translation>GLPMs überweisen</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 CDZC.</source>
-        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 CDZC begrenzt.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 GLPM.</source>
+        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 GLPM begrenzt.</translation>
     </message>
 </context>
 <context>
@@ -4281,7 +4281,7 @@ Bitte haben Sie Geduld...</translation>
     <name>ZCdzcControlDialog</name>
     <message>
         <source>Select zCdzc to Spend</source>
-        <translation>Auswahl zCDZC als Ausgabe</translation>
+        <translation>Auswahl zGLPM als Ausgabe</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4293,7 +4293,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zCdzc</source>
-        <translation>zCDZC</translation>
+        <translation>zGLPM</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4305,7 +4305,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
 </context>
 <context>
-    <name>cryptodezirecash-core</name>
+    <name>GLPM-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = behalte Tx-Meta-Daten z.B. Betrag, Besitzer und Zahlungsanforderungsinformationen, 2 = verwerfe Tx-Meta-Daten)</translation>
@@ -4379,12 +4379,12 @@ Bitte haben Sie Geduld...</translation>
         <translation>Befehl ausführen, wenn sich der beste Block ändert (%s in cmd wird durch Blockhash ersetzt)</translation>
     </message>
     <message>
-        <source>Fees (in CDZC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebühren (in CDZC/kB) kleiner als diese gelten als Null-Gebühr für die Weiterleitung (default: %s)</translation>
+        <source>Fees (in GLPM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebühren (in GLPM/kB) kleiner als diese gelten als Null-Gebühr für die Weiterleitung (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CDZC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebühren (in CDZC/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
+        <source>Fees (in GLPM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebühren (in GLPM/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

@@ -2,14 +2,14 @@
 # Copyright (c) 2018 The Crypto Dezire Cash developers
 #!/usr/bin/env python
 #
-# Use the raw transactions API to spend CDZCs received on particular addresses,
+# Use the raw transactions API to spend GLPMs received on particular addresses,
 # and send any change back to that same address.
 #
 # Example usage:
 #  spendfrom.py  # Lists available funds
 #  spendfrom.py --from=ADDRESS --to=ADDRESS --amount=11.00
 #
-# Assumes it will talk to a cryptodezirecashd or cryptodezirecash-Qt running
+# Assumes it will talk to a GLPMd or GLPM-Qt running
 # on localhost.
 #
 # Depends on jsonrpc
@@ -28,22 +28,22 @@ from jsonrpc import ServiceProxy, json
 BASE_FEE=Decimal("0.001")
 
 def check_json_precision():
-    """Make sure json library being used does not lose precision converting CDZC values"""
+    """Make sure json library being used does not lose precision converting GLPM values"""
     n = Decimal("20000000.00000003")
     satoshis = int(json.loads(json.dumps(float(n)))*1.0e8)
     if satoshis != 2000000000000003:
         raise RuntimeError("JSON encode/decode loses precision")
 
 def determine_db_dir():
-    """Return the default location of the cryptodezirecash data directory"""
+    """Return the default location of the GLPM data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/cryptodezirecash/")
+        return os.path.expanduser("~/Library/Application Support/GLPM/")
     elif platform.system() == "Windows":
         return os.path.join(os.environ['APPDATA'], "Crypto Dezire Cash")
-    return os.path.expanduser("~/.cryptodezirecash")
+    return os.path.expanduser("~/.GLPM")
 
 def read_bitcoin_config(dbdir):
-    """Read the cryptodezirecash.conf file from dbdir, returns dictionary of settings"""
+    """Read the GLPM.conf file from dbdir, returns dictionary of settings"""
     from ConfigParser import SafeConfigParser
 
     class FakeSecHead(object):
@@ -61,11 +61,11 @@ def read_bitcoin_config(dbdir):
                 return s
 
     config_parser = SafeConfigParser()
-    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "cryptodezirecash.conf"))))
+    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "GLPM.conf"))))
     return dict(config_parser.items("all"))
 
 def connect_JSON(config):
-    """Connect to a cryptodezirecash JSON-RPC server"""
+    """Connect to a GLPM JSON-RPC server"""
     testnet = config.get('testnet', '0')
     testnet = (int(testnet) > 0)  # 0/1 in config file, convert to True/False
     if not 'rpcport' in config:
@@ -74,7 +74,7 @@ def connect_JSON(config):
     try:
         result = ServiceProxy(connect)
         # ServiceProxy is lazy-connect, so send an RPC command mostly to catch connection errors,
-        # but also make sure the cryptodezirecashd we're talking to is/isn't testnet:
+        # but also make sure the GLPMd we're talking to is/isn't testnet:
         if result.getmininginfo()['testnet'] != testnet:
             sys.stderr.write("RPC server at "+connect+" testnet setting mismatch\n")
             sys.exit(1)
@@ -83,36 +83,36 @@ def connect_JSON(config):
         sys.stderr.write("Error connecting to RPC server at "+connect+"\n")
         sys.exit(1)
 
-def unlock_wallet(cryptodezirecashd):
-    info = cryptodezirecashd.getinfo()
+def unlock_wallet(GLPMd):
+    info = GLPMd.getinfo()
     if 'unlocked_until' not in info:
         return True # wallet is not encrypted
     t = int(info['unlocked_until'])
     if t <= time.time():
         try:
             passphrase = getpass.getpass("Wallet is locked; enter passphrase: ")
-            cryptodezirecashd.walletpassphrase(passphrase, 5)
+            GLPMd.walletpassphrase(passphrase, 5)
         except:
             sys.stderr.write("Wrong passphrase\n")
 
-    info = cryptodezirecashd.getinfo()
+    info = GLPMd.getinfo()
     return int(info['unlocked_until']) > time.time()
 
-def list_available(cryptodezirecashd):
+def list_available(GLPMd):
     address_summary = dict()
 
     address_to_account = dict()
-    for info in cryptodezirecashd.listreceivedbyaddress(0):
+    for info in GLPMd.listreceivedbyaddress(0):
         address_to_account[info["address"]] = info["account"]
 
-    unspent = cryptodezirecashd.listunspent(0)
+    unspent = GLPMd.listunspent(0)
     for output in unspent:
         # listunspent doesn't give addresses, so:
-        rawtx = cryptodezirecashd.getrawtransaction(output['txid'], 1)
+        rawtx = GLPMd.getrawtransaction(output['txid'], 1)
         vout = rawtx["vout"][output['vout']]
         pk = vout["scriptPubKey"]
 
-        # This code only deals with ordinary pay-to-cryptodezirecash-address
+        # This code only deals with ordinary pay-to-GLPM-address
         # or pay-to-script-hash outputs right now; anything exotic is ignored.
         if pk["type"] != "pubkeyhash" and pk["type"] != "scripthash":
             continue
@@ -141,8 +141,8 @@ def select_coins(needed, inputs):
         n += 1
     return (outputs, have-needed)
 
-def create_tx(cryptodezirecashd, fromaddresses, toaddress, amount, fee):
-    all_coins = list_available(cryptodezirecashd)
+def create_tx(GLPMd, fromaddresses, toaddress, amount, fee):
+    all_coins = list_available(GLPMd)
 
     total_available = Decimal("0.0")
     needed = amount+fee
@@ -161,7 +161,7 @@ def create_tx(cryptodezirecashd, fromaddresses, toaddress, amount, fee):
     # Note:
     # Python's json/jsonrpc modules have inconsistent support for Decimal numbers.
     # Instead of wrestling with getting json.dumps() (used by jsonrpc) to encode
-    # Decimals, I'm casting amounts to float before sending them to cryptodezirecashd.
+    # Decimals, I'm casting amounts to float before sending them to GLPMd.
     #
     outputs = { toaddress : float(amount) }
     (inputs, change_amount) = select_coins(needed, potential_inputs)
@@ -172,8 +172,8 @@ def create_tx(cryptodezirecashd, fromaddresses, toaddress, amount, fee):
         else:
             outputs[change_address] = float(change_amount)
 
-    rawtx = cryptodezirecashd.createrawtransaction(inputs, outputs)
-    signed_rawtx = cryptodezirecashd.signrawtransaction(rawtx)
+    rawtx = GLPMd.createrawtransaction(inputs, outputs)
+    signed_rawtx = GLPMd.signrawtransaction(rawtx)
     if not signed_rawtx["complete"]:
         sys.stderr.write("signrawtransaction failed\n")
         sys.exit(1)
@@ -181,10 +181,10 @@ def create_tx(cryptodezirecashd, fromaddresses, toaddress, amount, fee):
 
     return txdata
 
-def compute_amount_in(cryptodezirecashd, txinfo):
+def compute_amount_in(GLPMd, txinfo):
     result = Decimal("0.0")
     for vin in txinfo['vin']:
-        in_info = cryptodezirecashd.getrawtransaction(vin['txid'], 1)
+        in_info = GLPMd.getrawtransaction(vin['txid'], 1)
         vout = in_info['vout'][vin['vout']]
         result = result + vout['value']
     return result
@@ -195,12 +195,12 @@ def compute_amount_out(txinfo):
         result = result + vout['value']
     return result
 
-def sanity_test_fee(cryptodezirecashd, txdata_hex, max_fee):
+def sanity_test_fee(GLPMd, txdata_hex, max_fee):
     class FeeError(RuntimeError):
         pass
     try:
-        txinfo = cryptodezirecashd.decoderawtransaction(txdata_hex)
-        total_in = compute_amount_in(cryptodezirecashd, txinfo)
+        txinfo = GLPMd.decoderawtransaction(txdata_hex)
+        total_in = compute_amount_in(GLPMd, txinfo)
         total_out = compute_amount_out(txinfo)
         if total_in-total_out > max_fee:
             raise FeeError("Rejecting transaction, unreasonable fee of "+str(total_in-total_out))
@@ -223,15 +223,15 @@ def main():
 
     parser = optparse.OptionParser(usage="%prog [options]")
     parser.add_option("--from", dest="fromaddresses", default=None,
-                      help="addresses to get CDZCs from")
+                      help="addresses to get GLPMs from")
     parser.add_option("--to", dest="to", default=None,
-                      help="address to get send CDZCs to")
+                      help="address to get send GLPMs to")
     parser.add_option("--amount", dest="amount", default=None,
                       help="amount to send")
     parser.add_option("--fee", dest="fee", default="0.0",
                       help="fee to include")
     parser.add_option("--datadir", dest="datadir", default=determine_db_dir(),
-                      help="location of cryptodezirecash.conf file with RPC username/password (default: %default)")
+                      help="location of GLPM.conf file with RPC username/password (default: %default)")
     parser.add_option("--testnet", dest="testnet", default=False, action="store_true",
                       help="Use the test network")
     parser.add_option("--dry_run", dest="dry_run", default=False, action="store_true",
@@ -242,10 +242,10 @@ def main():
     check_json_precision()
     config = read_bitcoin_config(options.datadir)
     if options.testnet: config['testnet'] = True
-    cryptodezirecashd = connect_JSON(config)
+    GLPMd = connect_JSON(config)
 
     if options.amount is None:
-        address_summary = list_available(cryptodezirecashd)
+        address_summary = list_available(GLPMd)
         for address,info in address_summary.iteritems():
             n_transactions = len(info['outputs'])
             if n_transactions > 1:
@@ -255,14 +255,14 @@ def main():
     else:
         fee = Decimal(options.fee)
         amount = Decimal(options.amount)
-        while unlock_wallet(cryptodezirecashd) == False:
+        while unlock_wallet(GLPMd) == False:
             pass # Keep asking for passphrase until they get it right
-        txdata = create_tx(cryptodezirecashd, options.fromaddresses.split(","), options.to, amount, fee)
-        sanity_test_fee(cryptodezirecashd, txdata, amount*Decimal("0.01"))
+        txdata = create_tx(GLPMd, options.fromaddresses.split(","), options.to, amount, fee)
+        sanity_test_fee(GLPMd, txdata, amount*Decimal("0.01"))
         if options.dry_run:
             print(txdata)
         else:
-            txid = cryptodezirecashd.sendrawtransaction(txdata)
+            txid = GLPMd.sendrawtransaction(txdata)
             print(txid)
 
 if __name__ == '__main__':

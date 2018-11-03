@@ -176,15 +176,15 @@
         <translation>Konfirmi monerĉifrado</translation>
     </message>
     <message>
-        <source>CRYPTODEZIRECASH will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CDZCs from being stolen by malware infecting your computer.</source>
-        <translation>CRYPTODEZIRECASH fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn CDZCs de esti ŝtelita per malware infektanta vian komputilon.</translation>
+        <source>GLPM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
+        <translation>GLPM fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn GLPMs de esti ŝtelita per malware infektanta vian komputilon.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ĉu vi certas ke vi volas ĉifri vian monujon?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CDZC&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
         <translation>Averto: se vi ĉifras vian monujo kaj perdi vian pasfrazon, vi &lt;b&gt;PERDOS VIAN TUTAN MONON&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -433,8 +433,8 @@
         <translation>&amp;Foliumi transakcio historio</translation>
     </message>
     <message>
-        <source>Privacy Actions for zCDZC</source>
-        <translation>Privataj agoj por zCDZC</translation>
+        <source>Privacy Actions for zGLPM</source>
+        <translation>Privataj agoj por zGLPM</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -646,15 +646,15 @@
     </message>
     <message>
         <source>Crypto Dezire Cash Core</source>
-        <translation>CRYPTODEZIRECASH kerno</translation>
+        <translation>GLPM kerno</translation>
     </message>
     <message>
         <source>Send coins to a Crypto Dezire Cash address</source>
         <translation>Sendu mono al Crypto Dezire Cash addreso</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and cryptodezirecash: URIs)</source>
-        <translation>Peto pagojn (generas QR kodojn kaj cryptodezirecash: URIs)</translation>
+        <source>Request payments (generates QR codes and GLPM: URIs)</source>
+        <translation>Peto pagojn (generas QR kodojn kaj GLPM: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -677,8 +677,8 @@
         <translation>Montri informon pri Crypto Dezire Cash Kerno</translation>
     </message>
     <message>
-        <source>Modify configuration options for CRYPTODEZIRECASH</source>
-        <translation>Modifi agordajn opciojn por CRYPTODEZIRECASH</translation>
+        <source>Modify configuration options for GLPM</source>
+        <translation>Modifi agordajn opciojn por GLPM</translation>
     </message>
     <message>
         <source>Sign messages with your Crypto Dezire Cash addresses to prove you own them</source>
@@ -717,8 +717,8 @@
         <translation>Malfermi mastro-nodo agord-dosieron</translation>
     </message>
     <message>
-        <source>Open a CRYPTODEZIRECASH: URI or payment request</source>
-        <translation>Malfermi unu CRYPTODEZIRECASH: URI aŭ pago peto</translation>
+        <source>Open a GLPM: URI or payment request</source>
+        <translation>Malfermi unu GLPM: URI aŭ pago peto</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -734,7 +734,7 @@
     </message>
     <message>
         <source>Crypto Dezire Cash Core client</source>
-        <translation>CRYPTODEZIRECASH Kerno kliento</translation>
+        <translation>GLPM Kerno kliento</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Crypto Dezire Cash network</source>
@@ -892,8 +892,8 @@ Muktisendi: %1</translation>
         <translation>Tekstetikedo</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (cryptodezirecash.conf).</source>
-        <translation>Ĉiuj transakcio ne estos montri. Peor vidi ĉiuj transakcio bezonas agordi txindekso=1 en la agordo dosiero (cryptodezirecash.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (GLPM.conf).</source>
+        <translation>Ĉiuj transakcio ne estos montri. Peor vidi ĉiuj transakcio bezonas agordi txindekso=1 en la agordo dosiero (GLPM.conf).</translation>
     </message>
 </context>
 <context>
@@ -1224,7 +1224,7 @@ Muktisendi: %1</translation>
     </message>
     <message>
         <source>Crypto Dezire Cash Core</source>
-        <translation>CRYPTODEZIRECASH kerno</translation>
+        <translation>GLPM kerno</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -1283,7 +1283,7 @@ Muktisendi: %1</translation>
     </message>
     <message>
         <source>Crypto Dezire Cash Core will download and store a copy of the Crypto Dezire Cash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>CRYPTODEZIRECASH kerno elŝutos kaj konservi kopion de la Crypto Dezire Cash blokĉeno. Almenaŭ %1GB datumoj stokitos en ĉi tiun dosierujo, kaj ĝi kresko kun la tempo. Monujo stokitos en ĉi tiun dosierujo.</translation>
+        <translation>GLPM kerno elŝutos kaj konservi kopion de la Crypto Dezire Cash blokĉeno. Almenaŭ %1GB datumoj stokitos en ĉi tiun dosierujo, kaj ĝi kresko kun la tempo. Monujo stokitos en ĉi tiun dosierujo.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1295,7 +1295,7 @@ Muktisendi: %1</translation>
     </message>
     <message>
         <source>Crypto Dezire Cash Core</source>
-        <translation>CRYPTODEZIRECASH kerno</translation>
+        <translation>GLPM kerno</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1561,8 +1561,8 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>Adreso / Kvanto:</translation>
     </message>
     <message>
-        <source>Add destinations to send CDZC to</source>
-        <translation>Aldonu destinoj por sendi CDZC al</translation>
+        <source>Add destinations to send GLPM to</source>
+        <translation>Aldonu destinoj por sendi GLPM al</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1628,12 +1628,12 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>Bonvolu elekti privata nivelo.</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CDZC to anonymize 25000 CDZC</source>
-        <translation>Tion opcion estas la plej rapida kaji kostos ~0.025 CDZC por anonimigi 25000 CDZC</translation>
+        <source>This option is the quickest and will cost about ~0.025 GLPM to anonymize 25000 GLPM</source>
+        <translation>Tion opcion estas la plej rapida kaji kostos ~0.025 GLPM por anonimigi 25000 GLPM</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CDZC to anonymize 25000 CDZC</source>
-        <translation>Tion opcion estas moderebla rapide kaj kostos ĉirkaŭ 0.05 CDZC por anonimigi 25000 CDZC</translation>
+        <source>This option is moderately fast and will cost about 0.05 GLPM to anonymize 25000 GLPM</source>
+        <translation>Tion opcion estas moderebla rapide kaj kostos ĉirkaŭ 0.05 GLPM por anonimigi 25000 GLPM</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1706,14 +1706,14 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>&amp;Reto</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting CRYPTODEZIRECASH.</source>
-        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci CRYPTODEZIRECASH.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting GLPM.</source>
+        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci GLPM.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</source>
+https://www.transifex.com/GLPM/GLPM-translations</source>
         <translation>Ĉu mankas lingvon aŭ nekompleta tradukado? Helpu la  tradukcio ĉi tie:
-https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</translation>
+https://www.transifex.com/GLPM/GLPM-translations</translation>
     </message>
     <message>
         <source>Connect to the Crypto Dezire Cash network through a SOCKS5 proxy.</source>
@@ -1787,8 +1787,8 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
         <translation>Via aktuala elspezebla saldo</translation>
     </message>
     <message>
-        <source>CDZC Balance</source>
-        <translation>CDZC kvanto</translation>
+        <source>GLPM Balance</source>
+        <translation>GLPM kvanto</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -1799,8 +1799,8 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
         <translation>Via aktuala Crypto Dezire Cash totalo, nekonformita kaj nematurita transakcioj inkluzivita</translation>
     </message>
     <message>
-        <source>zCDZC Balance</source>
-        <translation>zCDZC kvanto</translation>
+        <source>zGLPM Balance</source>
+        <translation>zGLPM kvanto</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -1870,12 +1870,12 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>0</translation>
     </message>
     <message>
-        <source>zCDZC</source>
-        <translation>zCDZC</translation>
+        <source>zGLPM</source>
+        <translation>zGLPM</translation>
     </message>
     <message>
-        <source>0.000 000 00 CDZC</source>
-        <translation>0.000 000 00 CDZC</translation>
+        <source>0.000 000 00 GLPM</source>
+        <translation>0.000 000 00 GLPM</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1890,12 +1890,12 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Kvanto</translation>
     </message>
     <message>
-        <source>zCDZC Control</source>
-        <translation>zCDZC kontrolu</translation>
+        <source>zGLPM Control</source>
+        <translation>zGLPM kontrolu</translation>
     </message>
     <message>
-        <source>zCDZC Selected:</source>
-        <translation>Elektita zCDZC</translation>
+        <source>zGLPM Selected:</source>
+        <translation>Elektita zGLPM</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -1906,12 +1906,12 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Elspezi zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zCDZC for spending</source>
-        <translation>Havebla (matura kaj elspezebla) zCDZC por elspezi</translation>
+        <source>Available (mature and spendable) zGLPM for spending</source>
+        <translation>Havebla (matura kaj elspezebla) zGLPM por elspezi</translation>
     </message>
     <message>
-        <source>0 zCDZC</source>
-        <translation>0 zCDZC</translation>
+        <source>0 zGLPM</source>
+        <translation>0 zGLPM</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -1919,7 +1919,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>The Crypto Dezire Cash address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>CRYPTODEZIRECASH adreso por alsendi la pago. Kreas lokala pago al vi mem kiam malplenija.</translation>
+        <translation>GLPM adreso por alsendi la pago. Kreas lokala pago al vi mem kiam malplenija.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2297,8 +2297,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Se estas aktiva sed ŝanĝo-adreso estas malpleniĝa au nevalida, ŝanĝo sendos al nova generita adreson.</translation>
     </message>
     <message>
-        <source>0 CDZC</source>
-        <translation>0 CDZC</translation>
+        <source>0 GLPM</source>
+        <translation>0 GLPM</translation>
     </message>
     <message>
         <source>Open Coin Control...</source>
@@ -2373,7 +2373,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>The Crypto Dezire Cash address to send the payment to</source>
-        <translation>CDZCC adreso por sendi la pago al</translation>
+        <translation>GLPMC adreso por sendi la pago al</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2408,7 +2408,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     <name>ShutdownWindow</name>
     <message>
         <source>Crypto Dezire Cash Core is shutting down...</source>
-        <translation>CRYPTODEZIRECASH kerno fermanta...</translation>
+        <translation>GLPM kerno fermanta...</translation>
     </message>
     </context>
 <context>
@@ -2462,7 +2462,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     <name>SplashScreen</name>
     <message>
         <source>Crypto Dezire Cash Core</source>
-        <translation>CRYPTODEZIRECASH kerno</translation>
+        <translation>GLPM kerno</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>
@@ -2655,8 +2655,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>0</translation>
     </message>
     <message>
-        <source>zCDZC</source>
-        <translation>zCDZC</translation>
+        <source>zGLPM</source>
+        <translation>zGLPM</translation>
     </message>
     <message>
         <source>Is Spendable</source>
@@ -2664,7 +2664,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
 </context>
 <context>
-    <name>cryptodezirecash-core</name>
+    <name>GLPM-core</name>
     <message>
         <source>Connect through SOCKS5 proxy</source>
         <translation>Konekti per SOCKS5 prokurilo</translation>

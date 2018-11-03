@@ -953,16 +953,16 @@ bool ContextualCheckZerocoinMint(const CTransaction& tx, const PublicCoin& coin,
 
 bool ContextualCheckZerocoinSpend(const CTransaction& tx, const CoinSpend& spend, CBlockIndex* pindex, const uint256& hashBlock)
 {
-    //Check to see if the zCDZC is properly signed
+    //Check to see if the zGLPM is properly signed
     if (pindex->nHeight >= Params().Zerocoin_Block_V2_Start()) {
         if (!spend.HasValidSignature())
-            return error("%s: V2 zCDZC spend does not have a valid signature", __func__);
+            return error("%s: V2 zGLPM spend does not have a valid signature", __func__);
 
         libzerocoin::SpendType expectedType = libzerocoin::SpendType::SPEND;
         if (tx.IsCoinStake())
             expectedType = libzerocoin::SpendType::STAKE;
         if (spend.getSpendType() != expectedType) {
-            return error("%s: trying to spend zCDZC without the correct spend type. txid=%s", __func__,
+            return error("%s: trying to spend zGLPM without the correct spend type. txid=%s", __func__,
                          tx.GetHash().GetHex());
         }
     }
@@ -970,14 +970,14 @@ bool ContextualCheckZerocoinSpend(const CTransaction& tx, const CoinSpend& spend
     //Reject serial's that are already in the blockchain
     int nHeightTx = 0;
     if (IsSerialInBlockchain(spend.getCoinSerialNumber(), nHeightTx))
-        return error("%s : zCDZC spend with serial %s is already in block %d\n", __func__,
+        return error("%s : zGLPM spend with serial %s is already in block %d\n", __func__,
                      spend.getCoinSerialNumber().GetHex(), nHeightTx);
 
     //Reject serial's that are not in the acceptable value range
     bool fUseV1Params = spend.getVersion() < libzerocoin::PrivateCoin::PUBKEY_VERSION;
     if (pindex->nHeight > Params().Zerocoin_Block_EnforceSerialRange() &&
         !spend.HasValidSerial(Params().Zerocoin_Params(fUseV1Params)))
-        return error("%s : zCDZC spend with serial %s from tx %s is not in valid range\n", __func__,
+        return error("%s : zGLPM spend with serial %s from tx %s is not in valid range\n", __func__,
                      spend.getCoinSerialNumber().GetHex(), tx.GetHash().GetHex());
 
     return true;
@@ -1285,7 +1285,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
             //Check that txid is not already in the chain
             int nHeightTx = 0;
             if (IsTransactionInChain(tx.GetHash(), nHeightTx))
-                return state.Invalid(error("AcceptToMemoryPool : zCDZC spend tx %s already in block %d",
+                return state.Invalid(error("AcceptToMemoryPool : zGLPM spend tx %s already in block %d",
                                            tx.GetHash().GetHex(), nHeightTx), REJECT_DUPLICATE, "bad-txns-inputs-spent");
 
             //Check for double spending of serial #'s
@@ -1323,7 +1323,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 }
             }
 
-            // Check that zCDZC mints are not already known
+            // Check that zGLPM mints are not already known
             if (tx.IsZerocoinMint()) {
                 for (auto& out : tx.vout) {
                     if (!out.IsZerocoinMint())
@@ -1822,9 +1822,9 @@ int64_t GetBlockValue(int nHeight)
             // Genesis block
             return 0 * COIN;
         } else if (nHeight == 1) {
-            /* PREMINE: Current available cryptodezirecash on DEX marketc 198360471 cryptodezirecash
+            /* PREMINE: Current available GLPM on DEX marketc 198360471 GLPM
             Info abobut premine: 
-            Full premine size is 198360471. First 100 blocks mine 250000 cryptodezirecash per block - 198360471 - (100 * 250000) = 173360471
+            Full premine size is 198360471. First 100 blocks mine 250000 GLPM per block - 198360471 - (100 * 250000) = 173360471
             */
             // 87.4 % of premine
             return 173360471 * COIN;
@@ -2278,7 +2278,7 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
         const CTransaction& tx = block.vtx[i];
 
         /** UNDO ZEROCOIN DATABASING
-         * note we only undo zerocoin databasing in the following statement, value to and from CRYPTODEZIRECASH
+         * note we only undo zerocoin databasing in the following statement, value to and from GLPM
          * addresses should still be handled by the typical bitcoin based undo code
          * */
         if (tx.ContainsZerocoins()) {
@@ -2421,11 +2421,11 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("cryptodezirecash-scriptch");
+    RenameThread("GLPM-scriptch");
     scriptcheckqueue.Thread();
 }
 
-void RecalculateZCDZCMinted()
+void RecalculateZGLPMMinted()
 {
     CBlockIndex *pindex = chainActive[Params().Zerocoin_StartHeight()];
     int nHeightEnd = chainActive.Height();
@@ -2452,14 +2452,14 @@ void RecalculateZCDZCMinted()
     }
 }
 
-void RecalculateZCDZCSpent()
+void RecalculateZGLPMSpent()
 {
     CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
     while (true) {
         if (pindex->nHeight % 1000 == 0)
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
 
-        //Rewrite zCDZC supply
+        //Rewrite zGLPM supply
         CBlock block;
         assert(ReadBlockFromDisk(block, pindex));
 
@@ -2468,13 +2468,13 @@ void RecalculateZCDZCSpent()
         //Reset the supply to previous block
         pindex->mapZerocoinSupply = pindex->pprev->mapZerocoinSupply;
 
-        //Add mints to zCDZC supply
+        //Add mints to zGLPM supply
         for (auto denom : libzerocoin::zerocoinDenomList) {
             long nDenomAdded = count(pindex->vMintDenominationsInBlock.begin(), pindex->vMintDenominationsInBlock.end(), denom);
             pindex->mapZerocoinSupply.at(denom) += nDenomAdded;
         }
 
-        //Remove spends from zCDZC supply
+        //Remove spends from zGLPM supply
         for (auto denom : listDenomsSpent)
             pindex->mapZerocoinSupply.at(denom)--;
 
@@ -2488,7 +2488,7 @@ void RecalculateZCDZCSpent()
     }
 }
 
-bool RecalculateCDZCSupply(int nHeightStart)
+bool RecalculateGLPMSupply(int nHeightStart)
 {
     if (nHeightStart > chainActive.Height())
         return false;
@@ -2558,7 +2558,7 @@ bool RecalculateCDZCSupply(int nHeightStart)
 
 bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError)
 {
-    // CRYPTODEZIRECASH: recalculate Accumulator Checkpoints that failed to database properly
+    // GLPM: recalculate Accumulator Checkpoints that failed to database properly
     if (!listMissingCheckpoints.empty()) {
         uiInterface.ShowProgress(_("Calculating missing accumulators..."), 0);
         LogPrintf("%s : finding missing checkpoints\n", __func__);
@@ -2606,7 +2606,7 @@ bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError
     return true;
 }
 
-bool UpdateZCDZCSupply(const CBlock& block, CBlockIndex* pindex)
+bool UpdateZGLPMSupply(const CBlock& block, CBlockIndex* pindex)
 {
     std::list<CZerocoinMint> listMints;
     bool fFilterInvalid = pindex->nHeight >= Params().Zerocoin_Block_RecalculateAccumulators();
@@ -2787,7 +2787,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                     return state.DoS(100, error("%s: failed to add block %s with invalid zerocoinspend", __func__, tx.GetHash().GetHex()), REJECT_INVALID);
             }
 
-            // Check that zCDZC mints are not already known
+            // Check that zGLPM mints are not already known
             if (tx.IsZerocoinMint()) {
                 for (auto& out : tx.vout) {
                     if (!out.IsZerocoinMint())
@@ -2816,7 +2816,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 }
             }
 
-            // Check that zCDZC mints are not already known
+            // Check that zGLPM mints are not already known
             if (tx.IsZerocoinMint()) {
                 for (auto& out : tx.vout) {
                     if (!out.IsZerocoinMint())
@@ -2864,14 +2864,14 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
     //A one-time event where money supply counts were off and recalculated on a certain block.
     if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators() + 1) {
-        RecalculateZCDZCMinted();
-        RecalculateZCDZCSpent();
-        RecalculateCDZCSupply(Params().Zerocoin_StartHeight());
+        RecalculateZGLPMMinted();
+        RecalculateZGLPMSpent();
+        RecalculateGLPMSupply(Params().Zerocoin_StartHeight());
     }
 
-    //Track zCDZC money supply in the block index
-    if (!UpdateZCDZCSupply(block, pindex))
-        return state.DoS(100, error("%s: Failed to calculate new zCDZC supply for block=%s height=%d", __func__,
+    //Track zGLPM money supply in the block index
+    if (!UpdateZGLPMSupply(block, pindex))
+        return state.DoS(100, error("%s: Failed to calculate new zGLPM supply for block=%s height=%d", __func__,
                                     block.GetHash().GetHex(), pindex->nHeight), REJECT_INVALID);
 
     // track money supply and mint amount info
@@ -2933,7 +2933,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         setDirtyBlockIndex.insert(pindex);
     }
 
-    //Record zCDZC serials
+    //Record zGLPM serials
     set<uint256> setAddedTx;
     for (pair<CoinSpend, uint256> pSpend : vSpends) {
         // Send signal to wallet if this is ours
@@ -3074,7 +3074,7 @@ void static UpdateTip(CBlockIndex* pindexNew)
 {
     chainActive.SetTip(pindexNew);
 
-    // If turned on AutoZeromint will automatically convert CDZC to zCDZC
+    // If turned on AutoZeromint will automatically convert GLPM to zGLPM
     if (pwalletMain->isZeromintEnabled ())
         pwalletMain->AutoZeromint ();
 
@@ -3972,13 +3972,13 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         if (!CheckTransaction(tx, fZerocoinActive, chainActive.Height() + 1 >= Params().Zerocoin_Block_EnforceSerialRange(), state))
             return error("CheckBlock() : CheckTransaction failed");
 
-        // double check that there are no double spent zCDZC spends in this block
+        // double check that there are no double spent zGLPM spends in this block
         if (tx.IsZerocoinSpend()) {
             for (const CTxIn txIn : tx.vin) {
                 if (txIn.scriptSig.IsZerocoinSpend()) {
                     libzerocoin::CoinSpend spend = TxInToZerocoinSpend(txIn);
                     if (count(vBlockSerials.begin(), vBlockSerials.end(), spend.getCoinSerialNumber()))
-                        return state.DoS(100, error("%s : Double spending of zCDZC serial %s in block\n Block: %s",
+                        return state.DoS(100, error("%s : Double spending of zGLPM serial %s in block\n Block: %s",
                                                     __func__, spend.getCoinSerialNumber().GetHex(), block.ToString()));
                     vBlockSerials.emplace_back(spend.getCoinSerialNumber());
                 }
@@ -4185,21 +4185,21 @@ bool AcceptBlockHeader(const CBlock& block, CValidationState& state, CBlockIndex
 bool ContextualCheckZerocoinStake(int nHeight, CStakeInput* stake)
 {
     if (nHeight < Params().Zerocoin_Block_V2_Start())
-        return error("%s: zCDZC stake block is less than allowed start height", __func__);
+        return error("%s: zGLPM stake block is less than allowed start height", __func__);
 
-    if (CZCdzcStake* zCDZC = dynamic_cast<CZCdzcStake*>(stake)) {
-        CBlockIndex* pindexFrom = zCDZC->GetIndexFrom();
+    if (CZCdzcStake* zGLPM = dynamic_cast<CZCdzcStake*>(stake)) {
+        CBlockIndex* pindexFrom = zGLPM->GetIndexFrom();
         if (!pindexFrom)
-            return error("%s: failed to get index associated with zCDZC stake checksum", __func__);
+            return error("%s: failed to get index associated with zGLPM stake checksum", __func__);
 
         if (chainActive.Height() - pindexFrom->nHeight < Params().Zerocoin_RequiredStakeDepth())
-            return error("%s: zCDZC stake does not have required confirmation depth", __func__);
+            return error("%s: zGLPM stake does not have required confirmation depth", __func__);
 
         //The checksum needs to be the exact checksum from 200 blocks ago
         uint256 nCheckpoint200 = chainActive[nHeight - Params().Zerocoin_RequiredStakeDepth()]->nAccumulatorCheckpoint;
-        uint32_t nChecksum200 = ParseChecksum(nCheckpoint200, libzerocoin::AmountToZerocoinDenomination(zCDZC->GetValue()));
-        if (nChecksum200 != zCDZC->GetChecksum())
-            return error("%s: accumulator checksum is different than the block 200 blocks previous. stake=%d block200=%d", __func__, zCDZC->GetChecksum(), nChecksum200);
+        uint32_t nChecksum200 = ParseChecksum(nCheckpoint200, libzerocoin::AmountToZerocoinDenomination(zGLPM->GetValue()));
+        if (nChecksum200 != zGLPM->GetChecksum())
+            return error("%s: accumulator checksum is different than the block 200 blocks previous. stake=%d block200=%d", __func__, zGLPM->GetChecksum(), nChecksum200);
     } else {
         return error("%s: dynamic_cast of stake ptr failed", __func__);
     }
@@ -4249,8 +4249,8 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
         if (!stake)
             return error("%s: null stake ptr", __func__);
 
-        if (stake->IsZCDZC() && !ContextualCheckZerocoinStake(pindexPrev->nHeight, stake.get()))
-            return state.DoS(100, error("%s: staked zCDZC fails context checks", __func__));
+        if (stake->IsZGLPM() && !ContextualCheckZerocoinStake(pindexPrev->nHeight, stake.get()))
+            return state.DoS(100, error("%s: staked zGLPM fails context checks", __func__));
 
         uint256 hash = block.GetHash();
         if(!mapProofOfStake.count(hash)) // add to mapProofOfStake
@@ -4378,7 +4378,7 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
         }
     }
     if (nMints || nSpends)
-        LogPrintf("%s : block contains %d zCDZC mints and %d zCDZC spends\n", __func__, nMints, nSpends);
+        LogPrintf("%s : block contains %d zGLPM mints and %d zGLPM spends\n", __func__, nMints, nSpends);
 
     if (!CheckBlockSignature(*pblock))
         return error("ProcessNewBlock() : bad proof-of-stake block signature");

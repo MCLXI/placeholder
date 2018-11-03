@@ -148,8 +148,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CDZC&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE CDZC!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE GLPM!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -526,8 +526,8 @@
         <translation>Wyślij monety do adresu Crypto Dezire Cash</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and cryptodezirecash: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i cryptodezirecash:URI)</translation>
+        <source>Request payments (generates QR codes and GLPM: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i GLPM:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1217,9 +1217,9 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</source>
+https://www.transifex.com/GLPM/GLPM-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations </translation>
+https://www.transifex.com/GLPM/GLPM-translations </translation>
     </message>
     <message>
         <source>Connect to the Crypto Dezire Cash network through a SOCKS5 proxy.</source>
@@ -2034,7 +2034,7 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations </trans
     </message>
     </context>
 <context>
-    <name>cryptodezirecash-core</name>
+    <name>GLPM-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CDZCs from being stolen by malware infecting your computer.</source>
+        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CDZC&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -546,7 +546,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Privacy Actions for zCDZC</source>
+        <source>Privacy Actions for zGLPM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -821,7 +821,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Request payments (generates QR codes and cryptodezirecash: URIs)</source>
+        <source>Request payments (generates QR codes and GLPM: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1127,7 +1127,7 @@ Address: %4
     </message>
     <message>
         <location filename="../blockexplorer.cpp" line="+476"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (cryptodezirecash.conf).</source>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (GLPM.conf).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2078,7 +2078,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Add destinations to send CDZC to</source>
+        <source>Add destinations to send GLPM to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2210,12 +2210,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CDZC</source>
+        <source>Use 2 separate masternodes to mix funds up to 10000 GLPM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CDZC</source>
+        <source>Use 8 separate masternodes to mix funds up to 10000 GLPM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2225,12 +2225,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 CDZC to anonymize 10000 CDZC</source>
+        <source>This option is the quickest and will cost about ~0.025 GLPM to anonymize 10000 GLPM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 CDZC to anonymize 10000 CDZC</source>
+        <source>This option is moderately fast and will cost about 0.05 GLPM to anonymize 10000 GLPM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2240,7 +2240,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 CDZC per 10000 CDZC you anonymize.</source>
+        <source>0.1 GLPM per 10000 GLPM you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2409,7 +2409,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</source>
+https://www.transifex.com/GLPM/GLPM-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2419,23 +2419,23 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</source
     </message>
     <message>
         <location line="-133"/>
-        <source>Percentage of incoming CDZC which get automatically converted to zCDZC via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming GLPM which get automatically converted to zGLPM via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zCDZC</source>
+        <source>Percentage of autominted zGLPM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough CDZC for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough GLPM for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zCDZC Denomination</source>
+        <source>Preferred Automint zGLPM Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2605,7 +2605,7 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</source
     </message>
     <message>
         <location line="+43"/>
-        <source>CDZC Balances</source>
+        <source>GLPM Balances</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2706,17 +2706,17 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</source
     </message>
     <message>
         <location line="+36"/>
-        <source>CDZC:</source>
+        <source>GLPM:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+35"/>
-        <source>zCDZC:</source>
+        <source>zGLPM:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Current percentage of zCDZC.
+        <source>Current percentage of zGLPM.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2729,7 +2729,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     <message>
         <location line="-46"/>
         <location line="+13"/>
-        <source>Locked CDZC or Masternode collaterals. These are excluded from zCDZC minting.</source>
+        <source>Locked GLPM or Masternode collaterals. These are excluded from zGLPM minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2738,7 +2738,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <location line="+189"/>
         <location line="+31"/>
         <location line="+44"/>
-        <source>0.000 000 00 CDZC</source>
+        <source>0.000 000 00 GLPM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2749,7 +2749,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     <message>
         <location line="+7"/>
         <location line="+10"/>
-        <source>Unlocked CDZCs. These can be used for zCDZC minting.</source>
+        <source>Unlocked GLPMs. These can be used for zGLPM minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2766,7 +2766,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <location line="+14"/>
         <location line="+104"/>
         <source>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
-These zCDZC are spendable.</source>
+These zGLPM are spendable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2777,7 +2777,7 @@ These zCDZC are spendable.</source>
     <message>
         <location line="+23"/>
         <location line="+35"/>
-        <source>All available zCDZC, unconfirmed and immature zCDZC included.</source>
+        <source>All available zGLPM, unconfirmed and immature zGLPM included.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2807,7 +2807,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
     </message>
     <message>
         <location line="+93"/>
-        <source>Current percentage of zCDZC.
+        <source>Current percentage of zGLPM.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
         <translation type="unfinished"></translation>
@@ -2819,13 +2819,13 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     </message>
     <message>
         <location line="+1"/>
-        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in cryptodezirecash.conf.</source>
+        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in GLPM.conf.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
         <source>AutoMint is currently disabled.
-To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in cryptodezirecash.conf</source>
+To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in GLPM.conf</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2865,7 +2865,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="-108"/>
-        <source>Cannot start cryptodezirecash: click-to-pay handler</source>
+        <source>Cannot start GLPM: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2973,12 +2973,12 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <name>PrivacyDialog</name>
     <message>
         <location filename="../forms/privacydialog.ui" line="+55"/>
-        <source>CDZC which were anonymized via Zerocin Protocol</source>
+        <source>GLPM which were anonymized via Zerocin Protocol</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Zerocoin CDZC (zCDZC)</source>
+        <source>Zerocoin GLPM (zGLPM)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3014,7 +3014,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="-349"/>
         <location line="+629"/>
-        <source>zCDZC</source>
+        <source>zGLPM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3029,7 +3029,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+13"/>
-        <source>0.000 000 00 CDZC</source>
+        <source>0.000 000 00 GLPM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3104,7 +3104,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+7"/>
-        <source>Available (mature and spendable) zCDZC for spending</source>
+        <source>Available (mature and spendable) zGLPM for spending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3114,15 +3114,15 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+16"/>
-        <source>Available (mature and spendable) zCDZC for spending
+        <source>Available (mature and spendable) zGLPM for spending
 
-zCDZC are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+zGLPM are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+5"/>
         <location line="+417"/>
-        <source>0 zCDZC</source>
+        <source>0 zGLPM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3213,7 +3213,7 @@ zCDZC are mature when they have more than 20 confirmations AND more than 2 mints
     <message>
         <location line="+62"/>
         <location line="+38"/>
-        <source>Total Balance including unconfirmed and immature zCDZC</source>
+        <source>Total Balance including unconfirmed and immature zGLPM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3424,13 +3424,13 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
     <message>
         <location line="+45"/>
         <location line="+3"/>
-        <source>zCDZC is currently disabled due to maintenance.</source>
+        <source>zGLPM is currently disabled due to maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+50"/>
         <location line="+113"/>
-        <source>zCDZC is currently undergoing maintenance.</source>
+        <source>zGLPM is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3455,7 +3455,7 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
     </message>
     <message>
         <location line="+0"/>
-        <source> zCDZC in </source>
+        <source> zGLPM in </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4451,7 +4451,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+7"/>
-        <source>0 CDZC</source>
+        <source>0 GLPM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4521,12 +4521,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+772"/>
-        <source>If the custom fee is set to 1000 uCDZCs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uCDZCs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uCDZCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uGLPMs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uGLPMs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uGLPMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uCDZCs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uCDZCs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uCDZCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uGLPMs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uGLPMs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uGLPMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4592,7 +4592,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+35"/>
-        <source>Anonymized CDZC</source>
+        <source>Anonymized GLPM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5874,7 +5874,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 CDZC.</source>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 GLPM.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5961,9 +5961,9 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>cryptodezirecash-core</name>
+    <name>GLPM-core</name>
     <message>
-        <location filename="../cryptodezirecashstrings.cpp" line="+15"/>
+        <location filename="../GLPMstrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -6064,12 +6064,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in CDZC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in GLPM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in CDZC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in GLPM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6194,10 +6194,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>To use cryptodezirecashd, or the -server option to cryptodezirecash-qt, you must set an rpcpassword in the configuration file:
+        <source>To use GLPMd, or the -server option to GLPM-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=cryptodezirecashrpc
+rpcuser=GLPMrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -6219,12 +6219,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Crypto Dezire Cash Alert&quot;
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CDZC.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 GLPM.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CDZC.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 GLPM.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6644,7 +6644,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Crypto Dezire Cash Alert&quot;
     </message>
     <message>
         <location line="+1"/>
-        <source>Fee (in CDZC/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in GLPM/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

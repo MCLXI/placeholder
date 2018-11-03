@@ -176,7 +176,7 @@
         <translation>Bekræft, og tegnebogen krypteres.</translation>
     </message>
     <message>
-        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CDZCs from being stolen by malware infecting your computer.</source>
+        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
         <translation>Crypto Dezire Cash vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
     </message>
     <message>
@@ -184,8 +184,8 @@
         <translation>Er du sikker på, at du vil kryptere din tegnebog?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CDZC&lt;/b&gt;!</source>
-        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE CDZC&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
+        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE GLPM&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -606,7 +606,7 @@
         <translation>Send mønter til en Crypto Dezire Cash adresse</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and cryptodezirecash: URIs)</source>
+        <source>Request payments (generates QR codes and GLPM: URIs)</source>
         <translation>Anmod om betaling (genrerer QR kode og Crypto Dezire Cash URL)</translation>
     </message>
     <message>
@@ -813,8 +813,8 @@ Adresse: %4
         <translation>Tekstmærke</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (cryptodezirecash.conf).</source>
-        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (cryptodezirecash.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (GLPM.conf).</source>
+        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (GLPM.conf).</translation>
     </message>
 </context>
 <context>
@@ -1508,32 +1508,32 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Vælg tilsløringsniveau</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CDZC</source>
-        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 10000 CDZC</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 GLPM</source>
+        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 10000 GLPM</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CDZC</source>
-        <translation>Brug 8 separate masternoder for at tilsløre op til 10000 CDZC</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 GLPM</source>
+        <translation>Brug 8 separate masternoder for at tilsløre op til 10000 GLPM</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Brug 16 separate masternoder</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CDZC to anonymize 10000 CDZC</source>
-        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 CDZC for at anonymiser 10000 CDZC</translation>
+        <source>This option is the quickest and will cost about ~0.025 GLPM to anonymize 10000 GLPM</source>
+        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 GLPM for at anonymiser 10000 GLPM</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CDZC to anonymize 10000 CDZC</source>
-        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 CDZC for at anonymiser 10000 CDZC</translation>
+        <source>This option is moderately fast and will cost about 0.05 GLPM to anonymize 10000 GLPM</source>
+        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 GLPM for at anonymiser 10000 GLPM</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Denne mulighed er den langsomste og det mest sikre valg. Valg af maksimal tilsløring vil koste</translation>
     </message>
     <message>
-        <source>0.1 CDZC per 10000 CDZC you anonymize.</source>
-        <translation>0.1 pr 10000 CDZC for at tilsløre.</translation>
+        <source>0.1 GLPM per 10000 GLPM you anonymize.</source>
+        <translation>0.1 pr 10000 GLPM for at tilsløre.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1667,9 +1667,9 @@ Kontroller adressen og prøv igen.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</source>
+https://www.transifex.com/GLPM/GLPM-translations</source>
         <translation>Det valgte sprog mangler, eller oversættelsen er mangelfuld. Hjælp ved at bidrage med oversættelser her:
-https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</translation>
+https://www.transifex.com/GLPM/GLPM-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1894,7 +1894,7 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
         <translation>Ugyldig betalingsadresse: %1</translation>
     </message>
     <message>
-        <source>Cannot start cryptodezirecash: click-to-pay handler</source>
+        <source>Cannot start GLPM: click-to-pay handler</source>
         <translation>Kan ikke starte Crypto Dezire Cash "klik for at betale" systemet</translation>
     </message>
     <message>
@@ -2701,8 +2701,8 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
         <translation>UTXO størrelse:</translation>
     </message>
     <message>
-        <source>0 CDZC</source>
-        <translation>0 CDZC</translation>
+        <source>0 GLPM</source>
+        <translation>0 GLPM</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2745,12 +2745,12 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
         <translation>Bekræftelsestid</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCDZCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCDZCs in fee,&lt;br /&gt;while "at least" pays 1000 uCDZCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uCDZCs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uCDZC i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uCDZCs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uGLPMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uGLPMs in fee,&lt;br /&gt;while "at least" pays 1000 uGLPMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uGLPMs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uGLPM i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uGLPMs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCDZCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCDZCs in fee,&lt;br /&gt;while "total at least" pays 1000 uCDZCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uCDZCs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uCDZC i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uCDZCs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uGLPMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uGLPMs in fee,&lt;br /&gt;while "total at least" pays 1000 uGLPMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uGLPMs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uGLPM i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uGLPMs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Crypto Dezire Cash transactions than the network can process.</source>
@@ -3721,8 +3721,8 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
         <translation>Send mønter</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 CDZC.</source>
-        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1CDZC.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 GLPM.</source>
+        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1GLPM.</translation>
     </message>
 </context>
 <context>
@@ -3772,7 +3772,7 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
     </message>
     </context>
 <context>
-    <name>cryptodezirecash-core</name>
+    <name>GLPM-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = beholdtx metadata. For eksempel information om kontoejer og betalngsanmodninger, 2 = drop TX metadata)</translation>
@@ -3859,12 +3859,12 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
         <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
     </message>
     <message>
-        <source>Fees (in CDZC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebyrer (in CDZC/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
+        <source>Fees (in GLPM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebyrer (in GLPM/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CDZC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebyrer (in CDZC/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
+        <source>Fees (in GLPM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebyrer (in GLPM/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3963,10 +3963,10 @@ https://www.transifex.com/cryptodezirecash/cryptodezirecash-translations</transl
         <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use cryptodezirecashd, or the -server option to cryptodezirecash-qt, you must set an rpcpassword in the configuration file:
+        <source>To use GLPMd, or the -server option to GLPM-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=cryptodezirecashrpc
+rpcuser=GLPMrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3974,10 +3974,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "Crypto Dezire Cash Alert" admin@foo.com
 </source>
-        <translation>For at bruge cryptodezirecashd eller -server muligheden sammen med cryptodezirecash-qt skal der angives et rpc kodeord i konfigurationsfilen:
+        <translation>For at bruge GLPMd eller -server muligheden sammen med GLPM-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
 De anbefales at benytte følgende tilfældige kodeord
-Rpcuser=cryptodezirecashrpc
+Rpcuser=GLPMrpc
 rpcpasswrd=%s
 (Det er ikke nødvendigt at huske dette kodeord)
 Brugernavn og kodeord MÅ IKKE VÆRE ENS!
@@ -3995,12 +3995,12 @@ For eksempel: alertnotify=Echo %% | mail - s "Crypto Dezire Cash ALARM!" e-mail@
         <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret designeret indestående for at gennemføre denne transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CDZC.</source>
-        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 CDZC.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 GLPM.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 GLPM.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CDZC.</source>
-        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 CDZC.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 GLPM.</source>
+        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 GLPM.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4295,8 +4295,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Crypto Dezire Cash ALARM!" e-mail@
         <translation>Læsning af blokken mislykkedes</translation>
     </message>
     <message>
-        <source>Fee (in CDZC/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebyr (i CDZC/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
+        <source>Fee (in GLPM/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebyr (i GLPM/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>

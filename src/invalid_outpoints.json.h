@@ -1,10 +1,10 @@
 // Copyright (c) 2018 The PIVX developers
-// Copyright (c) 2018 The CRYPTODEZIRECASH developers
+// Copyright (c) 2018 The GLPM developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CRYPTODEZIRECASH_INVALID_OUTPOINTS_JSON_H
-#define CRYPTODEZIRECASH_INVALID_OUTPOINTS_JSON_H
+#ifndef GLPM_INVALID_OUTPOINTS_JSON_H
+#define GLPM_INVALID_OUTPOINTS_JSON_H
 #include <string>
 
 std::string LoadInvalidOutPoints()
@@ -6794,4 +6794,4 @@ std::string LoadInvalidOutPoints()
     return str;
 }
 
-#endif //CRYPTODEZIRECASH_INVALID_OUTPOINTS_JSON_H
+#endif //GLPM_INVALID_OUTPOINTS_JSON_H

@@ -3,15 +3,15 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CRYPTODEZIRECASH_ZCDZCTRACKER_H
-#define CRYPTODEZIRECASH_ZCDZCTRACKER_H
+#ifndef GLPM_ZGLPMTRACKER_H
+#define GLPM_ZGLPMTRACKER_H
 
 #include "primitives/zerocoin.h"
 #include <list>
 
 class CDeterministicMint;
 
-class CzCDZCTracker
+class CzGLPMTracker
 {
 private:
     bool fInitialized;
@@ -20,8 +20,8 @@ private:
     std::map<uint256, uint256> mapPendingSpends; //serialhash, txid of spend
     bool UpdateStatusInternal(const std::set<uint256>& setMempool, CMintMeta& mint);
 public:
-    CzCDZCTracker(std::string strWalletFile);
-    ~CzCDZCTracker();
+    CzGLPMTracker(std::string strWalletFile);
+    ~CzGLPMTracker();
     void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false);
     void Add(const CZerocoinMint& mint, bool isNew = false, bool isArchived = false);
     bool Archive(CMintMeta& meta);
@@ -49,4 +49,4 @@ public:
     void Clear();
 };
 
-#endif //CRYPTODEZIRECASH_ZCDZCTRACKER_H
+#endif //GLPM_ZGLPMTRACKER_H

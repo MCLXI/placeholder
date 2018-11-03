@@ -7,7 +7,7 @@ Some notes on how to build Crypto Dezire Cash in Unix.
 
 Note
 ---------------------
-Always use absolute paths to configure and compile cryptodezirecash and the dependencies,
+Always use absolute paths to configure and compile GLPM and the dependencies,
 for example, when specifying the the path of the dependency:
 
 	../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
@@ -25,7 +25,7 @@ make
 make install # optional
 ```
 
-This will build cryptodezirecash-qt as well if the dependencies are met.
+This will build GLPM-qt as well if the dependencies are met.
 
 Dependencies
 ---------------------
@@ -89,7 +89,7 @@ install necessary parts of boost:
 
 BerkeleyDB is required for the wallet.
 
-**For Ubuntu only:** db4.8 packages are available [here](https://launchpad.net/~cryptodezirecash/+archive/ubuntu/ppa).
+**For Ubuntu only:** db4.8 packages are available [here](https://launchpad.net/~GLPM/+archive/ubuntu/ppa).
 You can add the repository and install using the following commands:
 
     sudo apt-get install software-properties-common
@@ -131,7 +131,7 @@ libqrencode (optional) can be installed with:
 
     sudo apt-get install libqrencode-dev
 
-Once these are installed, they will be found by configure and a cryptodezirecash-qt executable will be
+Once these are installed, they will be found by configure and a GLPM-qt executable will be
 built by default.
 
 
@@ -157,7 +157,7 @@ libqrencode (optional) can be installed with:
 
 Notes
 -----
-The release is built with GCC and then "strip cryptodezirecashd" to strip the debug
+The release is built with GCC and then "strip GLPMd" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
@@ -198,7 +198,7 @@ If you need to build Boost yourself:
 
 Security
 --------
-To help make your cryptodezirecash installation more secure by making certain attacks impossible to
+To help make your GLPM installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, binaries are hardened by default.
 This can be disabled with:
 
@@ -222,7 +222,7 @@ Hardening enables the following features:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-    	scanelf -e ./cryptodezirecash
+    	scanelf -e ./GLPM
 
     The output should contain:
 
@@ -231,13 +231,13 @@ Hardening enables the following features:
 
 * Non-executable Stack
     If the stack is executable then trivial stack based buffer overflow exploits are possible if
-    vulnerable buffers are found. By default, cryptodezirecash should be built with a non-executable stack
+    vulnerable buffers are found. By default, GLPM should be built with a non-executable stack
     but if one of the libraries it uses asks for an executable stack or someone makes a mistake
     and uses a compiler extension which requires an executable stack, it will silently build an
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./cryptodezirecash`
+    `scanelf -e ./GLPM`
 
     the output should contain:
 	STK/REL/PTL
@@ -247,7 +247,7 @@ Hardening enables the following features:
 
 Disable-wallet mode
 --------------------
-When the intention is to run only a P2P node without a wallet, cryptodezirecash may be compiled in
+When the intention is to run only a P2P node without a wallet, GLPM may be compiled in
 disable-wallet mode with:
 
     ./configure --disable-wallet
@@ -269,8 +269,8 @@ Setup and Build Example: Arch Linux
 This example lists the steps necessary to setup and build a command line only, non-wallet distribution of the latest changes on Arch Linux:
 
     pacman -S git base-devel boost libevent python
-    git clonehttps://github.com/cryptodezire/CryptoDezireCash.git
-    cd cryptodezirecash/
+    git clonehttps://github.com/cryptodezire/GLPM.git
+    cd GLPM/
     ./autogen.sh
     ./configure --disable-wallet --without-gui --without-miniupnpc
     make check

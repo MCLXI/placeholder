@@ -13,7 +13,7 @@ HOST=$5
 
 RELEASEDIR=$BASEDIR/$RELEASEBASE/$COMMIT/$HOST
 
-cd $BASEDIR/cryptodezirecash-$HOST
+cd $BASEDIR/GLPM-$HOST
 
 mkdir -p $RELEASEDIR
 ZIPFILES=$(ls $OUTDIR/bin/* || true)

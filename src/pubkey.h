@@ -5,8 +5,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CRYPTODEZIRECASH_PUBKEY_H
-#define CRYPTODEZIRECASH_PUBKEY_H
+#ifndef GLPM_PUBKEY_H
+#define GLPM_PUBKEY_H
 
 #include "hash.h"
 #include "serialize.h"
@@ -269,4 +269,4 @@ public:
     ~ECCVerifyHandle();
 };
 
-#endif // CRYPTODEZIRECASH_PUBKEY_H
+#endif // GLPM_PUBKEY_H

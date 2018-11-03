@@ -28,7 +28,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../cryptodezirecash.qrc">:/images/about</pixmap>
+      <pixmap resource="../GLPM.qrc">:/images/about</pixmap>
      </property>
     </widget>
    </item>
@@ -97,7 +97,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../cryptodezirecash.qrc"/>
+  <include location="../GLPM.qrc"/>
  </resources>
  <connections>
   <connection>

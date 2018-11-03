@@ -1,13 +1,13 @@
-# bash programmable completion for cryptodezirecashd(1) and cryptodezirecash-cli(1)
+# bash programmable completion for GLPMd(1) and GLPM-cli(1)
 # Copyright (c) 2012,2014 Christian von Roques <roques@mti.ag>
 # Copyright (c) 2018 The Crypto Dezire Cash developers
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-have cryptodezirecashd && {
+have GLPMd && {
 
-# call $cryptodezirecashd for RPC
-_cryptodezirecash_rpc() {
+# call $GLPMd for RPC
+_GLPM_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -17,23 +17,23 @@ _cryptodezirecash_rpc() {
                 ;;
         esac
     done
-    $cryptodezirecashd "${rpcargs[@]}" "$@"
+    $GLPMd "${rpcargs[@]}" "$@"
 }
 
-# Add cryptodezirecash accounts to COMPREPLY
-_cryptodezirecash_accounts() {
+# Add GLPM accounts to COMPREPLY
+_GLPM_accounts() {
     local accounts
-    accounts=$(_cryptodezirecash_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
+    accounts=$(_GLPM_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
-_cryptodezirecashd() {
+_GLPMd() {
     local cur prev words=() cword
-    local cryptodezirecashd
+    local GLPMd
 
-    # save and use original argument to invoke cryptodezirecashd
-    # cryptodezirecashd might not be in $PATH
-    cryptodezirecashd="$1"
+    # save and use original argument to invoke GLPMd
+    # GLPMd might not be in $PATH
+    GLPMd="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -54,7 +54,7 @@ _cryptodezirecashd() {
     if ((cword > 3)); then
         case ${words[cword-3]} in
             addmultisigaddress)
-                _cryptodezirecash_accounts
+                _GLPM_accounts
                 return 0
                 ;;
             getbalance|gettxout|importaddress|importprivkey|listreceivedbyaccount|listreceivedbyaddress|listsinceblock)
@@ -75,7 +75,7 @@ _cryptodezirecashd() {
                 return 0
                 ;;
             move|setaccount)
-                _cryptodezirecash_accounts
+                _GLPM_accounts
                 return 0
                 ;;
         esac
@@ -91,7 +91,7 @@ _cryptodezirecashd() {
             return 0
             ;;
         getaccountaddress|getaddressesbyaccount|getbalance|getnewaddress|getreceivedbyaccount|listtransactions|move|sendfrom|sendmany)
-            _cryptodezirecash_accounts
+            _GLPM_accounts
             return 0
             ;;
     esac
@@ -115,12 +115,12 @@ _cryptodezirecashd() {
 
             # only parse --help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($cryptodezirecashd --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($GLPMd --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_cryptodezirecash_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
+                commands=$(_GLPM_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )
@@ -134,7 +134,7 @@ _cryptodezirecashd() {
     esac
 }
 
-complete -F _cryptodezirecashd cryptodezirecashd cryptodezirecash-cli
+complete -F _GLPMd GLPMd GLPM-cli
 }
 
 # Local variables:

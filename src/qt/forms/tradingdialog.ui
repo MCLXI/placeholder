@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="CDZCSupply">
+    <widget class="QLabel" name="GLPMSupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="CDZCDemand">
+    <widget class="QLabel" name="GLPMDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyCDZC">
+    <widget class="QPushButton" name="BuyGLPM">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -442,10 +442,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy CDZC</string>
+      <string>Buy GLPM</string>
      </property>
      <property name="icon">
-      <iconset resource="../cryptodezirecash.qrc">
+      <iconset resource="../GLPM.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>CDZC</string>
+      <string>GLPM</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,10 +1704,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>CDZC</string>
+      <string>GLPM</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputCDZC">
+    <widget class="QLineEdit" name="UnitsInputGLPM">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellCDZCBTN">
+    <widget class="QPushButton" name="SellGLPMBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1751,10 +1751,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell CDZC</string>
+      <string>Sell GLPM</string>
      </property>
      <property name="icon">
-      <iconset resource="../cryptodezirecash">
+      <iconset resource="../GLPM">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1777,12 +1777,12 @@
          </font>
         </property>
         <property name="text">
-         <string>CDZC Available:</string>
+         <string>GLPM Available:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="CDZCAvailableLabel">
+       <widget class="QLabel" name="GLPMAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelCDZC">
+       <widget class="QLabel" name="labelGLPM">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>CDZC</string>
+         <string>GLPM</string>
         </property>
        </widget>
       </item>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="CDZCBalanceLabel">
+    <widget class="QLabel" name="GLPMBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>CDZC Balance:</string>
+      <string>GLPM Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="CDZCAvailableLabel_2">
+    <widget class="QLabel" name="GLPMAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2813,7 +2813,7 @@
       </font>
      </property>
      <property name="text">
-      <string>CDZC Available:</string>
+      <string>GLPM Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2832,10 +2832,10 @@
       </font>
      </property>
      <property name="text">
-      <string>CDZC Pending:</string>
+      <string>GLPM Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="CDZCPendingLabel">
+    <widget class="QLabel" name="GLPMPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2928,7 +2928,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex CDZC Deposit Address:</string>
+      <string>Bittrex GLPM Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">
@@ -2944,7 +2944,7 @@
       <string>Generate Crypto Dezire Cash Deposit Address</string>
      </property>
      <property name="icon">
-      <iconset resource="../cryptodezirecash.qrc">
+      <iconset resource="../GLPM.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3206,7 +3206,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../cryptodezirecash.qrc">:/icons/transaction_1</pixmap>
+       <pixmap resource="../GLPM.qrc">:/icons/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3253,7 +3253,7 @@
       <string>Update API Keys</string>
      </property>
      <property name="icon">
-      <iconset resource="../cryptodezirecash.qrc">
+      <iconset resource="../GLPM.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3408,7 +3408,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../cryptodezirecash.qrc"/>
+  <include location="../GLPM.qrc"/>
  </resources>
  <connections/>
 </ui>

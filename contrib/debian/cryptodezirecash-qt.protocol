@@ -1,6 +1,6 @@
 [Protocol]
-exec=cryptodezirecash-qt '%u'
-protocol=cryptodezirecash
+exec=GLPM-qt '%u'
+protocol=GLPM
 input=none
 output=none
 helper=true

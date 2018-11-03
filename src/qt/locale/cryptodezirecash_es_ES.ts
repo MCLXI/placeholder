@@ -176,16 +176,16 @@
         <translation>Confirmar encriptación del monedero</translation>
     </message>
     <message>
-        <source>CRYPTODEZIRECASH will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CDZCs from being stolen by malware infecting your computer.</source>
-        <translation>CRYPTODEZIRECASH se cerrará ahora para completar el proceso de encriptación. Recuerde que la encriptación no le protege completamente del robo de sus CDZCs frente a malware que infecte su ordenador.</translation>
+        <source>GLPM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
+        <translation>GLPM se cerrará ahora para completar el proceso de encriptación. Recuerde que la encriptación no le protege completamente del robo de sus GLPMs frente a malware que infecte su ordenador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>¿Está seguro de que quiere encriptar su monedero?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CDZC&lt;/b&gt;!</source>
-        <translation>Advertencia: si encripta su monedero y pierde su clave de seguridad, ¡&lt;b&gt;PERDERÁ TODOS SUS CDZC&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
+        <translation>Advertencia: si encripta su monedero y pierde su clave de seguridad, ¡&lt;b&gt;PERDERÁ TODOS SUS GLPM&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this Crypto Dezire Cash address</source>
-        <translation>Cifrar la llave privada para esta dirección CRYPTODEZIRECASH</translation>
+        <translation>Cifrar la llave privada para esta dirección GLPM</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -555,7 +555,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this Crypto Dezire Cash address</source>
-        <translation>Firme el mensaje para probar que Ud. es el propietario de esta dirección CRYPTODEZIRECASH</translation>
+        <translation>Firme el mensaje para probar que Ud. es el propietario de esta dirección GLPM</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -648,7 +648,7 @@
     <name>ZCdzcControlDialog</name>
     </context>
 <context>
-    <name>cryptodezirecash-core</name>
+    <name>GLPM-core</name>
     <message>
         <source>Zapping all transactions from wallet...</source>
         <translation>Saltando todas las transacciones del monedero...</translation>

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CRYPTODEZIRECASH_MINTPOOL_H
-#define CRYPTODEZIRECASH_MINTPOOL_H
+#ifndef GLPM_MINTPOOL_H
+#define GLPM_MINTPOOL_H
 
 #include <map>
 #include <list>
@@ -51,4 +51,4 @@ public:
 };
 
 
-#endif //CRYPTODEZIRECASH_MINTPOOL_H
+#endif //GLPM_MINTPOOL_H

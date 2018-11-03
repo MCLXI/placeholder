@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Crypto Dezire Cash"
-            VALUE "FileDescription",    "cryptodezirecash-tx (CLI Crypto Dezire Cash transaction editor utility)"
+            VALUE "FileDescription",    "GLPM-tx (CLI Crypto Dezire Cash transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "cryptodezirecash-tx"
+            VALUE "InternalName",       "GLPM-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "cryptodezirecash-tx.exe"
-            VALUE "ProductName",        "cryptodezirecash-tx"
+            VALUE "OriginalFilename",   "GLPM-tx.exe"
+            VALUE "ProductName",        "GLPM-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

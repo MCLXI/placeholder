@@ -852,7 +852,7 @@ DBErrors CWalletDB::ZapWalletTx(CWallet* pwallet, vector<CWalletTx>& vWtx)
 void ThreadFlushWalletDB(const string& strFile)
 {
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("cryptodezirecash-wallet");
+    RenameThread("GLPM-wallet");
 
     static bool fOneThread;
     if (fOneThread)
@@ -1266,7 +1266,7 @@ bool CWalletDB::ReadCurrentSeedHash(uint256& hashSeed)
     return Read(string("seedhash"), hashSeed);
 }
 
-bool CWalletDB::WriteZCDZCSeed(const uint256& hashSeed, const vector<unsigned char>& seed)
+bool CWalletDB::WriteZGLPMSeed(const uint256& hashSeed, const vector<unsigned char>& seed)
 {
     if (!WriteCurrentSeedHash(hashSeed))
         return error("%s: failed to write current seed hash", __func__);
@@ -1274,13 +1274,13 @@ bool CWalletDB::WriteZCDZCSeed(const uint256& hashSeed, const vector<unsigned ch
     return Write(make_pair(string("dzs"), hashSeed), seed);
 }
 
-bool CWalletDB::EraseZCDZCSeed()
+bool CWalletDB::EraseZGLPMSeed()
 {
     uint256 hash;
     if(!ReadCurrentSeedHash(hash)){
         return error("Failed to read a current seed hash");
     }
-    if(!WriteZCDZCSeed(hash, ToByteVector(base_uint<256>(0) << 256))) {
+    if(!WriteZGLPMSeed(hash, ToByteVector(base_uint<256>(0) << 256))) {
         return error("Failed to write empty seed to wallet");
     }
     if(!WriteCurrentSeedHash(0)) {
@@ -1290,27 +1290,27 @@ bool CWalletDB::EraseZCDZCSeed()
     return true;
 }
 
-bool CWalletDB::EraseZCDZCSeed_deprecated()
+bool CWalletDB::EraseZGLPMSeed_deprecated()
 {
     return Erase(string("dzs"));
 }
 
-bool CWalletDB::ReadZCDZCSeed(const uint256& hashSeed, vector<unsigned char>& seed)
+bool CWalletDB::ReadZGLPMSeed(const uint256& hashSeed, vector<unsigned char>& seed)
 {
     return Read(make_pair(string("dzs"), hashSeed), seed);
 }
 
-bool CWalletDB::ReadZCDZCSeed_deprecated(uint256& seed)
+bool CWalletDB::ReadZGLPMSeed_deprecated(uint256& seed)
 {
     return Read(string("dzs"), seed);
 }
 
-bool CWalletDB::WriteZCDZCCount(const uint32_t& nCount)
+bool CWalletDB::WriteZGLPMCount(const uint32_t& nCount)
 {
     return Write(string("dzc"), nCount);
 }
 
-bool CWalletDB::ReadZCDZCCount(uint32_t& nCount)
+bool CWalletDB::ReadZGLPMCount(uint32_t& nCount)
 {
     return Read(string("dzc"), nCount);
 }

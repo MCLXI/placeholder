@@ -19,10 +19,10 @@ BEGIN
             VALUE "CompanyName",        "Crypto Dezire Cash"
             VALUE "FileDescription",    "Crypto Dezire Cash-cli (OSS RPC client for Crypto Dezire Cash)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "cryptodezirecash-cli"
+            VALUE "InternalName",       "GLPM-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "cryptodezirecash-cli.exe"
+            VALUE "OriginalFilename",   "GLPM-cli.exe"
             VALUE "ProductName",        "Crypto Dezire Cash-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END

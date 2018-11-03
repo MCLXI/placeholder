@@ -3,17 +3,17 @@ Description=Crypto Dezire Cash's distributed currency daemon
 After=network.target
 
 [Service]
-User=cryptodezirecash
-Group=cryptodezirecash
+User=GLPM
+Group=GLPM
 
 Type=forking
-PIDFile=/var/lib/cryptodezirecashd/cryptodezirecashd.pid
+PIDFile=/var/lib/GLPMd/GLPMd.pid
 
-ExecStart=/usr/bin/cryptodezirecashd -daemon -pid=/var/lib/cryptodezirecashd/cryptodezirecashd.pid \
-          -conf=/etc/cryptodezirecash/cryptodezirecash.conf -datadir=/var/lib/cryptodezirecashd
+ExecStart=/usr/bin/GLPMd -daemon -pid=/var/lib/GLPMd/GLPMd.pid \
+          -conf=/etc/GLPM/GLPM.conf -datadir=/var/lib/GLPMd
 
-ExecStop=-/usr/bin/cryptodezirecash-cli -conf=/etc/cryptodezirecash/cryptodezirecash.conf \
-         -datadir=/var/lib/cryptodezirecashd stop
+ExecStop=-/usr/bin/GLPM-cli -conf=/etc/GLPM/GLPM.conf \
+         -datadir=/var/lib/GLPMd stop
 
 Restart=always
 PrivateTmp=true

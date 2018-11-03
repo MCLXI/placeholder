@@ -2,7 +2,7 @@ NetBSD build guide
 ======================
 (updated for NetBSD 7.0)
 
-This guide describes how to build cryptodezirecashd and command-line utilities on NetBSD.
+This guide describes how to build GLPMd and command-line utilities on NetBSD.
 
 This guide does not contain instructions for building the GUI.
 
@@ -25,7 +25,7 @@ python27
 
 Download the source code:
 ```
-git clone https://github.com/cryptodezirecash/cryptodezirecash
+git clone https://github.com/GLPM/GLPM
 ```
 
 See [dependencies.md](dependencies.md) for a complete overview.

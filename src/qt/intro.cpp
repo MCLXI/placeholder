@@ -184,8 +184,8 @@ bool Intro::pickDataDirectory()
         settings.setValue("strDataDir", dataDir);
     }
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the cryptodezirecash.conf file in the default data directory
-     * (to be consistent with cryptodezirecashd behavior)
+     * override -datadir in the GLPM.conf file in the default data directory
+     * (to be consistent with GLPMd behavior)
      */
     if (dataDir != getDefaultDataDirectory())
         SoftSetArg("-datadir", GUIUtil::qstringToBoostPath(dataDir).string()); // use OS locale for path setting

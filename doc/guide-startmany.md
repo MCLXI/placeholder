@@ -95,7 +95,7 @@ Issue the following:
 Make note of the hash (which is your collaterla_output) and index.
 
 ### Enter your MasterNode details into your masternode.conf file
-[From the cryptodezirecash github repo](https://github.com/cryptodezirecash-crypto/cryptodezirecash/blob/master/doc/masternode_conf.md)
+[From the GLPM github repo](https://github.com/GLPM-crypto/GLPM/blob/master/doc/masternode_conf.md)
 
 The new masternode.conf format consists of a space seperated text file. Each line consisting of an alias, IP address followed by port, masternode private key, collateral output transaction id and collateral output index, donation address and donation percentage (the latter two are optional and should be in format "address:percentage").
 
@@ -112,20 +112,20 @@ mn01 127.0.0.1:55002 7gb6HNz8gRwVwKZLMGQ6XEaLjzPoxUNK4ui3Pig6mXA6RZ8xhsn 4901276
 mn02 127.0.0.2:55002 7gHrUV5JFdKF8cYLxAhfzDsj5RkRzebkHuHTG7pErCgaYGxT2vn 49012766543cac37369cf3813d6216bdddc1b9a8ed03ac690221be10aa5edd6c 0 TKa5kuygkJcMDmwsEP1aRawyXPUjbNKxqJ:25
 ```
 
-## What about the cryptodezirecash.conf file?
+## What about the GLPM.conf file?
 
-If you are using a masternode.conf file you no longer need the cryptodezirecash.conf file. The exception is if you need custom settings (thanks oblox). 
+If you are using a masternode.conf file you no longer need the GLPM.conf file. The exception is if you need custom settings (thanks oblox). 
 
-## Update cryptodezirecash.conf on server
+## Update GLPM.conf on server
 
-If you generated a new masternode private key, you will need to update the remote cryptodezirecash.conf files.
+If you generated a new masternode private key, you will need to update the remote GLPM.conf files.
 
 Shut down the daemon and then edit the file.
 
-```sudo nano .cryptodezirecash/cryptodezirecash.conf```
+```sudo nano .GLPM/GLPM.conf```
 
 ### Edit the masternodeprivkey
-If you generated a new masternode private key, you will need to update the masternodeprivkey value in your remote cryptodezirecash.conf file.
+If you generated a new masternode private key, you will need to update the masternodeprivkey value in your remote GLPM.conf file.
 
 ## Start your MasterNodes
 
@@ -135,9 +135,9 @@ If your remote server is not running, start your remote daemon as you normally w
 
 I usually confirm that remote is on the correct block by issuing:
 
-```cryptodezirecashd getinfo```
+```GLPMd getinfo```
 
-And compare with the official explorer at http://cryptodezirecashexplorer.coin-server.com <or> dnet.presstab.pw
+And compare with the official explorer at http://GLPMexplorer.coin-server.com <or> dnet.presstab.pw
 
 ### Local
 

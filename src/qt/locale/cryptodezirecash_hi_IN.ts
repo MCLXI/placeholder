@@ -324,7 +324,7 @@
     <name>ZCdzcControlDialog</name>
     </context>
 <context>
-    <name>cryptodezirecash-core</name>
+    <name>GLPM-core</name>
     <message>
         <source>Information</source>
         <translation>जानकारी</translation>

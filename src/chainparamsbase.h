@@ -11,7 +11,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between cryptodezirecash-cli and cryptodezirecashd)
+ * CBaseChainParams defines the base parameters (shared between GLPM-cli and GLPMd)
  * of a given instance of the Crypto Dezire Cash system.
  */
 class CBaseChainParams

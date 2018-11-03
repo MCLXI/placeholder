@@ -15,7 +15,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.cryptodezirecash.CryptoDezireCash-Qt";
+        return @"io.GLPM.GLPM-Qt";
     } else {
         return [self __bundleIdentifier];
     }

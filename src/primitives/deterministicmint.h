@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CRYPTODEZIRECASH_DETERMINISTICMINT_H
-#define CRYPTODEZIRECASH_DETERMINISTICMINT_H
+#ifndef GLPM_DETERMINISTICMINT_H
+#define GLPM_DETERMINISTICMINT_H
 
 #include <libzerocoin/Denominations.h>
 #include <uint256.h>
@@ -65,4 +65,4 @@ public:
     };
 };
 
-#endif //CRYPTODEZIRECASH_DETERMINISTICMINT_H
+#endif //GLPM_DETERMINISTICMINT_H

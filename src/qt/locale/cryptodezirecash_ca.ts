@@ -164,8 +164,8 @@
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CDZC&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES CDZCS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES GLPMS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -687,7 +687,7 @@
     </message>
     <message>
         <source>Allow incoming connections</source>
-        <translation>Permet connezCDZCs entrants</translation>
+        <translation>Permet connezGLPMs entrants</translation>
     </message>
     <message>
         <source>Expert</source>
@@ -852,7 +852,7 @@
     </message>
     <message>
         <source>Number of connections</source>
-        <translation>Nombre de connezCDZCs</translation>
+        <translation>Nombre de connezGLPMs</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -1310,7 +1310,7 @@
     <name>ZCdzcControlDialog</name>
     </context>
 <context>
-    <name>cryptodezirecash-core</name>
+    <name>GLPM-core</name>
     <message>
         <source>Error</source>
         <translation>Error</translation>

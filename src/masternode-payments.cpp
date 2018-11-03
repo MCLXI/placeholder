@@ -270,7 +270,7 @@ bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
     return true;
 }
 
-void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStake, bool fZCDZCStake)
+void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStake, bool fZGLPMStake)
 {
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (!pindexPrev) 
@@ -279,7 +279,7 @@ void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStak
     // if (IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS) && budget.IsBudgetPaymentBlock(pindexPrev->nHeight + 1)) {
     //     budget.FillBlockPayee(txNew, nFees, fProofOfStake);
     // } else {
-    masternodePayments.FillBlockPayee(txNew, nFees, fProofOfStake, fZCDZCStake);
+    masternodePayments.FillBlockPayee(txNew, nFees, fProofOfStake, fZGLPMStake);
     // }
 }
 
@@ -292,7 +292,7 @@ std::string GetRequiredPaymentsString(int nBlockHeight)
     }
 }
 
-void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFees, bool fProofOfStake, bool fZCDZCStake)
+void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFees, bool fProofOfStake, bool fZGLPMStake)
 {
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (!pindexPrev) 
@@ -314,7 +314,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
     }
 
     CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
-    CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue, 0, fZCDZCStake);
+    CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue, 0, fZGLPMStake);
     CAmount devFund = GetDevFundPayment(pindexPrev->nHeight, blockValue);
     
     if (!fProofOfStake) {

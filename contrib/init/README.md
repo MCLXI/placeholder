@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: cryptodezirecashd.service
-Upstart: cryptodezirecashd.conf
-OpenRC:  cryptodezirecashd.openrc
-         cryptodezirecashd.openrcconf
-CentOS:  cryptodezirecashd.init
+SystemD: GLPMd.service
+Upstart: GLPMd.conf
+OpenRC:  GLPMd.openrc
+         GLPMd.openrcconf
+CentOS:  GLPMd.init
 
 have been made available to assist packagers in creating node packages here.
 

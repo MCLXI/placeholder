@@ -1,4 +1,4 @@
-bitcoin               ICON    "pixmaps/cryptodezirecash.ico"
+bitcoin               ICON    "pixmaps/GLPM.ico"
 
 #include "wx/msw/wx.rc"
 

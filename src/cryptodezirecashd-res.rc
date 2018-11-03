@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Crypto Dezire Cash"
-            VALUE "FileDescription",    "cryptodezirecashd (OSS daemon/client for Crypto Dezire Cash)"
+            VALUE "FileDescription",    "GLPMd (OSS daemon/client for Crypto Dezire Cash)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "cryptodezirecashd"
+            VALUE "InternalName",       "GLPMd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "cryptodezirecashd.exe"
-            VALUE "ProductName",        "cryptodezirecashd"
+            VALUE "OriginalFilename",   "GLPMd.exe"
+            VALUE "ProductName",        "GLPMd"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

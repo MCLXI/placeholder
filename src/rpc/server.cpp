@@ -268,7 +268,7 @@ UniValue stop(const UniValue& params, bool fHelp)
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "CRYPTODEZIRECASH server stopping";
+    return "GLPM server stopping";
 }
 
 
@@ -354,36 +354,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
         /* Crypto Dezire Cash features */
-        {"cryptodezirecash", "masternode", &masternode, true, true, false},
-        {"cryptodezirecash", "listmasternodes", &listmasternodes, true, true, false},
-        {"cryptodezirecash", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"cryptodezirecash", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"cryptodezirecash", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"cryptodezirecash", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"cryptodezirecash", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"cryptodezirecash", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"cryptodezirecash", "masternodedebug", &masternodedebug, true, true, false},
-        {"cryptodezirecash", "startmasternode", &startmasternode, true, true, false},
-        {"cryptodezirecash", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"cryptodezirecash", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"cryptodezirecash", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"cryptodezirecash", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"cryptodezirecash", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"cryptodezirecash", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"cryptodezirecash", "mnbudget", &mnbudget, true, true, false},
-        {"cryptodezirecash", "preparebudget", &preparebudget, true, true, false},
-        {"cryptodezirecash", "submitbudget", &submitbudget, true, true, false},
-        {"cryptodezirecash", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"cryptodezirecash", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"cryptodezirecash", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"cryptodezirecash", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"cryptodezirecash", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"cryptodezirecash", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"cryptodezirecash", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"cryptodezirecash", "checkbudgets", &checkbudgets, true, true, false},
-        {"cryptodezirecash", "mnsync", &mnsync, true, true, false},
-        {"cryptodezirecash", "spork", &spork, true, true, false},
-        {"cryptodezirecash", "getpoolinfo", &getpoolinfo, true, true, false},
+        {"GLPM", "masternode", &masternode, true, true, false},
+        {"GLPM", "listmasternodes", &listmasternodes, true, true, false},
+        {"GLPM", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"GLPM", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"GLPM", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"GLPM", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"GLPM", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"GLPM", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"GLPM", "masternodedebug", &masternodedebug, true, true, false},
+        {"GLPM", "startmasternode", &startmasternode, true, true, false},
+        {"GLPM", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"GLPM", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"GLPM", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"GLPM", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"GLPM", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"GLPM", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"GLPM", "mnbudget", &mnbudget, true, true, false},
+        {"GLPM", "preparebudget", &preparebudget, true, true, false},
+        {"GLPM", "submitbudget", &submitbudget, true, true, false},
+        {"GLPM", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"GLPM", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"GLPM", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"GLPM", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"GLPM", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"GLPM", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"GLPM", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"GLPM", "checkbudgets", &checkbudgets, true, true, false},
+        {"GLPM", "mnsync", &mnsync, true, true, false},
+        {"GLPM", "spork", &spork, true, true, false},
+        {"GLPM", "getpoolinfo", &getpoolinfo, true, true, false},
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -618,7 +618,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> cryptodezirecash-cli " + methodname + " " + args + "\n";
+    return "> GLPM-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

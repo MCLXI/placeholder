@@ -152,16 +152,16 @@
         <translation>Confirmer le cryptage du portefeuille</translation>
     </message>
     <message>
-        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CDZCs from being stolen by malware infecting your computer.</source>
-        <translation>Crypto Dezire Cash va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos CDZCs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
+        <translation>Crypto Dezire Cash va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos GLPMs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Êtes-vous sûr de vouloir crypter votre portefeuille?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CDZC&lt;/b&gt;!</source>
-        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS CDZC&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
+        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS GLPM&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -653,8 +653,8 @@ Adresse : %4
         <translation>Chercher</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (cryptodezirecash.conf).</source>
-        <translation>Toutes les transaction ne seront pas affichés. Pour voir toutes les transactions, vous devez régler txindex=1 dans le fichier de configuration (cryptodezirecash.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (GLPM.conf).</source>
+        <translation>Toutes les transaction ne seront pas affichés. Pour voir toutes les transactions, vous devez régler txindex=1 dans le fichier de configuration (GLPM.conf).</translation>
     </message>
 </context>
 <context>
@@ -1038,32 +1038,32 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Veuillez sélectionner un niveau de confidentialité.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CDZC</source>
-        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 CDZC</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 GLPM</source>
+        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 GLPM</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CDZC</source>
-        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 CDZC</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 GLPM</source>
+        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 GLPM</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utiliser 16 masternodes différentes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CDZC to anonymize 10000 CDZC</source>
-        <translation>Cette option est la plus rapide, et coutera ~0.025 CDZC pour anonymiser 10000 CDZC</translation>
+        <source>This option is the quickest and will cost about ~0.025 GLPM to anonymize 10000 GLPM</source>
+        <translation>Cette option est la plus rapide, et coutera ~0.025 GLPM pour anonymiser 10000 GLPM</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CDZC to anonymize 10000 CDZC</source>
-        <translation>Cette option est moyennement rapide, et coutera 0.05 CDZC pour anonymiser 10000 CDZC</translation>
+        <source>This option is moderately fast and will cost about 0.05 GLPM to anonymize 10000 GLPM</source>
+        <translation>Cette option est moyennement rapide, et coutera 0.05 GLPM pour anonymiser 10000 GLPM</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Il s'agit de l'option la plus lente est la plus sécurisé. Utiliser l'anonymat maximum coutera</translation>
     </message>
     <message>
-        <source>0.1 CDZC per 10000 CDZC you anonymize.</source>
-        <translation>0.1 CDZC par 10000 CDZC vous anonymisez.</translation>
+        <source>0.1 GLPM per 10000 GLPM you anonymize.</source>
+        <translation>0.1 GLPM par 10000 GLPM vous anonymisez.</translation>
     </message>
     </context>
 <context>
@@ -1433,8 +1433,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Après commission</translation>
     </message>
     <message>
-        <source>0 CDZC</source>
-        <translation>0 CDZC</translation>
+        <source>0 GLPM</source>
+        <translation>0 GLPM</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -1808,7 +1808,7 @@ Veuillez vérifier l'adresse et réessayer.</translation>
     </message>
     </context>
 <context>
-    <name>cryptodezirecash-core</name>
+    <name>GLPM-core</name>
     <message>
         <source>Error</source>
         <translation>Erreur</translation>
