@@ -3,10 +3,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GLPM_INVALID_H
-#define GLPM_INVALID_H
+#ifndef HCASH_INVALID_H
+#define HCASH_INVALID_H
 
-#endif //GLPM_INVALID_H
+#endif //HCASH_INVALID_H
 
 #include <libzerocoin/bignum.h>
 #include <univalue/include/univalue.h>

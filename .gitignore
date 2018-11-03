@@ -7,12 +7,12 @@ reset-files.bash
 *.tar.gz
 
 *.exe
-src/GLPM
-src/GLPMd
-src/GLPM-cli
-src/GLPM-tx
-src/test/test_GLPM
-src/qt/test/test_GLPM-qt
+src/HCASH
+src/HCASHd
+src/HCASH-cli
+src/HCASH-tx
+src/test/test_HCASH
+src/qt/test/test_HCASH-qt
 
 # autoreconf
 Makefile.in
@@ -38,8 +38,8 @@ confdefs.h
 conftest.cpp
 conftest.err
 libtool
-src/config/GLPM-config.h
-src/config/GLPM-config.h.in
+src/config/HCASH-config.h
+src/config/HCASH-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -65,7 +65,7 @@ src/qt/test/moc*.cpp
 *.o
 *.o-*
 *.patch
-.GLPM
+.HCASH
 *.a
 *.pb.cc
 *.pb.h
@@ -84,12 +84,12 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-GLPM-qt
-GLPM-Qt.app
+HCASH-qt
+HCASH-Qt.app
 
 # Unit-tests
 Makefile.test
-GLPM-qt_test
+HCASH-qt_test
 src/test/buildenv.py
 
 # Resources cpp
@@ -105,7 +105,7 @@ build
 #lcov
 *.gcno
 /*.info
-test_GLPM.coverage/
+test_HCASH.coverage/
 total.coverage/
 coverage_percent.txt
 

@@ -12,8 +12,8 @@ When a "Transaction Lock" occurs the hash of the related transaction is broadcas
 * `zmqpubhashtxlock`: publishes the transaction hash when locked via SwiftX
 
 This mechanism has been integrated into Bitcore-Node-Crypto Dezire Cash which allows for notification to be broadcast through Insight API in one of two ways:
-* WebSocket: [https://github.com/GLPM/insight-api-GLPM#web-socket-api](https://github.com/GLPM/insight-api-GLPM#web-socket-api) 
-* API: [https://github.com/GLPM/insight-api-GLPM#swifttx-transactions](https://github.com/GLPM/insight-api-GLPM#swifttx-transactions) 
+* WebSocket: [https://github.com/HCASH/insight-api-HCASH#web-socket-api](https://github.com/HCASH/insight-api-HCASH#web-socket-api) 
+* API: [https://github.com/HCASH/insight-api-HCASH#swifttx-transactions](https://github.com/HCASH/insight-api-HCASH#swifttx-transactions) 
 
 ####Command line option
 

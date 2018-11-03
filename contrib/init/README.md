@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: GLPMd.service
-Upstart: GLPMd.conf
-OpenRC:  GLPMd.openrc
-         GLPMd.openrcconf
-CentOS:  GLPMd.init
+SystemD: HCASHd.service
+Upstart: HCASHd.conf
+OpenRC:  HCASHd.openrc
+         HCASHd.openrcconf
+CentOS:  HCASHd.init
 
 have been made available to assist packagers in creating node packages here.
 

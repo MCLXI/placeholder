@@ -1,6 +1,6 @@
-usr/local/bin/GLPM-qt usr/bin
+usr/local/bin/HCASH-qt usr/bin
 share/pixmaps/bitcoin32.xpm usr/share/pixmaps
 share/pixmaps/bitcoin16.xpm usr/share/pixmaps
 share/pixmaps/bitcoin128.png usr/share/pixmaps
-debian/GLPM-qt.desktop usr/share/applications
-debian/GLPM-qt.protocol usr/share/kde4/services/
+debian/HCASH-qt.desktop usr/share/applications
+debian/HCASH-qt.protocol usr/share/kde4/services/

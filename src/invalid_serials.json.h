@@ -1,12 +1,12 @@
 // Copyright (c) 2018 The PIVX developers
-// Copyright (c) 2018 The GLPM developers
+// Copyright (c) 2018 The HCASH developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 
 
-#ifndef GLPM_INVALID_SERIALS_JSON_H
-#define GLPM_INVALID_SERIALS_JSON_H
+#ifndef HCASH_INVALID_SERIALS_JSON_H
+#define HCASH_INVALID_SERIALS_JSON_H
 
 #include <string>
 
@@ -1190,4 +1190,4 @@ std::string LoadInvalidSerials()
     return str;
 }
 
-#endif //GLPM_INVALID_SERIALS_JSON_H
+#endif //HCASH_INVALID_SERIALS_JSON_H

@@ -176,16 +176,16 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
-        <translation>Crypto Dezire Cash verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi GLPM dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HCASHs from being stolen by malware infecting your computer.</source>
+        <translation>Crypto Dezire Cash verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi HCASH dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
-        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI GLPM&lt;7b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HCASH&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI HCASH&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -598,8 +598,8 @@
         <translation>Invia monete all' indirizzo Crypto Dezire Cash</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and GLPM: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e GLPM: URIs)</translation>
+        <source>Request payments (generates QR codes and HCASH: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e HCASH: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -753,8 +753,8 @@ MultiSend: %1</translation>
         <translation>Cerca</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (GLPM.conf).</source>
-        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (GLPM.conf)</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (HCASH.conf).</source>
+        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (HCASH.conf)</translation>
     </message>
 </context>
 <context>
@@ -1314,7 +1314,7 @@ MultiSend: %1</translation>
     <name>ZCdzcControlDialog</name>
     </context>
 <context>
-    <name>GLPM-core</name>
+    <name>HCASH-core</name>
     <message>
         <source>Error</source>
         <translation>Errore</translation>

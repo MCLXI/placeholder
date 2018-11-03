@@ -172,16 +172,16 @@
         <translation>Potvrdite šifriranje novčanika</translation>
     </message>
     <message>
-        <source>GLPM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
-        <translation>GLPM se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše GLPM od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>HCASH will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HCASHs from being stolen by malware infecting your computer.</source>
+        <translation>HCASH se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše HCASH od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite vašu zaporku, vi ćete1 IZGUBITI ĆE TE SAV VAŠ GLPM1!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HCASH&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite vašu zaporku, vi ćete1 IZGUBITI ĆE TE SAV VAŠ HCASH1!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -397,8 +397,8 @@
         <translation>Pregledajte povijest transakcija</translation>
     </message>
     <message>
-        <source>Privacy Actions for zGLPM</source>
-        <translation>Aktivnosti na privatnost za zGLPM</translation>
+        <source>Privacy Actions for zHCASH</source>
+        <translation>Aktivnosti na privatnost za zHCASH</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -609,8 +609,8 @@
         <translation>Pošaljite kovanice na Crypto Dezire Cash adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and GLPM: URIs)</source>
-        <translation>Zahtjev za plaćanja (generira QR kodove i GLPM: URI)</translation>
+        <source>Request payments (generates QR codes and HCASH: URIs)</source>
+        <translation>Zahtjev za plaćanja (generira QR kodove i HCASH: URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -633,8 +633,8 @@
         <translation>Prikaz informacija o Crypto Dezire Cash Coreu</translation>
     </message>
     <message>
-        <source>Modify configuration options for GLPM</source>
-        <translation>Izmijenite opcije konfiguracije za GLPM</translation>
+        <source>Modify configuration options for HCASH</source>
+        <translation>Izmijenite opcije konfiguracije za HCASH</translation>
     </message>
     <message>
         <source>Sign messages with your Crypto Dezire Cash addresses to prove you own them</source>
@@ -1045,8 +1045,8 @@
         <translation>ne</translation>
     </message>
     <message>
-        <source>0 GLPM</source>
-        <translation>0 GLPM</translation>
+        <source>0 HCASH</source>
+        <translation>0 HCASH</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -1119,7 +1119,7 @@
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>The Crypto Dezire Cash address to sign the message with</source>
-        <translation>GLPM adresa za potpisivanje poruke s</translation>
+        <translation>HCASH adresa za potpisivanje poruke s</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1147,7 +1147,7 @@
     </message>
     <message>
         <source>The Crypto Dezire Cash address the message was signed with</source>
-        <translation>GLPM adresa s kojom je potpisana poruka</translation>
+        <translation>HCASH adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Crypto Dezire Cash address</source>
@@ -1352,7 +1352,7 @@
     </message>
     </context>
 <context>
-    <name>GLPM-core</name>
+    <name>HCASH-core</name>
     <message>
         <source>Error</source>
         <translation>Greška</translation>

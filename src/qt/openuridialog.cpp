@@ -18,7 +18,7 @@ OpenURIDialog::OpenURIDialog(QWidget* parent) : QDialog(parent, Qt::WindowSystem
 {
     ui->setupUi(this);
 #if QT_VERSION >= 0x040700
-    ui->uriEdit->setPlaceholderText("GLPM:");
+    ui->uriEdit->setPlaceholderText("HCASH:");
 #endif
 }
 
@@ -49,5 +49,5 @@ void OpenURIDialog::on_selectFileButton_clicked()
     if (filename.isEmpty())
         return;
     QUrl fileUri = QUrl::fromLocalFile(filename);
-    ui->uriEdit->setText("GLPM:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
+    ui->uriEdit->setText("HCASH:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
 }

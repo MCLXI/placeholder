@@ -6,7 +6,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/GLPM-config.h"
+#include "config/HCASH-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -63,7 +63,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::GLPM);
+        settings.setValue("nDisplayUnit", BitcoinUnits::HCASH);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
@@ -90,10 +90,10 @@ void OptionsModel::Init()
         settings.setValue("nPreferredDenom", 0);
     nPreferredDenom = settings.value("nPreferredDenom", "0").toLongLong();
 
-    if (!settings.contains("nAnonymizeGLPMAmount"))
-        settings.setValue("nAnonymizeGLPMAmount", 1000);
+    if (!settings.contains("nAnonymizeHCASHAmount"))
+        settings.setValue("nAnonymizeHCASHAmount", 1000);
 
-    nAnonymizeGLPMAmount = settings.value("nAnonymizeGLPMAmount").toLongLong();
+    nAnonymizeHCASHAmount = settings.value("nAnonymizeHCASHAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -167,8 +167,8 @@ void OptionsModel::Init()
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
-    if (settings.contains("nAnonymizeGLPMAmount"))
-        SoftSetArg("-anonymizeGLPMamount", settings.value("nAnonymizeGLPMAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeHCASHAmount"))
+        SoftSetArg("-anonymizeHCASHamount", settings.value("nAnonymizeHCASHAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -179,7 +179,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in GLPM.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in HCASH.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -259,8 +259,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return QVariant(nZeromintPercentage);
         case ZeromintPrefDenom:
             return QVariant(nPreferredDenom);
-        case AnonymizeGLPMAmount:
-            return QVariant(nAnonymizeGLPMAmount);
+        case AnonymizeHCASHAmount:
+            return QVariant(nAnonymizeHCASHAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -389,10 +389,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             emit hideZeroBalancesChanged(fHideZeroBalances);
             break;
 
-        case AnonymizeGLPMAmount:
-            nAnonymizeGLPMAmount = value.toInt();
-            settings.setValue("nAnonymizeGLPMAmount", nAnonymizeGLPMAmount);
-            emit anonymizeGLPMAmountChanged(nAnonymizeGLPMAmount);
+        case AnonymizeHCASHAmount:
+            nAnonymizeHCASHAmount = value.toInt();
+            settings.setValue("nAnonymizeHCASHAmount", nAnonymizeHCASHAmount);
+            emit anonymizeHCASHAmountChanged(nAnonymizeHCASHAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

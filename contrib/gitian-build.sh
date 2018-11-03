@@ -18,7 +18,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/GLPM/GLPM
+url=https://github.com/HCASH/HCASH
 proc=2
 mem=2000
 lxc=true
@@ -32,7 +32,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the GLPM, gitian-builder, gitian.sigs, and GLPM-detached-sigs.
+Run this script from the directory containing the HCASH, gitian-builder, gitian.sigs, and HCASH-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -40,7 +40,7 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/GLPM/GLPM
+-u|--url	Specify the URL of the repository. Default is https://github.com/HCASH/HCASH
 -v|--verify 	Verify the gitian build
 -b|--build	Do a gitian build
 -s|--sign	Make signed binaries for Windows and Mac OSX
@@ -238,8 +238,8 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/GLPM/gitian.sigs.git
-    git clone https://github.com/GLPM/GLPM-detached-sigs.git
+    git clone https://github.com/HCASH/gitian.sigs.git
+    git clone https://github.com/HCASH/HCASH-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]
@@ -253,7 +253,7 @@ then
 fi
 
 # Set up build
-pushd ./GLPM
+pushd ./HCASH
 git fetch
 git checkout ${COMMIT}
 popd
@@ -262,7 +262,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./GLPM-binaries/${VERSION}
+	mkdir -p ./HCASH-binaries/${VERSION}
 
 	# Build Dependencies
 	echo ""
@@ -272,7 +272,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../GLPM/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../HCASH/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -280,9 +280,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit GLPM=${COMMIT} --url GLPM=${url} ../GLPM/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../GLPM/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/GLPM-*.tar.gz build/out/src/GLPM-*.tar.gz ../GLPM-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit HCASH=${COMMIT} --url HCASH=${url} ../HCASH/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../HCASH/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/HCASH-*.tar.gz build/out/src/HCASH-*.tar.gz ../HCASH-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -290,10 +290,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit GLPM=${COMMIT} --url GLPM=${url} ../GLPM/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../GLPM/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/GLPM-*-win-unsigned.tar.gz inputs/GLPM-win-unsigned.tar.gz
-	    mv build/out/GLPM-*.zip build/out/GLPM-*.exe ../GLPM-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit HCASH=${COMMIT} --url HCASH=${url} ../HCASH/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../HCASH/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/HCASH-*-win-unsigned.tar.gz inputs/HCASH-win-unsigned.tar.gz
+	    mv build/out/HCASH-*.zip build/out/HCASH-*.exe ../HCASH-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -301,10 +301,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit GLPM=${COMMIT} --url GLPM=${url} ../GLPM/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../GLPM/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/GLPM-*-osx-unsigned.tar.gz inputs/GLPM-osx-unsigned.tar.gz
-	    mv build/out/GLPM-*.tar.gz build/out/GLPM-*.dmg ../GLPM-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit HCASH=${COMMIT} --url HCASH=${url} ../HCASH/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../HCASH/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/HCASH-*-osx-unsigned.tar.gz inputs/HCASH-osx-unsigned.tar.gz
+	    mv build/out/HCASH-*.tar.gz build/out/HCASH-*.dmg ../HCASH-binaries/${VERSION}
 	fi
 	# AArch64
 	if [[ $aarch64 = true ]]
@@ -312,9 +312,9 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} AArch64"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit GLPM=${COMMIT} --url GLPM=${url} ../GLPM/contrib/gitian-descriptors/gitian-aarch64.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../GLPM/contrib/gitian-descriptors/gitian-aarch64.yml
-	    mv build/out/GLPM-*.tar.gz build/out/src/GLPM-*.tar.gz ../GLPM-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit HCASH=${COMMIT} --url HCASH=${url} ../HCASH/contrib/gitian-descriptors/gitian-aarch64.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../HCASH/contrib/gitian-descriptors/gitian-aarch64.yml
+	    mv build/out/HCASH-*.tar.gz build/out/src/HCASH-*.tar.gz ../HCASH-binaries/${VERSION}
 	popd
 
         if [[ $commitFiles = true ]]
@@ -341,32 +341,32 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../GLPM/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../HCASH/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../GLPM/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../HCASH/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../GLPM/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../HCASH/contrib/gitian-descriptors/gitian-osx.yml
 	# AArch64
 	echo ""
 	echo "Verifying v${VERSION} AArch64"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../GLPM/contrib/gitian-descriptors/gitian-aarch64.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../HCASH/contrib/gitian-descriptors/gitian-aarch64.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../GLPM/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../HCASH/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../GLPM/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../HCASH/contrib/gitian-descriptors/gitian-osx-signer.yml
 	popd
 fi
 
@@ -381,10 +381,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../GLPM/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../GLPM/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/GLPM-*win64-setup.exe ../GLPM-binaries/${VERSION}
-	    mv build/out/GLPM-*win32-setup.exe ../GLPM-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../HCASH/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../HCASH/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/HCASH-*win64-setup.exe ../HCASH-binaries/${VERSION}
+	    mv build/out/HCASH-*win32-setup.exe ../HCASH-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -392,9 +392,9 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../GLPM/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../GLPM/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/GLPM-osx-signed.dmg ../GLPM-binaries/${VERSION}/GLPM-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../HCASH/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../HCASH/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/HCASH-osx-signed.dmg ../HCASH-binaries/${VERSION}/HCASH-${VERSION}-osx.dmg
 	fi
 	popd
 

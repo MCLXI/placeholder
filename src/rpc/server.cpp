@@ -268,7 +268,7 @@ UniValue stop(const UniValue& params, bool fHelp)
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "GLPM server stopping";
+    return "HCASH server stopping";
 }
 
 
@@ -354,36 +354,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
         /* Crypto Dezire Cash features */
-        {"GLPM", "masternode", &masternode, true, true, false},
-        {"GLPM", "listmasternodes", &listmasternodes, true, true, false},
-        {"GLPM", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"GLPM", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"GLPM", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"GLPM", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"GLPM", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"GLPM", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"GLPM", "masternodedebug", &masternodedebug, true, true, false},
-        {"GLPM", "startmasternode", &startmasternode, true, true, false},
-        {"GLPM", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"GLPM", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"GLPM", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"GLPM", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"GLPM", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"GLPM", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"GLPM", "mnbudget", &mnbudget, true, true, false},
-        {"GLPM", "preparebudget", &preparebudget, true, true, false},
-        {"GLPM", "submitbudget", &submitbudget, true, true, false},
-        {"GLPM", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"GLPM", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"GLPM", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"GLPM", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"GLPM", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"GLPM", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"GLPM", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"GLPM", "checkbudgets", &checkbudgets, true, true, false},
-        {"GLPM", "mnsync", &mnsync, true, true, false},
-        {"GLPM", "spork", &spork, true, true, false},
-        {"GLPM", "getpoolinfo", &getpoolinfo, true, true, false},
+        {"HCASH", "masternode", &masternode, true, true, false},
+        {"HCASH", "listmasternodes", &listmasternodes, true, true, false},
+        {"HCASH", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"HCASH", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"HCASH", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"HCASH", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"HCASH", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"HCASH", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"HCASH", "masternodedebug", &masternodedebug, true, true, false},
+        {"HCASH", "startmasternode", &startmasternode, true, true, false},
+        {"HCASH", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"HCASH", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"HCASH", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"HCASH", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"HCASH", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"HCASH", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"HCASH", "mnbudget", &mnbudget, true, true, false},
+        {"HCASH", "preparebudget", &preparebudget, true, true, false},
+        {"HCASH", "submitbudget", &submitbudget, true, true, false},
+        {"HCASH", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"HCASH", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"HCASH", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"HCASH", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"HCASH", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"HCASH", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"HCASH", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"HCASH", "checkbudgets", &checkbudgets, true, true, false},
+        {"HCASH", "mnsync", &mnsync, true, true, false},
+        {"HCASH", "spork", &spork, true, true, false},
+        {"HCASH", "getpoolinfo", &getpoolinfo, true, true, false},
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -618,7 +618,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> GLPM-cli " + methodname + " " + args + "\n";
+    return "> HCASH-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

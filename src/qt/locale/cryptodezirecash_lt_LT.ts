@@ -176,16 +176,16 @@
         <translation>Patvirtinkite piniginės užšifravimą.</translation>
     </message>
     <message>
-        <source>GLPM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
-        <translation>Dabar Crypto Dezire Cash išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų GLPM nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
+        <source>HCASH will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HCASHs from being stolen by malware infecting your computer.</source>
+        <translation>Dabar Crypto Dezire Cash išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų HCASH nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ar tikrai norite užšifruoti savo piniginę?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
-        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO GLPM&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HCASH&lt;/b&gt;!</source>
+        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO HCASH&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -259,7 +259,7 @@
     </message>
     <message>
         <source>The Crypto Dezire Cash address to encrypt</source>
-        <translation>GLPM adresas, kurį norite užšifruoti</translation>
+        <translation>HCASH adresas, kurį norite užšifruoti</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -433,8 +433,8 @@
         <translation>Naršyti pavedimų istoriją</translation>
     </message>
     <message>
-        <source>Privacy Actions for zGLPM</source>
-        <translation>zGLPM Saugumo Veiksmai </translation>
+        <source>Privacy Actions for zHCASH</source>
+        <translation>zHCASH Saugumo Veiksmai </translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -653,8 +653,8 @@
         <translation>Siųsti monetas į Crypto Dezire Cash adresą</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and GLPM: URIs)</source>
-        <translation>Prašyti mokėjimų (sugeneruoja QR kodus ir GLPM URI)</translation>
+        <source>Request payments (generates QR codes and HCASH: URIs)</source>
+        <translation>Prašyti mokėjimų (sugeneruoja QR kodus ir HCASH URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -677,7 +677,7 @@
         <translation>Rodyti informaciją apie Crypto Dezire Cash Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for GLPM</source>
+        <source>Modify configuration options for HCASH</source>
         <translation>Keisti Crypto Dezire Cash konfigūravimo parinktis</translation>
     </message>
     <message>
@@ -717,8 +717,8 @@
         <translation>Atidaryti Masternod'o konfigūracijos failą</translation>
     </message>
     <message>
-        <source>Open a GLPM: URI or payment request</source>
-        <translation>Atidaryti GLPM: URI arba mokėjimo prašymą</translation>
+        <source>Open a HCASH: URI or payment request</source>
+        <translation>Atidaryti HCASH: URI arba mokėjimo prašymą</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -892,8 +892,8 @@ MultiSend: %1</translation>
         <translation>Teksto etiketė</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (GLPM.conf).</source>
-        <translation>Ne visi pavedimai bus rodomi. Norėdami peržiūrėti visus pavedimus, reikia nustatyti txindex = 1 konfigūracijos faile (GLPM.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (HCASH.conf).</source>
+        <translation>Ne visi pavedimai bus rodomi. Norėdami peržiūrėti visus pavedimus, reikia nustatyti txindex = 1 konfigūracijos faile (HCASH.conf).</translation>
     </message>
 </context>
 <context>
@@ -1651,8 +1651,8 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Adresas / Suma:</translation>
     </message>
     <message>
-        <source>Add destinations to send GLPM to</source>
-        <translation>Pridėkite vietas, kurioms norite siųsti GLPM</translation>
+        <source>Add destinations to send HCASH to</source>
+        <translation>Pridėkite vietas, kurioms norite siųsti HCASH</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1750,47 +1750,47 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Pasirinkite privatumo lygmenį.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 GLPM</source>
-        <translation>Naudokite 2 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 GLPM</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 HCASH</source>
+        <translation>Naudokite 2 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 HCASH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 GLPM</source>
-        <translation>Naudokite 8 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 GLPM</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 HCASH</source>
+        <translation>Naudokite 8 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 HCASH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Naudokite 16 atskirų masternod'ų</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 GLPM to anonymize 25000 GLPM</source>
-        <translation>Ši parinktis yra greičiausia ir kainuos apie ~0.025 GLPM, kad anonimizuotų 25000 GLPM</translation>
+        <source>This option is the quickest and will cost about ~0.025 HCASH to anonymize 25000 HCASH</source>
+        <translation>Ši parinktis yra greičiausia ir kainuos apie ~0.025 HCASH, kad anonimizuotų 25000 HCASH</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 GLPM to anonymize 25000 GLPM</source>
-        <translation>Ši parinktis yra vidutiniškai greita ir kainuoja apie 0,05 GLPM, kad anonimizuotų 25000 GLPM</translation>
+        <source>This option is moderately fast and will cost about 0.05 HCASH to anonymize 25000 HCASH</source>
+        <translation>Ši parinktis yra vidutiniškai greita ir kainuoja apie 0,05 HCASH, kad anonimizuotų 25000 HCASH</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tai yra lėčiausias ir saugiausias variantas. Maksimalus anonimiškumas kainuos.</translation>
     </message>
     <message>
-        <source>0.1 GLPM per 25000 GLPM you anonymize.</source>
-        <translation>0.1 GLPM kas 1000 GLPM kuriuos anonimizuosite.</translation>
+        <source>0.1 HCASH per 25000 HCASH you anonymize.</source>
+        <translation>0.1 HCASH kas 1000 HCASH kuriuos anonimizuosite.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Obfuscation Konfigūracija</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening GLPM's configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening HCASH's configuration screen.</source>
         <translation>Obfuscation buvo sėkmingai nustatytas į paprastą (%1 ir 2 raundai). Bet kada galite tai pakeisti, atidarę Crypto Dezire Cash konfigūracijos ekraną.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening GLPM's configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening HCASH's configuration screen.</source>
         <translation>Obfuscation buvo sėkmingai nustatytas į aukštą (%1 ir 8 raundai). Bet kada galite tai pakeisti, atidarę Crypto Dezire Cash konfigūracijos ekraną.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening GLPM's configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening HCASH's configuration screen.</source>
         <translation>Obfuscation buvo sėkmingai nustatytas į maksimumą (%1 ir 16 raundai). Bet kada galite tai pakeisti, atidarę Crypto Dezire Cash konfigūracijos ekraną.</translation>
     </message>
 </context>
@@ -1876,38 +1876,38 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>&amp;Tinklas</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting GLPM.</source>
-        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "GLPM".</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting HCASH.</source>
+        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "HCASH".</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/GLPM/GLPM-translations</source>
+https://www.transifex.com/HCASH/HCASH-translations</source>
         <translation>Trūksta kalbos arba vertimas nebaigtas? Padėkite prisidėdami prie vertimų čia: 
-https://www.transifex.com/GLPM/GLPM-translations</translation>
+https://www.transifex.com/HCASH/HCASH-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Įrašyti prievadą naudojant &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of GLPM units to zGLPM</source>
-        <translation>Įgalinti automatinį konvertavimą iš GLPM į zGLPM</translation>
+        <source>Enable automatic minting of HCASH units to zHCASH</source>
+        <translation>Įgalinti automatinį konvertavimą iš HCASH į zHCASH</translation>
     </message>
     <message>
-        <source>Enable zGLPM Automint</source>
-        <translation>Įgalinti zGLPM Automatinį nukaldinima</translation>
+        <source>Enable zHCASH Automint</source>
+        <translation>Įgalinti zHCASH Automatinį nukaldinima</translation>
     </message>
     <message>
-        <source>Percentage of incoming GLPM which get automatically converted to zGLPM via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentas gauto GLPM, kuris automatiškai bus konvertuotas į zGLPM naudojant Zerocoin Protokolą (min: 10%)</translation>
+        <source>Percentage of incoming HCASH which get automatically converted to zHCASH via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentas gauto HCASH, kuris automatiškai bus konvertuotas į zHCASH naudojant Zerocoin Protokolą (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zGLPM</source>
-        <translation>Automatiškai sukurtų zGLPM procentas</translation>
+        <source>Percentage of autominted zHCASH</source>
+        <translation>Automatiškai sukurtų zHCASH procentas</translation>
     </message>
     <message>
-        <source>Preferred Automint zGLPM Denomination</source>
-        <translation>Pageidautinas zGLPM Automatinio Nukaldinimo Nominalas</translation>
+        <source>Preferred Automint zHCASH Denomination</source>
+        <translation>Pageidautinas zHCASH Automatinio Nukaldinimo Nominalas</translation>
     </message>
     <message>
         <source>Connect to the Crypto Dezire Cash network through a SOCKS5 proxy.</source>
@@ -2029,8 +2029,8 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>Bendras balansas, įskaitant visas nepasiekiamas monetas.</translation>
     </message>
     <message>
-        <source>GLPM Balance</source>
-        <translation>GLPM Balansas</translation>
+        <source>HCASH Balance</source>
+        <translation>HCASH Balansas</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2057,14 +2057,14 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>Jūsų dabartinis Crypto Dezire Cash balansas, įskaitant nepatvirtintus ir nesubrendusius sandorius</translation>
     </message>
     <message>
-        <source>zGLPM Balance</source>
-        <translation>zGLPM Balansas</translation>
+        <source>zHCASH Balance</source>
+        <translation>zHCASH Balansas</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zGLPM are spendable.</source>
+These zHCASH are spendable.</source>
         <translation>Subrendę: daugiau nei 20 patvirtinimų ir daugiau nei 1 konvertacija to pačio nominalo, kai jis jau buvo konvertuotas.
-Šiuos zGLPM galima išleisti.</translation>
+Šiuos zHCASH galima išleisti.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2117,8 +2117,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prienamas išleidimui:</translation>
     </message>
     <message>
-        <source>Locked GLPM or Masternode collaterals. These are excluded from zGLPM minting.</source>
-        <translation>Užrakinti GLPM arba Masternode užstatai. Jie yra neįtraukti į zGLPM kalimą.</translation>
+        <source>Locked HCASH or Masternode collaterals. These are excluded from zHCASH minting.</source>
+        <translation>Užrakinti HCASH arba Masternode užstatai. Jie yra neįtraukti į zHCASH kalimą.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2141,8 +2141,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>AutoMint šiuo metu įgalintas ir nustatytas</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in GLPM.conf.</source>
-        <translation>Norėdami išjungti Automatinį Kalimą pridėkite 'enablezeromint=0' GLPM.conf faile.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in HCASH.conf.</source>
+        <translation>Norėdami išjungti Automatinį Kalimą pridėkite 'enablezeromint=0' HCASH.conf faile.</translation>
     </message>
     </context>
 <context>
@@ -2156,8 +2156,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Netinkamas mokėjimo adresas %1</translation>
     </message>
     <message>
-        <source>Cannot start GLPM: click-to-pay handler</source>
-        <translation>Nepavyksta paleisti GLPM: apdorojimo "spustelėjimo ir apmokėjimo" funkcijos klaida</translation>
+        <source>Cannot start HCASH: click-to-pay handler</source>
+        <translation>Nepavyksta paleisti HCASH: apdorojimo "spustelėjimo ir apmokėjimo" funkcijos klaida</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2222,8 +2222,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>0</translation>
     </message>
     <message>
-        <source>zGLPM</source>
-        <translation>zGLPM</translation>
+        <source>zHCASH</source>
+        <translation>zHCASH</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2234,8 +2234,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prieinama Konvertavimui:</translation>
     </message>
     <message>
-        <source>0.000 000 00 GLPM</source>
-        <translation>0.000 000 00 GLPM</translation>
+        <source>0.000 000 00 HCASH</source>
+        <translation>0.000 000 00 HCASH</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -2266,12 +2266,12 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>PRIVATUMAS</translation>
     </message>
     <message>
-        <source>zGLPM Control</source>
+        <source>zHCASH Control</source>
         <translation>zCdzc Kontrolė</translation>
     </message>
     <message>
-        <source>zGLPM Selected:</source>
-        <translation>Pasirinkta zGLPM:</translation>
+        <source>zHCASH Selected:</source>
+        <translation>Pasirinkta zHCASH:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2290,8 +2290,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prieinamas Balansas: </translation>
     </message>
     <message>
-        <source>0 zGLPM</source>
-        <translation>0 zGLPM</translation>
+        <source>0 zHCASH</source>
+        <translation>0 zHCASH</translation>
     </message>
     <message>
         <source>Security Level:</source>
@@ -2338,8 +2338,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Zerocoin Statistika:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zGLPM</source>
-        <translation>Bendras balansas, įskaitant nepatvirtintą ir nesubrendusį zGLPM</translation>
+        <source>Total Balance including unconfirmed and immature zHCASH</source>
+        <translation>Bendras balansas, įskaitant nepatvirtintą ir nesubrendusį zHCASH</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2516,12 +2516,12 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Kopijuoti sumą</translation>
     </message>
     <message>
-        <source>zGLPM Spend #: </source>
-        <translation>zGLPM Išleidimas #:</translation>
+        <source>zHCASH Spend #: </source>
+        <translation>zHCASH Išleidimas #:</translation>
     </message>
     <message>
-        <source>zGLPM Mint</source>
-        <translation>zGLPM Konvertavimas</translation>
+        <source>zHCASH Mint</source>
+        <translation>zHCASH Konvertavimas</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2628,8 +2628,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>su Saugumo Lygmeniu</translation>
     </message>
     <message>
-        <source>Failed to spend zGLPM</source>
-        <translation>Nepavyko išleisti zGLPM</translation>
+        <source>Failed to spend zHCASH</source>
+        <translation>Nepavyko išleisti zHCASH</translation>
     </message>
     <message>
         <source>serial: </source>
@@ -3001,8 +3001,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Pasirinktinio pakeitimo adresas</translation>
     </message>
     <message>
-        <source>0 GLPM</source>
-        <translation>0 GLPM</translation>
+        <source>0 HCASH</source>
+        <translation>0 HCASH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3159,7 +3159,7 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>The Crypto Dezire Cash address to sign the message with</source>
-        <translation>GLPM adresas, kuriuo pasirašyti žinute</translation>
+        <translation>HCASH adresas, kuriuo pasirašyti žinute</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3187,7 +3187,7 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
     </message>
     <message>
         <source>The Crypto Dezire Cash address the message was signed with</source>
-        <translation>GLPM adresas, kurio buvo pasirašyta žinutė</translation>
+        <translation>HCASH adresas, kurio buvo pasirašyta žinutė</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Crypto Dezire Cash address</source>
@@ -3455,12 +3455,12 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>0</translation>
     </message>
     <message>
-        <source>zGLPM</source>
-        <translation>zGLPM</translation>
+        <source>zHCASH</source>
+        <translation>zHCASH</translation>
     </message>
     </context>
 <context>
-    <name>GLPM-core</name>
+    <name>HCASH-core</name>
     <message>
         <source>(default: %s)</source>
         <translation>(numatytas: %s)</translation>

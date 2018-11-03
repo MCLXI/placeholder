@@ -176,16 +176,16 @@
         <translation>Potvrdi šifriranje novčanika</translation>
     </message>
     <message>
-        <source>GLPM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
-        <translation>GLPM se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše GLPM od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>HCASH will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HCASHs from being stolen by malware infecting your computer.</source>
+        <translation>HCASH se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše HCASH od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše GLPMove 1 !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HCASH&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše HCASHove 1 !</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -259,7 +259,7 @@
     </message>
     <message>
         <source>The Crypto Dezire Cash address to encrypt</source>
-        <translation>GLPM adresa za šifriranje</translation>
+        <translation>HCASH adresa za šifriranje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -433,8 +433,8 @@
         <translation>Pregled povijesti transakcija</translation>
     </message>
     <message>
-        <source>Privacy Actions for zGLPM</source>
-        <translation>Postavke privatnosti za zGLPM</translation>
+        <source>Privacy Actions for zHCASH</source>
+        <translation>Postavke privatnosti za zHCASH</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -653,8 +653,8 @@
         <translation>Pošaljite kovanice na Crypto Dezire Cash adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and GLPM: URIs)</source>
-        <translation>Zahtjev za plaćanje (generira QR kodove i GLPM: URI)</translation>
+        <source>Request payments (generates QR codes and HCASH: URIs)</source>
+        <translation>Zahtjev za plaćanje (generira QR kodove i HCASH: URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -677,8 +677,8 @@
         <translation>Prikaz informacija o Crypto Dezire Cash Core-u</translation>
     </message>
     <message>
-        <source>Modify configuration options for GLPM</source>
-        <translation>Izmijenite konfiguracijske opcije za GLPM</translation>
+        <source>Modify configuration options for HCASH</source>
+        <translation>Izmijenite konfiguracijske opcije za HCASH</translation>
     </message>
     <message>
         <source>Sign messages with your Crypto Dezire Cash addresses to prove you own them</source>
@@ -717,8 +717,8 @@
         <translation>Otvori Masternode konfiguracijsku datoteku</translation>
     </message>
     <message>
-        <source>Open a GLPM: URI or payment request</source>
-        <translation>Otvori GLPM: URI zahtjev za plačanje</translation>
+        <source>Open a HCASH: URI or payment request</source>
+        <translation>Otvori HCASH: URI zahtjev za plačanje</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -734,7 +734,7 @@
     </message>
     <message>
         <source>Crypto Dezire Cash Core client</source>
-        <translation>GLPMIX Core Klijent</translation>
+        <translation>HCASHIX Core Klijent</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Crypto Dezire Cash network</source>
@@ -892,8 +892,8 @@ Višestruko slanje: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (GLPM.conf).</source>
-        <translation>Nisu prikazane sve transakcije. Za pregled svih transakcija morate postaviti txindex = 1 u konfiguracijskoj datoteci (GLPM.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (HCASH.conf).</source>
+        <translation>Nisu prikazane sve transakcije. Za pregled svih transakcija morate postaviti txindex = 1 u konfiguracijskoj datoteci (HCASH.conf).</translation>
     </message>
 </context>
 <context>
@@ -1679,8 +1679,8 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Adresa / iznos:</translation>
     </message>
     <message>
-        <source>Add destinations to send GLPM to</source>
-        <translation>Dodajte odredišta za slanje GLPM
+        <source>Add destinations to send HCASH to</source>
+        <translation>Dodajte odredišta za slanje HCASH
 </translation>
     </message>
     <message>
@@ -1779,48 +1779,48 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Odaberi razinu privatnosti.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 GLPM</source>
-        <translation>Koristite 2 odvojene masternode za miješanje sredstava do 25000 GLPM</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 HCASH</source>
+        <translation>Koristite 2 odvojene masternode za miješanje sredstava do 25000 HCASH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 GLPM</source>
-        <translation>Koristite 8 zasebnih masternoda za miješanje sredstava do 25000 GLPM</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 HCASH</source>
+        <translation>Koristite 8 zasebnih masternoda za miješanje sredstava do 25000 HCASH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Koristite 16 zasebnih masternodova</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 GLPM to anonymize 25000 GLPM</source>
-        <translation>Ova je opcija najbrža i košta oko 0,025 GLPM da anonimizira 25000 GLPM</translation>
+        <source>This option is the quickest and will cost about ~0.025 HCASH to anonymize 25000 HCASH</source>
+        <translation>Ova je opcija najbrža i košta oko 0,025 HCASH da anonimizira 25000 HCASH</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 GLPM to anonymize 25000 GLPM</source>
-        <translation>Ova je opcija umjereno brza i košta oko 0,05 GLPM da anonimizira 25000 GLPM</translation>
+        <source>This option is moderately fast and will cost about 0.05 HCASH to anonymize 25000 HCASH</source>
+        <translation>Ova je opcija umjereno brza i košta oko 0,05 HCASH da anonimizira 25000 HCASH</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Ovo je najsporiji i najsigurniji izbor. Korištenje maksimalne anonimnosti košta</translation>
     </message>
     <message>
-        <source>0.1 GLPM per 25000 GLPM you anonymize.</source>
-        <translation>0,1 GLPM po 25000 GLPM za anonimizaciju.</translation>
+        <source>0.1 HCASH per 25000 HCASH you anonymize.</source>
+        <translation>0,1 HCASH po 25000 HCASH za anonimizaciju.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Obfuscation Konfiguracija</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening GLPM's configuration screen.</source>
-        <translation>Obfuscation je uspješno postavljen na osnovne (%1 i 2 runde). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju GLPM-a.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening HCASH's configuration screen.</source>
+        <translation>Obfuscation je uspješno postavljen na osnovne (%1 i 2 runde). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju HCASH-a.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening GLPM's configuration screen.</source>
-        <translation>Obfuscation je uspješno postavljen na visoku razinu (%1 i 8 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju GLPM-a</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening HCASH's configuration screen.</source>
+        <translation>Obfuscation je uspješno postavljen na visoku razinu (%1 i 8 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju HCASH-a</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening GLPM's configuration screen.</source>
-        <translation>Obfuscation je uspješno postavljen na maksimalnu razinu (%1 i 16 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju GLPM-a.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening HCASH's configuration screen.</source>
+        <translation>Obfuscation je uspješno postavljen na maksimalnu razinu (%1 i 16 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju HCASH-a.</translation>
     </message>
 </context>
 <context>
@@ -1933,14 +1933,14 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Mreža</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting GLPM.</source>
-        <translation>Ovdje se može postaviti jezik korisničkog sučelja. Ova postavka će stupiti na snagu nakon ponovnog pokretanja GLPM-a.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting HCASH.</source>
+        <translation>Ovdje se može postaviti jezik korisničkog sučelja. Ova postavka će stupiti na snagu nakon ponovnog pokretanja HCASH-a.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/GLPM/GLPM-translations</source>
+https://www.transifex.com/HCASH/HCASH-translations</source>
         <translation>Jezik nedostaje ili prijevod nije potpun? Pomozite s prijevodima ovdje:
-https://www.transifex.com/GLPM/GLPM-translations</translation>
+https://www.transifex.com/HCASH/HCASH-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1948,28 +1948,28 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
 </translation>
     </message>
     <message>
-        <source>Enable automatic minting of GLPM units to zGLPM</source>
-        <translation>Omogućite automint GLPM jedinica na zGLPM</translation>
+        <source>Enable automatic minting of HCASH units to zHCASH</source>
+        <translation>Omogućite automint HCASH jedinica na zHCASH</translation>
     </message>
     <message>
-        <source>Enable zGLPM Automint</source>
-        <translation>Omogući zGLPM Automint</translation>
+        <source>Enable zHCASH Automint</source>
+        <translation>Omogući zHCASH Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming GLPM which get automatically converted to zGLPM via Zerocoin Protocol (min: 10%)</source>
-        <translation>Postotak dolaznih GLPM koji se automatski pretvara u zGLPM putem protokola Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming HCASH which get automatically converted to zHCASH via Zerocoin Protocol (min: 10%)</source>
+        <translation>Postotak dolaznih HCASH koji se automatski pretvara u zHCASH putem protokola Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zGLPM</source>
-        <translation>Postotak automatiziranog zGLPM</translation>
+        <source>Percentage of autominted zHCASH</source>
+        <translation>Postotak automatiziranog zHCASH</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough GLPM for this denomination is available</source>
-        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno GLPM za apoen</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough HCASH for this denomination is available</source>
+        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno HCASH za apoen</translation>
     </message>
     <message>
-        <source>Preferred Automint zGLPM Denomination</source>
-        <translation>Preferirana Automint zGLPM denominacijad</translation>
+        <source>Preferred Automint zHCASH Denomination</source>
+        <translation>Preferirana Automint zHCASH denominacijad</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>Ukupni saldo, uključujući sve nedostupne kovanice.</translation>
     </message>
     <message>
-        <source>GLPM Balance</source>
-        <translation>GLPM Saldo</translation>
+        <source>HCASH Balance</source>
+        <translation>HCASH Saldo</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2156,17 +2156,17 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
     </message>
     <message>
         <source>Your current Crypto Dezire Cash balance, unconfirmed and immature transactions included</source>
-        <translation>Uključena je vaša trenutna bilanca GLPM, nepotvrđene i nezrele transakcije</translation>
+        <translation>Uključena je vaša trenutna bilanca HCASH, nepotvrđene i nezrele transakcije</translation>
     </message>
     <message>
-        <source>zGLPM Balance</source>
-        <translation>zGLPM Bilanca</translation>
+        <source>zHCASH Balance</source>
+        <translation>zHCASH Bilanca</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zGLPM are spendable.</source>
+These zHCASH are spendable.</source>
         <translation>Mature: više od 20 potvrda i više od 1 mint od iste denominacije nakon što je mintan.
-Ti zGLPMs se mogu potrošiti.</translation>
+Ti zHCASHs se mogu potrošiti.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2219,8 +2219,8 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>Po potrošiti:</translation>
     </message>
     <message>
-        <source>Locked GLPM or Masternode collaterals. These are excluded from zGLPM minting.</source>
-        <translation>Zaključani GLPM ili Masternode kolateral. Oni su isključeni iz zGLPM kovanja.</translation>
+        <source>Locked HCASH or Masternode collaterals. These are excluded from zHCASH minting.</source>
+        <translation>Zaključani HCASH ili Masternode kolateral. Oni su isključeni iz zHCASH kovanja.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2231,8 +2231,8 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>Nepotvrđeno:</translation>
     </message>
     <message>
-        <source>Your current zGLPM balance, unconfirmed and immature zGLPM included.</source>
-        <translation>Vaša trenutačna zGLPM bilanca, nepotvrđena i nezrela zGLPM.</translation>
+        <source>Your current zHCASH balance, unconfirmed and immature zHCASH included.</source>
+        <translation>Vaša trenutačna zHCASH bilanca, nepotvrđena i nezrela zHCASH.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2243,10 +2243,10 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>nije sinkronizirano</translation>
     </message>
     <message>
-        <source>Current percentage of zGLPM.
+        <source>Current percentage of zHCASH.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Trenutni postotak zGLPM.
+        <translation>Trenutni postotak zHCASH.
 Ako je omogućeno automatsko navođenje, ovaj postotak će se podmiriti oko konfiguriranog postotka automatskog navođenja (zadano = 10%).
 </translation>
     </message>
@@ -2255,14 +2255,14 @@ Ako je omogućeno automatsko navođenje, ovaj postotak će se podmiriti oko konf
         <translation>AutoMint je trenutno omogućen i podešen na</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in GLPM.conf.</source>
-        <translation>Da biste onemogućili AutoMint, dodajte 'enablezeromint=0' u GLPM.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in HCASH.conf.</source>
+        <translation>Da biste onemogućili AutoMint, dodajte 'enablezeromint=0' u HCASH.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in GLPM.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in HCASH.conf</source>
         <translation>AutoMint je trenutno onemogućen.
-Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablezeromint=1' u GLPM.conf</translation>
+Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablezeromint=1' u HCASH.conf</translation>
     </message>
 </context>
 <context>
@@ -2288,8 +2288,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Nevažeća adresa za plaćanje %1</translation>
     </message>
     <message>
-        <source>Cannot start GLPM: click-to-pay handler</source>
-        <translation>Ne može se pokrenuti GLPM: clik-to-pay handler</translation>
+        <source>Cannot start HCASH: click-to-pay handler</source>
+        <translation>Ne može se pokrenuti HCASH: clik-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Crypto Dezire Cash address or malformed URI parameters.</source>
@@ -2390,8 +2390,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>0</translation>
     </message>
     <message>
-        <source>zGLPM</source>
-        <translation>zGLPM</translation>
+        <source>zHCASH</source>
+        <translation>zHCASH</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2402,8 +2402,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Dostupno za Minting:</translation>
     </message>
     <message>
-        <source>0.000 000 00 GLPM</source>
-        <translation>0.000 000 00 GLPM</translation>
+        <source>0.000 000 00 HCASH</source>
+        <translation>0.000 000 00 HCASH</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2442,16 +2442,16 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>PRIVATNOST</translation>
     </message>
     <message>
-        <source>Enter an amount of Cdzc to convert to zGLPM</source>
-        <translation>Unesite iznos Cdzc za pretvorbu u zGLPM</translation>
+        <source>Enter an amount of Cdzc to convert to zHCASH</source>
+        <translation>Unesite iznos Cdzc za pretvorbu u zHCASH</translation>
     </message>
     <message>
-        <source>zGLPM Control</source>
-        <translation>Upravljanje zGLPM</translation>
+        <source>zHCASH Control</source>
+        <translation>Upravljanje zHCASH</translation>
     </message>
     <message>
-        <source>zGLPM Selected:</source>
-        <translation>zGLPM Odabrani:</translation>
+        <source>zHCASH Selected:</source>
+        <translation>zHCASH Odabrani:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2466,24 +2466,24 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Potroši Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zGLPM for spending</source>
-        <translation>Dostupni (zreli) zGLPM za potrošnju</translation>
+        <source>Available (mature and spendable) zHCASH for spending</source>
+        <translation>Dostupni (zreli) zHCASH za potrošnju</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Dostupna Bilanca:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zGLPM for spending
+        <source>Available (mature and spendable) zHCASH for spending
 
-zGLPM are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Dostupni (zreli) zGLPM za potrošnju
+zHCASH are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Dostupni (zreli) zHCASH za potrošnju
 
-zGLPM su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denominacije nakon što su bili mintani</translation>
+zHCASH su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denominacije nakon što su bili mintani</translation>
     </message>
     <message>
-        <source>0 zGLPM</source>
-        <translation>0 zGLPM</translation>
+        <source>0 zHCASH</source>
+        <translation>0 zHCASH</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2503,7 +2503,7 @@ zGLPM su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denomina
     </message>
     <message>
         <source>The Crypto Dezire Cash address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>GLPM adresa za slanje uplate. Stvara lokalno plaćanje za sebe kada je prazno.</translation>
+        <translation>HCASH adresa za slanje uplate. Stvara lokalno plaćanje za sebe kada je prazno.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2554,8 +2554,8 @@ zGLPM su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denomina
         <translation>Statistike Zerocoina:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zGLPM</source>
-        <translation>Ukupni saldo uključujući nepotvrđeni i nedovršeni zGLPM</translation>
+        <source>Total Balance including unconfirmed and immature zHCASH</source>
+        <translation>Ukupni saldo uključujući nepotvrđeni i nedovršeni zHCASH</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2576,24 +2576,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zGLPM minting.
+        <source>Show the current status of automatic zHCASH minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to GLPM.conf
-- disable: add 'enablezeromint=0' to GLPM.conf
+- enable: add 'enablezeromint=1' to HCASH.conf
+- disable: add 'enablezeromint=0' to HCASH.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zGLPM
+- menu Settings-&gt;Options-&gt;Percentage of autominted zHCASH
 
 </source>
-        <translation>Pokažite trenutačni status automatskog zGLPM mintanja.
+        <translation>Pokažite trenutačni status automatskog zHCASH mintanja.
 
 Da biste promijenili status (potrebno je ponovno pokretanje):
-- omogući: dodajte 'enablezeromint = 1' u GLPM.conf
-- onemogućiti: dodajte 'enablezeromint = 0' na GLPM.conf
+- omogući: dodajte 'enablezeromint = 1' u HCASH.conf
+- onemogućiti: dodajte 'enablezeromint = 0' na HCASH.conf
 
 Promjena postotka (nije potrebno ponovno pokretanje):
-- izbornik Postavke-&gt; Opcije-&gt; Postotak zGLPM</translation>
+- izbornik Postavke-&gt; Opcije-&gt; Postotak zHCASH</translation>
     </message>
     <message>
         <source>AutoMint Status</source>
@@ -2787,12 +2787,12 @@ Maximum allowed: </source>
 Maksimalno dopušteno:</translation>
     </message>
     <message>
-        <source>zGLPM Spend #: </source>
-        <translation>zGLPM utrošeno #: </translation>
+        <source>zHCASH Spend #: </source>
+        <translation>zHCASH utrošeno #: </translation>
     </message>
     <message>
-        <source>zGLPM Mint</source>
-        <translation>zGLPM Mint</translation>
+        <source>zHCASH Mint</source>
+        <translation>zHCASH Mint</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2807,12 +2807,12 @@ Maksimalno dopušteno:</translation>
         <translation> Konfigirani ciljani postotak: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zGLPM is currently disabled due to maintenance.</source>
-        <translation>Zbog održavanja zGLPM je trenutačno onemogućen.</translation>
+        <source>zHCASH is currently disabled due to maintenance.</source>
+        <translation>Zbog održavanja zHCASH je trenutačno onemogućen.</translation>
     </message>
     <message>
-        <source>zGLPM is currently undergoing maintenance.</source>
-        <translation>Radovi u tijeku na zGLPM.</translation>
+        <source>zHCASH is currently undergoing maintenance.</source>
+        <translation>Radovi u tijeku na zHCASH.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2899,8 +2899,8 @@ Maksimalno dopušteno:</translation>
         <translation>Uspješno mintano</translation>
     </message>
     <message>
-        <source> zGLPM in </source>
-        <translation> ulazni zGLPM </translation>
+        <source> zHCASH in </source>
+        <translation> ulazni zHCASH </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2958,12 +2958,12 @@ Maksimalno dopušteno:</translation>
         <translation>Potvrdite slanje novca</translation>
     </message>
     <message>
-        <source>Version 1 zGLPM require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zGLPM zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
+        <source>Version 1 zHCASH require a security level of 100 to successfully spend.</source>
+        <translation>Verzija 1 zHCASH zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
     </message>
     <message>
-        <source>Failed to spend zGLPM</source>
-        <translation>Neuspjelo trošenje zGLPM</translation>
+        <source>Failed to spend zHCASH</source>
+        <translation>Neuspjelo trošenje zHCASH</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -2984,7 +2984,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of GLPM to convert to zGLPM</comment>
+        <comment>Enter an amount of HCASH to convert to zHCASH</comment>
         <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3302,8 +3302,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Put prilagođenog sigurnosnog kopiranja:</translation>
     </message>
     <message>
-        <source>Custom zGLPM Backup Path:</source>
-        <translation>Prilagođeni put zGLPM sigurnosne kopije:</translation>
+        <source>Custom zHCASH Backup Path:</source>
+        <translation>Prilagođeni put zHCASH sigurnosne kopije:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3747,8 +3747,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Veličina UTXO:</translation>
     </message>
     <message>
-        <source>0 GLPM</source>
-        <translation>0 GLPM</translation>
+        <source>0 HCASH</source>
+        <translation>0 HCASH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3805,12 +3805,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Kovanice se automatski odabiru</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uGLPMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uGLPMs in fee,&lt;br /&gt;while "at least" pays 1000 uGLPMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ako je prilagođena naknada postavljena na 1000 uGLPM-ova, a transakcija je samo 250 bajta, tada "po kilobajtu" se plaća samo 250 uGLPM-a, dok se "barem" plaća 1000 uGLPM-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
+        <source>If the custom fee is set to 1000 uHCASHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHCASHs in fee,&lt;br /&gt;while "at least" pays 1000 uHCASHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ako je prilagođena naknada postavljena na 1000 uHCASH-ova, a transakcija je samo 250 bajta, tada "po kilobajtu" se plaća samo 250 uHCASH-a, dok se "barem" plaća 1000 uHCASH-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uGLPMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uGLPMs in fee,&lt;br /&gt;while "total at least" pays 1000 uGLPMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ako je prilagođena naknada postavljena na 1000 uGLPM, a transakcija je samo 250 bajta, tada "po kilobajtu" plaća se samo 250 uGLPM-ova, a "ukupno barem" plaća 1000 uGLPM-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
+        <source>If the custom fee is set to 1000 uHCASHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHCASHs in fee,&lt;br /&gt;while "total at least" pays 1000 uHCASHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ako je prilagođena naknada postavljena na 1000 uHCASH, a transakcija je samo 250 bajta, tada "po kilobajtu" plaća se samo 250 uHCASH-ova, a "ukupno barem" plaća 1000 uHCASH-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Crypto Dezire Cash transactions than the network can process.</source>
@@ -3861,8 +3861,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dodaj primatelja</translation>
     </message>
     <message>
-        <source>Anonymized GLPM</source>
-        <translation>Anonimiziran GLPM</translation>
+        <source>Anonymized HCASH</source>
+        <translation>Anonimiziran HCASH</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4013,7 +4013,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>The Crypto Dezire Cash address to send the payment to</source>
-        <translation>GLPM adresa za slanje uplate</translation>
+        <translation>HCASH adresa za slanje uplate</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4052,8 +4052,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Poruka:</translation>
     </message>
     <message>
-        <source>A message that was attached to the GLPM: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Crypto Dezire Cash network.</source>
-        <translation>Poruka koja je bila povezana s GLPM: URI koji će biti pohranjen s transakcijom za vašu referencu. Napomena: ova poruka neće biti poslana preko Crypto Dezire Cash mreže.</translation>
+        <source>A message that was attached to the HCASH: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Crypto Dezire Cash network.</source>
+        <translation>Poruka koja je bila povezana s HCASH: URI koji će biti pohranjen s transakcijom za vašu referencu. Napomena: ova poruka neće biti poslana preko Crypto Dezire Cash mreže.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4103,7 +4103,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>The Crypto Dezire Cash address to sign the message with</source>
-        <translation>GLPM adresa za potpisivanje poruke</translation>
+        <translation>HCASH adresa za potpisivanje poruke</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4139,7 +4139,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>The Crypto Dezire Cash address the message was signed with</source>
-        <translation>GLPM adresa s kojom je potpisana poruka</translation>
+        <translation>HCASH adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Crypto Dezire Cash address</source>
@@ -4526,12 +4526,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Zaprimljeno preko Zametanja</translation>
     </message>
     <message>
-        <source>GLPM Stake</source>
-        <translation>GLPM Stake</translation>
+        <source>HCASH Stake</source>
+        <translation>HCASH Stake</translation>
     </message>
     <message>
-        <source>zGLPM Stake</source>
-        <translation>zGLPM Stake</translation>
+        <source>zHCASH Stake</source>
+        <translation>zHCASH Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4550,32 +4550,32 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Prikrivanje Stvara Denominacije</translation>
     </message>
     <message>
-        <source>Converted GLPM to zGLPM</source>
-        <translation>Pretvoreni GLPM u zGLPM</translation>
+        <source>Converted HCASH to zHCASH</source>
+        <translation>Pretvoreni HCASH u zHCASH</translation>
     </message>
     <message>
-        <source>Spent zGLPM</source>
-        <translation>Utrošeni zGLPM</translation>
+        <source>Spent zHCASH</source>
+        <translation>Utrošeni zHCASH</translation>
     </message>
     <message>
-        <source>Received GLPM from zGLPM</source>
-        <translation>Primljeni GLPM od zGLPM</translation>
+        <source>Received HCASH from zHCASH</source>
+        <translation>Primljeni HCASH od zHCASH</translation>
     </message>
     <message>
-        <source>Minted Change as zGLPM from zGLPM Spend</source>
-        <translation>Mintana razlika zGLPM od zGLPM Utroška</translation>
+        <source>Minted Change as zHCASH from zHCASH Spend</source>
+        <translation>Mintana razlika zHCASH od zHCASH Utroška</translation>
     </message>
     <message>
-        <source>Converted zGLPM to GLPM</source>
-        <translation>Pretvoreni zGLPM u GLPM</translation>
+        <source>Converted zHCASH to HCASH</source>
+        <translation>Pretvoreni zHCASH u HCASH</translation>
     </message>
     <message>
-        <source>Anonymous (zGLPM Transaction)</source>
-        <translation>Anonimno (zGLPM Transakcija)</translation>
+        <source>Anonymous (zHCASH Transaction)</source>
+        <translation>Anonimno (zHCASH Transakcija)</translation>
     </message>
     <message>
-        <source>Anonymous (zGLPM Stake)</source>
-        <translation>Anonimno (zGLPM Stake)</translation>
+        <source>Anonymous (zHCASH Stake)</source>
+        <translation>Anonimno (zHCASH Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4785,12 +4785,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izvoz uspješan</translation>
     </message>
     <message>
-        <source>Received GLPM from zGLPM</source>
-        <translation>Primljeni GLPM od zGLPM</translation>
+        <source>Received HCASH from zHCASH</source>
+        <translation>Primljeni HCASH od zHCASH</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zGLPM</source>
-        <translation>Zerocoin Utrošeno, Razlika (ostatak) u zGLPM</translation>
+        <source>Zerocoin Spend, Change in zHCASH</source>
+        <translation>Zerocoin Utrošeno, Razlika (ostatak) u zHCASH</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4826,8 +4826,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Salji novac</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 GLPM.</source>
-        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 GLPM.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 HCASH.</source>
+        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 HCASH.</translation>
     </message>
 </context>
 <context>
@@ -4860,8 +4860,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ZCdzcControlDialog</name>
     <message>
-        <source>Select zGLPM to Spend</source>
-        <translation>Odabrani zGLPM za utrošiti</translation>
+        <source>Select zHCASH to Spend</source>
+        <translation>Odabrani zHCASH za utrošiti</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4872,8 +4872,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>0</translation>
     </message>
     <message>
-        <source>zGLPM</source>
-        <translation>zGLPM</translation>
+        <source>zHCASH</source>
+        <translation>zHCASH</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4885,7 +4885,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>GLPM-core</name>
+    <name>HCASH-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = zadržite metapodatke tx, npr. Vlasnika računa i podatke o zahtjevu za plaćanje, 2 = odbaci meta podataka tx)</translation>
@@ -4939,16 +4939,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Distribuirano pod MIT softverskom licencom, pogledajte priloženu datoteku COPYING ili &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zGLPM minting (0-1, default: %u)</source>
-        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zGLPM mintanja (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zHCASH minting (0-1, default: %u)</source>
+        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zHCASH mintanja (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for GLPM inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za GLPM unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for HCASH inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za HCASH unose (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zGLPM inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za zGLPM unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zHCASH inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za zHCASH unose (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4983,12 +4983,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izvrši naredbu kada se promijeni najbolji blok (%s u cmd zamjenjuje se blokovskim raspršivanjem)</translation>
     </message>
     <message>
-        <source>Fees (in GLPM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Naknade (u GLPM / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
+        <source>Fees (in HCASH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Naknade (u HCASH / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
     </message>
     <message>
-        <source>Fees (in GLPM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Naknade (u GLPM / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
+        <source>Fees (in HCASH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Naknade (u HCASH / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5095,12 +5095,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Nije moguće locirati dovoljno sredstava s domenom Prikrivanja za tu transakciju.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 GLPM.</source>
-        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 25000 GLPM.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 HCASH.</source>
+        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 25000 HCASH.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 25000 GLPM.</source>
-        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 25000 GLPM.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 HCASH.</source>
+        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 25000 HCASH.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5416,8 +5416,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Greška čitanja bloka</translation>
     </message>
     <message>
-        <source>Fee (in GLPM/kB) to add to transactions you send (default: %s)</source>
-        <translation>Naknada (u GLPM / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
+        <source>Fee (in HCASH/kB) to add to transactions you send (default: %s)</source>
+        <translation>Naknada (u HCASH / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5548,8 +5548,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Postotak automatskog kovanog Zerocoina (1-100, zadano: %u)</translation>
     </message>
     <message>
-        <source>Reindex the GLPM and zGLPM money supply statistics</source>
-        <translation>Ponovno indeksirati statistiku GLPM i zGLPM ponude novca</translation>
+        <source>Reindex the HCASH and zHCASH money supply statistics</source>
+        <translation>Ponovno indeksirati statistiku HCASH i zHCASH ponude novca</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5623,8 +5623,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Preferirana denominacija za automatski ovjereni Zerocoin (1/5/10/50/100/500/1000/5000), 0 bez preferencije. zadana vrijednost: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zGLPM backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zGLPM sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
+        <source>Specify custom backup path to add a copy of any automatic zHCASH backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zHCASH sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6123,8 +6123,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Sinkronizacija sporka...</translation>
     </message>
     <message>
-        <source>Syncing zGLPM wallet...</source>
-        <translation>Sinkronizacija zGLPM novčanika...</translation>
+        <source>Syncing zHCASH wallet...</source>
+        <translation>Sinkronizacija zHCASH novčanika...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -6271,8 +6271,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Korisničko ime za JSON-RPC veze</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zGLPM</source>
-        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zGLPM-a</translation>
+        <source>Value is below the smallest available denomination (= 1) of zHCASH</source>
+        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zHCASH-a</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>
@@ -6287,8 +6287,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Provjera novčanika...</translation>
     </message>
     <message>
-        <source>Version 1 zGLPM require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zGLPM zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
+        <source>Version 1 zHCASH require a security level of 100 to successfully spend.</source>
+        <translation>Verzija 1 zHCASH zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>

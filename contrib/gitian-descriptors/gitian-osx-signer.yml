@@ -1,5 +1,5 @@
 ---
-name: "GLPM-dmg-signer"
+name: "HCASH-dmg-signer"
 suites:
 - "trusty"
 architectures:
@@ -7,10 +7,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/GLPM/GLPM-detached-sigs.git"
+- "url": "https://github.com/HCASH/HCASH-detached-sigs.git"
   "dir": "signature"
 files:
-- "GLPM-osx-unsigned.tar.gz"
+- "HCASH-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -27,8 +27,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=GLPM-osx-unsigned.tar.gz
-  SIGNED=GLPM-osx-signed.dmg
+  UNSIGNED=HCASH-osx-unsigned.tar.gz
+  SIGNED=HCASH-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"

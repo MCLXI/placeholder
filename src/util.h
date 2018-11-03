@@ -14,7 +14,7 @@
 #define BITCOIN_UTIL_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/GLPM-config.h"
+#include "config/HCASH-config.h"
 #endif
 
 #include "compat.h"
@@ -39,7 +39,7 @@ extern int nSwiftTXDepth;
 extern int nZeromintPercentage;
 extern const int64_t AUTOMINT_DELAY;
 extern int nPreferredDenom;
-extern int nAnonymizeGLPMAmount;
+extern int nAnonymizeHCASHAmount;
 extern int nLiquidityProvider;
 extern bool fEnableZeromint;
 extern int64_t enforceMasternodePaymentsTime;
@@ -213,7 +213,7 @@ void RenameThread(const char* name);
 template <typename Callable>
 void TraceThread(const char* name, Callable func)
 {
-    std::string s = strprintf("GLPM-%s", name);
+    std::string s = strprintf("HCASH-%s", name);
     RenameThread(s.c_str());
     try {
         LogPrintf("%s thread start\n", name);

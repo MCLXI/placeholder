@@ -2,14 +2,14 @@
 
 Crypto Dezire Cash Core version *version* is now available from:
 
-  <https://github.com/GLPM/GLPM/releases>
+  <https://github.com/HCASH/HCASH/releases>
 
 This is a new major version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/GLPM/GLPM/issues>
+  <https://github.com/HCASH/HCASH/issues>
 
 Autocombine changes
 ---------------------------------
@@ -34,41 +34,41 @@ Removed warning
 Other notable changes:
 ----------------------
 - Version
-  - 1.5.0 and new checkpoint https://github.com/GLPM/GLPM/commit/4b7e26fc3f4342342ab3fdc7a2c07beee862aa18
+  - 1.5.0 and new checkpoint https://github.com/HCASH/HCASH/commit/4b7e26fc3f4342342ab3fdc7a2c07beee862aa18
 - QT
-   - connect automint icon https://github.com/GLPM/GLPM/commit/12c6aced2da5609e718390d08dc9b6c5c411933d
-  - Update privacy tab info about zeromint on config change https://github.com/GLPM/GLPM/commit/d3c45d0104d760c33b3d2707d39a60dd6c0f152d
-  - Refresh xGLPM balance after resetting mints or spends https://github.com/GLPM/GLPM/commit/514750e9c05a39a303c80e1d69e6e88e62637ff7
+   - connect automint icon https://github.com/HCASH/HCASH/commit/12c6aced2da5609e718390d08dc9b6c5c411933d
+  - Update privacy tab info about zeromint on config change https://github.com/HCASH/HCASH/commit/d3c45d0104d760c33b3d2707d39a60dd6c0f152d
+  - Refresh xHCASH balance after resetting mints or spends https://github.com/HCASH/HCASH/commit/514750e9c05a39a303c80e1d69e6e88e62637ff7
 - Wallet 
-  - Add a check on zGLPM spend to avoid a segfault https://github.com/GLPM/GLPM/commit/903d3b80227bc398e3099f4b0247e99a2bf23b2d
-  - Increase valid range for automint percentage https://github.com/GLPM/GLPM/commit/df3bdbc7612651b2fb8e6090aadfa27b0663a877
-  - Add argument to mint zerocoin from specific UTXO https://github.com/GLPM/GLPM/commit/766d425e5c9f02897a51a647d1f38f0ac4a16d2d
+  - Add a check on zHCASH spend to avoid a segfault https://github.com/HCASH/HCASH/commit/903d3b80227bc398e3099f4b0247e99a2bf23b2d
+  - Increase valid range for automint percentage https://github.com/HCASH/HCASH/commit/df3bdbc7612651b2fb8e6090aadfa27b0663a877
+  - Add argument to mint zerocoin from specific UTXO https://github.com/HCASH/HCASH/commit/766d425e5c9f02897a51a647d1f38f0ac4a16d2d
 - Consensus
-  - Fix compilation with OpenSSL 1.1 https://github.com/GLPM/GLPM/commit/e9bcf324cdd18b4ee887338e2f328b5c0f79bdb8
-  - Require standard transactions for testnet https://github.com/GLPM/GLPM/commit/a86d106954e0e7836ba6581eb2267a81a0f9e9a2
+  - Fix compilation with OpenSSL 1.1 https://github.com/HCASH/HCASH/commit/e9bcf324cdd18b4ee887338e2f328b5c0f79bdb8
+  - Require standard transactions for testnet https://github.com/HCASH/HCASH/commit/a86d106954e0e7836ba6581eb2267a81a0f9e9a2
 - Trivial
-  - Add debug info for CWallet::ReconsiderZerocoins() https://github.com/GLPM/GLPM/commit/867d8735f505b70086ac39dcb095de7e165d84c8
-  - Fix errant LogPrint in UpdateZGLPMSupply https://github.com/GLPM/GLPM/commit/158b0b53c8f6f1e81d404bd64fdf0d9be69d877a
+  - Add debug info for CWallet::ReconsiderZerocoins() https://github.com/HCASH/HCASH/commit/867d8735f505b70086ac39dcb095de7e165d84c8
+  - Fix errant LogPrint in UpdateZHCASHSupply https://github.com/HCASH/HCASH/commit/158b0b53c8f6f1e81d404bd64fdf0d9be69d877a
 - GUI
-  - Make "For anonymization and staking only" checked by default https://github.com/GLPM/GLPM/commit/49450f06d9f23a84479bae8962faab8cc67471eb
-  - Zeromint status bar icon https://github.com/GLPM/GLPM/commit/13e412015f4ce0468336d891821e65864f42dd59
+  - Make "For anonymization and staking only" checked by default https://github.com/HCASH/HCASH/commit/49450f06d9f23a84479bae8962faab8cc67471eb
+  - Zeromint status bar icon https://github.com/HCASH/HCASH/commit/13e412015f4ce0468336d891821e65864f42dd59
 - Documentation
-  - Improve help for mintzerocoin rpc command https://github.com/GLPM/GLPM/commit/1f6802fc9da8760dcc530be5b1777d35baf9ab52
+  - Improve help for mintzerocoin rpc command https://github.com/HCASH/HCASH/commit/1f6802fc9da8760dcc530be5b1777d35baf9ab52
 - Core
-  - Remove Gitan-OSX warning for High Sierra builds https://github.com/GLPM/GLPM/commit/fe4c2598143c7157e0b179cf7e4a55b12660ea83
+  - Remove Gitan-OSX warning for High Sierra builds https://github.com/HCASH/HCASH/commit/fe4c2598143c7157e0b179cf7e4a55b12660ea83
 - Bugs fixed
-  - Segfault with -enableswifttx=0 / -enableswifttx=false https://github.com/GLPM/GLPM/commit/6e982101923c9d38fa7f45eb808e7718118ad3a5
-  - Listtransactions bug https://github.com/GLPM/GLPM/commit/8f5c430f4535c8cad6f10128329385947c4785b1
+  - Segfault with -enableswifttx=0 / -enableswifttx=false https://github.com/HCASH/HCASH/commit/6e982101923c9d38fa7f45eb808e7718118ad3a5
+  - Listtransactions bug https://github.com/HCASH/HCASH/commit/8f5c430f4535c8cad6f10128329385947c4785b1
 - Other changes
-  - Instructions on how to make the Homebrew OpenSSL headers visible https://github.com/GLPM/GLPM/commit/359e5c862f9502d1a5d1738365a9bd094837f360
-  - Correct zerocoin lavel https://github.com/GLPM/GLPM/commit/706629ed593b1241bcd4fbd916121397dcc59fe4
-  - Change git info in genbuild.sh https://github.com/GLPM/GLPM/commit/92dcfdb07e3d22fa3a8da72d53e892df95e7a426
+  - Instructions on how to make the Homebrew OpenSSL headers visible https://github.com/HCASH/HCASH/commit/359e5c862f9502d1a5d1738365a9bd094837f360
+  - Correct zerocoin lavel https://github.com/HCASH/HCASH/commit/706629ed593b1241bcd4fbd916121397dcc59fe4
+  - Change git info in genbuild.sh https://github.com/HCASH/HCASH/commit/92dcfdb07e3d22fa3a8da72d53e892df95e7a426
 
 
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Crypto Dezire Cash-Qt (on Mac) or GLPMd/GLPM-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Crypto Dezire Cash-Qt (on Mac) or HCASHd/HCASH-qt (on Linux).
 
 Compatibility
 ==============
@@ -100,7 +100,7 @@ overridden with the option `-rpccookiefile`.
 This is similar to Tor's CookieAuthentication: see
 https://www.torproject.org/docs/tor-manual.html.en
 
-This allows running GLPMd without having to do any manual configuration.
+This allows running HCASHd without having to do any manual configuration.
 
 
 *version* Change log
@@ -122,4 +122,4 @@ Credits
 Thanks to everyone who directly contributed to this release:
 
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/GLPM-translations/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/HCASH-translations/).

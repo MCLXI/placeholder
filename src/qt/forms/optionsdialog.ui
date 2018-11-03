@@ -133,13 +133,13 @@
        <item>
         <widget class="QCheckBox" name="checkBoxZeromintEnable">
          <property name="toolTip">
-          <string>Enable automatic minting of GLPM units to zGLPM</string>
+          <string>Enable automatic minting of HCASH units to zHCASH</string>
          </property>
          <property name="layoutDirection">
           <enum>Qt::LeftToRight</enum>
          </property>
          <property name="text">
-          <string>Enable zGLPM Automint</string>
+          <string>Enable zHCASH Automint</string>
          </property>
         </widget>
        </item>
@@ -148,10 +148,10 @@
          <item>
           <widget class="QLabel" name="percentage_label">
            <property name="toolTip">
-            <string>Percentage of incoming GLPM which get automatically converted to zGLPM via Zerocoin Protocol (min: 10%)</string>
+            <string>Percentage of incoming HCASH which get automatically converted to zHCASH via Zerocoin Protocol (min: 10%)</string>
            </property>
            <property name="text">
-            <string>Percentage of autominted zGLPM</string>
+            <string>Percentage of autominted zHCASH</string>
            </property>
           </widget>
          </item>
@@ -181,10 +181,10 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Wait with automatic conversion to Zerocoin until enough GLPM for this denomination is available</string>
+            <string>Wait with automatic conversion to Zerocoin until enough HCASH for this denomination is available</string>
            </property>
            <property name="text">
-            <string>Preferred Automint zGLPM Denomination</string>
+            <string>Preferred Automint zHCASH Denomination</string>
            </property>
           </widget>
          </item>
@@ -197,7 +197,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Wait with automatic conversion to Zerocoin until enough GLPM for this denomination is available</string>
+            <string>Wait with automatic conversion to Zerocoin until enough HCASH for this denomination is available</string>
            </property>
            <property name="maxVisibleItems">
             <number>9</number>
@@ -507,7 +507,7 @@
          </property>
          <property name="text">
           <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/GLPM/GLPM-translations</string>
+https://www.transifex.com/HCASH/HCASH-translations</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>

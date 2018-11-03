@@ -21,7 +21,7 @@ For instructions, call the program with no arguments::
 An example template is accessible using "test" as the argument::
     % burn-btc test
     DezireBurnAddressBurnPremineXmtXTL
-Validate bitcoin burn addresses at https://explorer.GLPM.com/address/
+Validate bitcoin burn addresses at https://explorer.HCASH.com/address/
 """
 
 import sys

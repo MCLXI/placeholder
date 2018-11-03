@@ -1,4 +1,4 @@
-name: GLPM
+name: HCASH
 version: master
 summary:   peer-to-peer network based digital currency
 description: |
@@ -13,23 +13,23 @@ confinement: strict
 
 apps:
   daemon:
-    command: GLPMd
+    command: HCASHd
     plugs: [network, network-bind]
     environment:
       XDG_DATA_DIRS: $SNAP_USER_DATA:$SNAP/usr/share:$XDG_DATA_DIRS
-    aliases: [GLPMd]
+    aliases: [HCASHd]
   qt:
-    command: desktop-launch GLPM-qt
+    command: desktop-launch HCASH-qt
     plugs: [network, network-bind, unity7]
-    aliases: [GLPM-qt]
-    desktop: GLPM.desktop
+    aliases: [HCASH-qt]
+    desktop: HCASH.desktop
   cli:
-    command: GLPM-cli
-    aliases: [GLPM-cli]
+    command: HCASH-cli
+    aliases: [HCASH-cli]
 
 parts:
-  GLPM:
-    source: https://github.com/GLPM/GLPM
+  HCASH:
+    source: https://github.com/HCASH/HCASH
     source-type: git
     source-tag: master
     plugin: autotools

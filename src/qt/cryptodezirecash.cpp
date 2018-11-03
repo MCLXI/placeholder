@@ -6,7 +6,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/GLPM-config.h"
+#include "config/HCASH-config.h"
 #endif
 
 #include "bitcoingui.h"
@@ -95,7 +95,7 @@ static void InitMessage(const std::string& message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("GLPM-core", psz).toStdString();
+    return QCoreApplication::translate("HCASH-core", psz).toStdString();
 }
 
 static QString GetLangTerritory()
@@ -142,11 +142,11 @@ static void initTranslations(QTranslator& qtTranslatorBase, QTranslator& qtTrans
     if (qtTranslator.load("qt_" + lang_territory, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         QApplication::installTranslator(&qtTranslator);
 
-    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in GLPM.qrc)
+    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in HCASH.qrc)
     if (translatorBase.load(lang, ":/translations/"))
         QApplication::installTranslator(&translatorBase);
 
-    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in GLPM.qrc)
+    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in HCASH.qrc)
     if (translator.load(lang_territory, ":/translations/"))
         QApplication::installTranslator(&translator);
 }
@@ -255,7 +255,7 @@ private:
     void startThread();
 };
 
-#include "GLPM.moc"
+#include "HCASH.moc"
 
 BitcoinCore::BitcoinCore() : QObject()
 {
@@ -532,8 +532,8 @@ int main(int argc, char* argv[])
     QTextCodec::setCodecForCStrings(QTextCodec::codecForTr());
 #endif
 
-    Q_INIT_RESOURCE(GLPM_locale);
-    Q_INIT_RESOURCE(GLPM);
+    Q_INIT_RESOURCE(HCASH_locale);
+    Q_INIT_RESOURCE(HCASH);
 
     BitcoinApplication app(argc, argv);
 #if QT_VERSION > 0x050100
@@ -580,7 +580,7 @@ int main(int argc, char* argv[])
     if (!Intro::pickDataDirectory())
         return 0;
 
-    /// 6. Determine availability of data directory and parse GLPM.conf
+    /// 6. Determine availability of data directory and parse HCASH.conf
     /// - Do not call GetDataDir(true) before this step finishes
     if (!boost::filesystem::is_directory(GetDataDir(false))) {
         QMessageBox::critical(0, QObject::tr("Crypto Dezire Cash Core"),
@@ -637,7 +637,7 @@ int main(int argc, char* argv[])
         exit(0);
 
     // Start up the payment server early, too, so impatient users that click on
-    // GLPM: links repeatedly have their payment requests routed to this process:
+    // HCASH: links repeatedly have their payment requests routed to this process:
     app.createPaymentServer();
 #endif
 

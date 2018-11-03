@@ -164,16 +164,16 @@
         <translation>錢包確認加密</translation>
     </message>
     <message>
-        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
-        <translation>Crypto Dezire Cash 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 GLPM 幣被可疑軟體或病毒偷走的風險.</translation>
+        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HCASHs from being stolen by malware infecting your computer.</source>
+        <translation>Crypto Dezire Cash 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 HCASH 幣被可疑軟體或病毒偷走的風險.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>確定要加密你的錢包?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
-        <translation>請注意: 如果你加密了你的錢包但是卻忘記你設定的密碼, &lt;b&gt;你將會失去錢包裡的錢(GLPM)&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HCASH&lt;/b&gt;!</source>
+        <translation>請注意: 如果你加密了你的錢包但是卻忘記你設定的密碼, &lt;b&gt;你將會失去錢包裡的錢(HCASH)&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -590,8 +590,8 @@
         <translation>送出錢幣到 Crypto Dezire Cash 地址</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and GLPM: URIs)</source>
-        <translation>請求付款 (會產生 QR Code跟 GLPM 位址)</translation>
+        <source>Request payments (generates QR codes and HCASH: URIs)</source>
+        <translation>請求付款 (會產生 QR Code跟 HCASH 位址)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -974,6 +974,6 @@
     <name>ZCdzcControlDialog</name>
     </context>
 <context>
-    <name>GLPM-core</name>
+    <name>HCASH-core</name>
     </context>
 </TS>

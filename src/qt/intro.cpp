@@ -184,8 +184,8 @@ bool Intro::pickDataDirectory()
         settings.setValue("strDataDir", dataDir);
     }
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the GLPM.conf file in the default data directory
-     * (to be consistent with GLPMd behavior)
+     * override -datadir in the HCASH.conf file in the default data directory
+     * (to be consistent with HCASHd behavior)
      */
     if (dataDir != getDefaultDataDirectory())
         SoftSetArg("-datadir", GUIUtil::qstringToBoostPath(dataDir).string()); // use OS locale for path setting

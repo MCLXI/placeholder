@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GLPM_ZGLPMCHAIN_H
-#define GLPM_ZGLPMCHAIN_H
+#ifndef HCASH_ZHCASHCHAIN_H
+#define HCASH_ZHCASHCHAIN_H
 
 #include "libzerocoin/Coin.h"
 #include "libzerocoin/Denominations.h"
@@ -40,4 +40,4 @@ bool TxOutToPublicCoin(const CTxOut& txout, libzerocoin::PublicCoin& pubCoin, CV
 std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock& block, bool fFilterInvalid);
 
 
-#endif //GLPM_ZGLPMCHAIN_H
+#endif //HCASH_ZHCASHCHAIN_H

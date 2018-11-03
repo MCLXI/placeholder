@@ -2,24 +2,24 @@
 
 # backward compatibility for existing gentoo layout
 #
-if [ -d "/var/lib/GLPM/.GLPM" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/GLPM/.GLPM"
+if [ -d "/var/lib/HCASH/.HCASH" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/HCASH/.HCASH"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/GLPMd"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/HCASHd"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/GLPM/GLPM.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/GLPMd}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/GLPMd.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/HCASH/HCASH.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/HCASHd}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/HCASHd.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-GLPM}
-BITCOIND_GROUP=${BITCOIND_GROUP:-GLPM}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/GLPMd}
+BITCOIND_USER=${BITCOIND_USER:-HCASH}
+BITCOIND_GROUP=${BITCOIND_GROUP:-HCASH}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/HCASHd}
 
 name="Crypto Dezire Cash Core Daemon"
 description="Crypto Dezire Cash crypto-currency p2p network daemon"
 
-command="/usr/bin/GLPMd"
+command="/usr/bin/HCASHd"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -65,7 +65,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run GLPMd."
+		eerror "ERROR: You must set a secure rpcpassword to run HCASHd."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "

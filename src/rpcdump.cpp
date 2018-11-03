@@ -83,12 +83,12 @@ UniValue importprivkey(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 3)
         throw runtime_error(
-            "importprivkey \"GLPMprivkey\" ( \"label\" rescan )\n"
+            "importprivkey \"HCASHprivkey\" ( \"label\" rescan )\n"
             "\nAdds a private key (as returned by dumpprivkey) to your wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"GLPMprivkey\"   (string, required) The private key (see dumpprivkey)\n"
+            "1. \"HCASHprivkey\"   (string, required) The private key (see dumpprivkey)\n"
             "2. \"label\"            (string, optional, default=\"\") An optional label\n"
             "3. rescan               (boolean, optional, default=true) Rescan the wallet for transactions\n"
 
@@ -331,13 +331,13 @@ UniValue dumpprivkey(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "dumpprivkey \"GLPMaddress\"\n"
-            "\nReveals the private key corresponding to 'GLPMaddress'.\n"
+            "dumpprivkey \"HCASHaddress\"\n"
+            "\nReveals the private key corresponding to 'HCASHaddress'.\n"
             "Then the importprivkey can be used with this output\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"GLPMaddress\"   (string, required) The GLPM address for the private key\n"
+            "1. \"HCASHaddress\"   (string, required) The HCASH address for the private key\n"
 
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
@@ -430,12 +430,12 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "bip38encrypt \"GLPMaddress\" \"passphrase\"\n"
-            "\nEncrypts a private key corresponding to 'GLPMaddress'.\n" +
+            "bip38encrypt \"HCASHaddress\" \"passphrase\"\n"
+            "\nEncrypts a private key corresponding to 'HCASHaddress'.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"GLPMaddress\"   (string, required) The GLPM address for the private key (you must hold the key already)\n"
+            "1. \"HCASHaddress\"   (string, required) The HCASH address for the private key (you must hold the key already)\n"
             "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with - Valid special chars: !#$%&'()*+,-./:;<=>?`{|}~ \n"
 
             "\nResult:\n"
@@ -476,7 +476,7 @@ UniValue bip38decrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "bip38decrypt \"GLPMaddress\" \"passphrase\"\n"
+            "bip38decrypt \"HCASHaddress\" \"passphrase\"\n"
             "\nDecrypts and then imports password protected private key.\n" +
             HelpRequiringPassphrase() + "\n"
 

@@ -1,6 +1,6 @@
 [Protocol]
-exec=GLPM-qt '%u'
-protocol=GLPM
+exec=HCASH-qt '%u'
+protocol=HCASH
 input=none
 output=none
 helper=true

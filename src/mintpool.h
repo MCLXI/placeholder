@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GLPM_MINTPOOL_H
-#define GLPM_MINTPOOL_H
+#ifndef HCASH_MINTPOOL_H
+#define HCASH_MINTPOOL_H
 
 #include <map>
 #include <list>
@@ -51,4 +51,4 @@ public:
 };
 
 
-#endif //GLPM_MINTPOOL_H
+#endif //HCASH_MINTPOOL_H

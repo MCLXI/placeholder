@@ -80,15 +80,15 @@ noinst_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += GLPMd
+  bin_PROGRAMS += HCASHd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += GLPM-cli GLPM-tx
+  bin_PROGRAMS += HCASH-cli HCASH-tx
 endif
 
 .PHONY: FORCE
-# GLPM core #
+# HCASH core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -206,7 +206,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between GLPMd and GLPM-qt
+# server: shared between HCASHd and HCASH-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -254,7 +254,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between GLPMd and GLPM-qt, but only linked
+# wallet: shared between HCASHd and HCASH-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -349,7 +349,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between GLPMd, and GLPM-qt and non-server tools
+# common: shared between HCASHd, and HCASH-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -412,7 +412,7 @@ if GLIBC_BACK_COMPAT
 libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 endif
 
-# cli: shared between GLPM-cli and GLPM-qt
+# cli: shared between HCASH-cli and HCASH-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -422,16 +422,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# GLPMd binary #
-GLPMd_SOURCES = GLPMd.cpp
-GLPMd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-GLPMd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-GLPMd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# HCASHd binary #
+HCASHd_SOURCES = HCASHd.cpp
+HCASHd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+HCASHd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+HCASHd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-GLPMd_SOURCES += GLPMd-res.rc
+HCASHd_SOURCES += HCASHd-res.rc
 endif
-GLPMd_LDADD = \
+HCASHd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -444,38 +444,38 @@ GLPMd_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-GLPMd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+HCASHd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# GLPM-cli binary #
-GLPM_cli_SOURCES = GLPM-cli.cpp
-GLPM_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-GLPM_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-GLPM_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# HCASH-cli binary #
+HCASH_cli_SOURCES = HCASH-cli.cpp
+HCASH_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+HCASH_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+HCASH_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-GLPM_cli_SOURCES += GLPM-cli-res.rc
+HCASH_cli_SOURCES += HCASH-cli-res.rc
 endif
 
-GLPM_cli_LDADD = \
+HCASH_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-GLPM_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+HCASH_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# GLPM-tx binary #
-GLPM_tx_SOURCES = GLPM-tx.cpp
-GLPM_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-GLPM_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-GLPM_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# HCASH-tx binary #
+HCASH_tx_SOURCES = HCASH-tx.cpp
+HCASH_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+HCASH_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+HCASH_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-GLPM_tx_SOURCES += GLPM-tx-res.rc
+HCASH_tx_SOURCES += HCASH-tx-res.rc
 endif
 
-GLPM_tx_LDADD = \
+HCASH_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -483,7 +483,7 @@ GLPM_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-GLPM_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+HCASH_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

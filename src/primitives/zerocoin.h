@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GLPM_ZEROCOIN_H
-#define GLPM_ZEROCOIN_H
+#ifndef HCASH_ZEROCOIN_H
+#define HCASH_ZEROCOIN_H
 
 #include <amount.h>
 #include <limits.h>
@@ -248,4 +248,4 @@ public:
     int GetNeededSpends();
 };
 
-#endif //GLPM_ZEROCOIN_H
+#endif //HCASH_ZEROCOIN_H

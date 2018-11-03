@@ -7,7 +7,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/GLPM-config.h"
+#include "config/HCASH-config.h"
 #endif
 
 #include "util.h"
@@ -121,7 +121,7 @@ int nZeromintPercentage = 10;
 int nPreferredDenom = 0;
 const int64_t AUTOMINT_DELAY = (60 * 5); // Wait at least 5 minutes until Automint starts
 
-int nAnonymizeGLPMAmount = 1000;
+int nAnonymizeHCASHAmount = 1000;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
@@ -238,8 +238,8 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "GLPM" is a composite category enabling all Crypto Dezire Cash-related debug output
-            if (ptrCategory->count(string("GLPM"))) {
+            // "HCASH" is a composite category enabling all Crypto Dezire Cash-related debug output
+            if (ptrCategory->count(string("HCASH"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swiftx"));
                 ptrCategory->insert(string("masternode"));
@@ -404,7 +404,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "GLPM";
+    const char* pszModule = "HCASH";
 #endif
     if (pex)
         return strprintf(
@@ -425,13 +425,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\GLPM
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\GLPM
-// Mac: ~/Library/Application Support/GLPM
-// Unix: ~/.GLPM
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\HCASH
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\HCASH
+// Mac: ~/Library/Application Support/HCASH
+// Unix: ~/.HCASH
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "GLPM";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "HCASH";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -443,10 +443,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "GLPM";
+    return pathRet / "HCASH";
 #else
     // Unix
-    return pathRet / ".GLPM";
+    return pathRet / ".HCASH";
 #endif
 #endif
 }
@@ -493,7 +493,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "GLPM.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "HCASH.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -561,7 +561,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 #ifndef WIN32
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "GLPMd.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "HCASHd.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

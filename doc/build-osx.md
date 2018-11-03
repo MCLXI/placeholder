@@ -43,19 +43,19 @@ from the root of the repository.
 Build Crypto Dezire Cash Core
 ------------------------
 
-1. Clone the GLPM source code and cd into `GLPM`
+1. Clone the HCASH source code and cd into `HCASH`
 
-        git clone https://github.com/GLPM/GLPM
-        cd GLPM
+        git clone https://github.com/HCASH/HCASH
+        cd HCASH
 
 2.  Make the Homebrew OpenSSL headers visible to the configure script  (do ```brew info openssl``` to find out why this is necessary, or if you use Homebrew with installation folders different from the default).
 
         export LDFLAGS+=-L/usr/local/opt/openssl/lib
         export CPPFLAGS+=-I/usr/local/opt/openssl/include
 
-3.  Build GLPM-core:
+3.  Build HCASH-core:
 
-    Configure and build the headless GLPM binaries as well as the GUI (if Qt is found).
+    Configure and build the headless HCASH binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -74,15 +74,15 @@ Build Crypto Dezire Cash Core
 Running
 -------
 
-Crypto Dezire Cash Core is now available at `./src/GLPMd`
+Crypto Dezire Cash Core is now available at `./src/HCASHd`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=GLPMrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Crypto Dezire Cash/GLPM.conf"
+    echo -e "rpcuser=HCASHrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Crypto Dezire Cash/HCASH.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Crypto Dezire Cash/GLPM.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Crypto Dezire Cash/HCASH.conf"
 
-The first time you run GLPMd, it will start downloading the blockchain. This process could take several hours.
+The first time you run HCASHd, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
@@ -91,20 +91,20 @@ You can monitor the download process by looking at the debug.log file:
 Other commands:
 -------
 
-    ./src/GLPMd -daemon # Starts the GLPM daemon.
-    ./src/GLPM-cli --help # Outputs a list of command-line options.
-    ./src/GLPM-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/HCASHd -daemon # Starts the HCASH daemon.
+    ./src/HCASH-cli --help # Outputs a list of command-line options.
+    ./src/HCASH-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Using Qt Creator as IDE
 ------------------------
-You can use Qt Creator as an IDE, for GLPM development.
+You can use Qt Creator as an IDE, for HCASH development.
 Download and install the community edition of [Qt Creator](https://www.qt.io/download/).
 Uncheck everything except Qt Creator during the installation process.
 
 1. Make sure you installed everything through Homebrew mentioned above
 2. Do a proper ./configure --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "GLPM-qt" as project name, enter src/qt as location
+4. Enter "HCASH-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."

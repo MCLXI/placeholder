@@ -3,17 +3,17 @@ Description=Crypto Dezire Cash's distributed currency daemon
 After=network.target
 
 [Service]
-User=GLPM
-Group=GLPM
+User=HCASH
+Group=HCASH
 
 Type=forking
-PIDFile=/var/lib/GLPMd/GLPMd.pid
+PIDFile=/var/lib/HCASHd/HCASHd.pid
 
-ExecStart=/usr/bin/GLPMd -daemon -pid=/var/lib/GLPMd/GLPMd.pid \
-          -conf=/etc/GLPM/GLPM.conf -datadir=/var/lib/GLPMd
+ExecStart=/usr/bin/HCASHd -daemon -pid=/var/lib/HCASHd/HCASHd.pid \
+          -conf=/etc/HCASH/HCASH.conf -datadir=/var/lib/HCASHd
 
-ExecStop=-/usr/bin/GLPM-cli -conf=/etc/GLPM/GLPM.conf \
-         -datadir=/var/lib/GLPMd stop
+ExecStop=-/usr/bin/HCASH-cli -conf=/etc/HCASH/HCASH.conf \
+         -datadir=/var/lib/HCASHd stop
 
 Restart=always
 PrivateTmp=true

@@ -36,7 +36,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::GLPM)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::HCASH)
     {
     }
 
@@ -165,7 +165,7 @@ OverviewPage::~OverviewPage()
     delete ui;
 }
 
-void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sGLPMPercentage, QString& szGLPMPercentage)
+void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sHCASHPercentage, QString& szHCASHPercentage)
 {
     int nPrecision = 2;
     double dzPercentage = 0.0;
@@ -184,8 +184,8 @@ void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBala
 
     double dPercentage = 100.0 - dzPercentage;
     
-    szGLPMPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
-    sGLPMPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
+    szHCASHPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
+    sHCASHPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
     
 }
 
@@ -209,13 +209,13 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nLockedBalance = pwalletMain->GetLockedCoins();
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
-    // GLPM Balance
+    // HCASH Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
     CAmount cdzcAvailableBalance = balance - immatureBalance - nLockedBalance;
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance + watchImmatureBalance;    
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance; // increment nLockedBalance twice because it was added to
                                                                                 // nTotalBalance above
-    // zGLPM Balance
+    // zHCASH Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
     // Percentages
     QString szPercentage = "";
@@ -225,7 +225,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     CAmount availableTotalBalance = cdzcAvailableBalance + matureZerocoinBalance;
     CAmount sumTotalBalance = nTotalBalance + zerocoinBalance;
 
-    // GLPM labels
+    // HCASH labels
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, cdzcAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
@@ -239,7 +239,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchLocked->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nWatchOnlyLockedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nTotalWatchBalance, false, BitcoinUnits::separatorAlways));
 
-    // zGLPM labels
+    // zHCASH labels
     ui->labelzBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, zerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedZerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceMature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, matureZerocoinBalance, false, BitcoinUnits::separatorAlways));
@@ -250,19 +250,19 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelTotalz->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, sumTotalBalance, false, BitcoinUnits::separatorAlways));
 
     // Percentage labels
-    ui->labelGLPMPercent->setText(sPercentage);
-    ui->labelzGLPMPercent->setText(szPercentage);
+    ui->labelHCASHPercent->setText(sPercentage);
+    ui->labelzHCASHPercent->setText(szPercentage);
 
     // Adjust bubble-help according to AutoMint settings
-    QString automintHelp = tr("Current percentage of zGLPM.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
+    QString automintHelp = tr("Current percentage of zHCASH.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
     bool fEnableZeromint = GetBoolArg("-enablezeromint", true);
     int nZeromintPercentage = GetArg("-zeromintpercentage", 10);
     if (fEnableZeromint) {
         automintHelp += tr("AutoMint is currently enabled and set to ") + QString::number(nZeromintPercentage) + "%.\n";
-        automintHelp += tr("To disable AutoMint add 'enablezeromint=0' in GLPM.conf.");
+        automintHelp += tr("To disable AutoMint add 'enablezeromint=0' in HCASH.conf.");
     }
     else {
-        automintHelp += tr("AutoMint is currently disabled.\nTo enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in GLPM.conf");
+        automintHelp += tr("AutoMint is currently disabled.\nTo enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in HCASH.conf");
     }
 
     // Only show most balances if they are non-zero for the sake of simplicity
@@ -271,39 +271,39 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     bool showSumAvailable = settingShowAllBalances || sumTotalBalance != availableTotalBalance;
     ui->labelBalanceTextz->setVisible(showSumAvailable);
     ui->labelBalancez->setVisible(showSumAvailable);
-    bool showGLPMAvailable = settingShowAllBalances || cdzcAvailableBalance != nTotalBalance;
-    bool showWatchOnlyGLPMAvailable = watchOnlyBalance != nTotalWatchBalance;
-    bool showGLPMPending = settingShowAllBalances || unconfirmedBalance != 0;
-    bool showWatchOnlyGLPMPending = watchUnconfBalance != 0;
-    bool showGLPMLocked = settingShowAllBalances || nLockedBalance != 0;
-    bool showWatchOnlyGLPMLocked = nWatchOnlyLockedBalance != 0;
+    bool showHCASHAvailable = settingShowAllBalances || cdzcAvailableBalance != nTotalBalance;
+    bool showWatchOnlyHCASHAvailable = watchOnlyBalance != nTotalWatchBalance;
+    bool showHCASHPending = settingShowAllBalances || unconfirmedBalance != 0;
+    bool showWatchOnlyHCASHPending = watchUnconfBalance != 0;
+    bool showHCASHLocked = settingShowAllBalances || nLockedBalance != 0;
+    bool showWatchOnlyHCASHLocked = nWatchOnlyLockedBalance != 0;
     bool showImmature = settingShowAllBalances || immatureBalance != 0;
     bool showWatchOnlyImmature = watchImmatureBalance != 0;
     bool showWatchOnly = nTotalWatchBalance != 0;
-    ui->labelBalance->setVisible(showGLPMAvailable || showWatchOnlyGLPMAvailable);
-    ui->labelBalanceText->setVisible(showGLPMAvailable || showWatchOnlyGLPMAvailable);
-    ui->labelWatchAvailable->setVisible(showGLPMAvailable && showWatchOnly);
-    ui->labelUnconfirmed->setVisible(showGLPMPending || showWatchOnlyGLPMPending);
-    ui->labelPendingText->setVisible(showGLPMPending || showWatchOnlyGLPMPending);
-    ui->labelWatchPending->setVisible(showGLPMPending && showWatchOnly);
-    ui->labelLockedBalance->setVisible(showGLPMLocked || showWatchOnlyGLPMLocked);
-    ui->labelLockedBalanceText->setVisible(showGLPMLocked || showWatchOnlyGLPMLocked);
-    ui->labelWatchLocked->setVisible(showGLPMLocked && showWatchOnly);
+    ui->labelBalance->setVisible(showHCASHAvailable || showWatchOnlyHCASHAvailable);
+    ui->labelBalanceText->setVisible(showHCASHAvailable || showWatchOnlyHCASHAvailable);
+    ui->labelWatchAvailable->setVisible(showHCASHAvailable && showWatchOnly);
+    ui->labelUnconfirmed->setVisible(showHCASHPending || showWatchOnlyHCASHPending);
+    ui->labelPendingText->setVisible(showHCASHPending || showWatchOnlyHCASHPending);
+    ui->labelWatchPending->setVisible(showHCASHPending && showWatchOnly);
+    ui->labelLockedBalance->setVisible(showHCASHLocked || showWatchOnlyHCASHLocked);
+    ui->labelLockedBalanceText->setVisible(showHCASHLocked || showWatchOnlyHCASHLocked);
+    ui->labelWatchLocked->setVisible(showHCASHLocked && showWatchOnly);
     ui->labelImmature->setVisible(showImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelImmatureText->setVisible(showImmature || showWatchOnlyImmature);
     ui->labelWatchImmature->setVisible(showImmature && showWatchOnly); // show watch-only immature balance
-    bool showzGLPMAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
-    bool showzGLPMUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
-    bool showzGLPMImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
-    ui->labelzBalanceMature->setVisible(showzGLPMAvailable);
-    ui->labelzBalanceMatureText->setVisible(showzGLPMAvailable);
-    ui->labelzBalanceUnconfirmed->setVisible(showzGLPMUnconfirmed);
-    ui->labelzBalanceUnconfirmedText->setVisible(showzGLPMUnconfirmed);
-    ui->labelzBalanceImmature->setVisible(showzGLPMImmature);
-    ui->labelzBalanceImmatureText->setVisible(showzGLPMImmature);
+    bool showzHCASHAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
+    bool showzHCASHUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
+    bool showzHCASHImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
+    ui->labelzBalanceMature->setVisible(showzHCASHAvailable);
+    ui->labelzBalanceMatureText->setVisible(showzHCASHAvailable);
+    ui->labelzBalanceUnconfirmed->setVisible(showzHCASHUnconfirmed);
+    ui->labelzBalanceUnconfirmedText->setVisible(showzHCASHUnconfirmed);
+    ui->labelzBalanceImmature->setVisible(showzHCASHImmature);
+    ui->labelzBalanceImmatureText->setVisible(showzHCASHImmature);
     bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
-    ui->labelGLPMPercent->setVisible(showPercentages);
-    ui->labelzGLPMPercent->setVisible(showPercentages);
+    ui->labelHCASHPercent->setVisible(showPercentages);
+    ui->labelzHCASHPercent->setVisible(showPercentages);
 
     static int cachedTxLocks = 0;
 
@@ -374,7 +374,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("GLPM")
+    // update the display unit, to not use the default ("HCASH")
     updateDisplayUnit();
 }
 

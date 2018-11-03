@@ -176,16 +176,16 @@
         <translation>지갑 암호화 확인</translation>
     </message>
     <message>
-        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
-        <translation>Crypto Dezire Cash는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 GLPMs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HCASHs from being stolen by malware infecting your computer.</source>
+        <translation>Crypto Dezire Cash는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 HCASHs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>지갑을 암호화 하시겠습니까?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
-        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 GLPM를 잃게 됩니다&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HCASH&lt;/b&gt;!</source>
+        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 HCASH를 잃게 됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -606,8 +606,8 @@
         <translation>Crypto Dezire Cash 주소로 전송하기</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and GLPM: URIs)</source>
-        <translation>결제 요청 (QR 코드 및 GLPM: URI 생성)</translation>
+        <source>Request payments (generates QR codes and HCASH: URIs)</source>
+        <translation>결제 요청 (QR 코드 및 HCASH: URI 생성)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -813,8 +813,8 @@ Address: %4
         <translation>텍스트라벨</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (GLPM.conf).</source>
-        <translation>모든 트랜잭션이 표시되지는 않습니다. 모든 트랜잭션을 보려면 구성 파일 (GLPM.conf)에 txindex = 1을 설정해야합니다.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (HCASH.conf).</source>
+        <translation>모든 트랜잭션이 표시되지는 않습니다. 모든 트랜잭션을 보려면 구성 파일 (HCASH.conf)에 txindex = 1을 설정해야합니다.</translation>
     </message>
 </context>
 <context>
@@ -1508,32 +1508,32 @@ Please check the address and try again.</source>
         <translation>익명화 레벨을 선택해주세요.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 GLPM</source>
-        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 GLPM 를 섞을 수 있습니다.</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 HCASH</source>
+        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 HCASH 를 섞을 수 있습니다.</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 GLPM</source>
-        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 GLPM 를 섞을 수 있습니다.</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 HCASH</source>
+        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 HCASH 를 섞을 수 있습니다.</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16개의 개별 마스터노드를 사용</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 GLPM to anonymize 10000 GLPM</source>
-        <translation>이 옵션은 가장 빠르게 전송되며 10000 GLPM 익명화에 약 ~0.025 GLPM의 비용이 들어갑니다.</translation>
+        <source>This option is the quickest and will cost about ~0.025 HCASH to anonymize 10000 HCASH</source>
+        <translation>이 옵션은 가장 빠르게 전송되며 10000 HCASH 익명화에 약 ~0.025 HCASH의 비용이 들어갑니다.</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 GLPM to anonymize 10000 GLPM</source>
-        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 GLPM 익명화에 약 0.05 GLPM의 비용이 들어갑니다.</translation>
+        <source>This option is moderately fast and will cost about 0.05 HCASH to anonymize 10000 HCASH</source>
+        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 HCASH 익명화에 약 0.05 HCASH의 비용이 들어갑니다.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>이것은 가장 느리고 안전한 옵션입니다. 최고 익명성을 사용하면 비용이 발생합니다.</translation>
     </message>
     <message>
-        <source>0.1 GLPM per 10000 GLPM you anonymize.</source>
-        <translation>10000 GLPM 익명화에 0.1 GLPM 가 듭니다.</translation>
+        <source>0.1 HCASH per 10000 HCASH you anonymize.</source>
+        <translation>10000 HCASH 익명화에 0.1 HCASH 가 듭니다.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1667,9 +1667,9 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/GLPM/GLPM-translations</source>
+https://www.transifex.com/HCASH/HCASH-translations</source>
         <translation>지원 언어가 없거나 번역이 불완전한가요? 번역 기여 도움말:
-https://www.transifex.com/GLPM/GLPM-translations</translation>
+https://www.transifex.com/HCASH/HCASH-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1894,7 +1894,7 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>잘못된 결제 주소 %1</translation>
     </message>
     <message>
-        <source>Cannot start GLPM: click-to-pay handler</source>
+        <source>Cannot start HCASH: click-to-pay handler</source>
         <translation>Crypto Dezire Cash을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
@@ -2706,8 +2706,8 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>UTXO 크기:</translation>
     </message>
     <message>
-        <source>0 GLPM</source>
-        <translation>0 GLPM</translation>
+        <source>0 HCASH</source>
+        <translation>0 HCASH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2750,12 +2750,12 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>승인 시간:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uGLPMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uGLPMs in fee,&lt;br /&gt;while "at least" pays 1000 uGLPMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uGLPMs로 설정되고,&lt;br /&gt;1000 uGLPMs 안에는 최소 "킬로바이트당" 250 uGLPMs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uHCASHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHCASHs in fee,&lt;br /&gt;while "at least" pays 1000 uHCASHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uHCASHs로 설정되고,&lt;br /&gt;1000 uHCASHs 안에는 최소 "킬로바이트당" 250 uHCASHs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uGLPMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uGLPMs in fee,&lt;br /&gt;while "total at least" pays 1000 uGLPMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uGLPMs로 설정되고,&lt;br /&gt;1000 uGLPMs 안에는 전체에서 최소 "킬로바이트당" 250 uGLPMs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uHCASHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHCASHs in fee,&lt;br /&gt;while "total at least" pays 1000 uHCASHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uHCASHs로 설정되고,&lt;br /&gt;1000 uHCASHs 안에는 전체에서 최소 "킬로바이트당" 250 uHCASHs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Crypto Dezire Cash transactions than the network can process.</source>
@@ -3731,8 +3731,8 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>코인 전송 </translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 GLPM.</source>
-        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 GLPM로 제한됩니다.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 HCASH.</source>
+        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 HCASH로 제한됩니다.</translation>
     </message>
 </context>
 <context>
@@ -3782,7 +3782,7 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
     </message>
     </context>
 <context>
-    <name>GLPM-core</name>
+    <name>HCASH-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = tx 메타 데이터 유지 예 : 계정 소유자 및 지불 요청 정보, 2 = tx 메타 데이터 삭제)</translation>
@@ -3868,12 +3868,12 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
     </message>
     <message>
-        <source>Fees (in GLPM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>이것보다 작은 수수료 (GLPM/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in HCASH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>이것보다 작은 수수료 (HCASH/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
-        <source>Fees (in GLPM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>이것보다 작은 수수료 (GLPM/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in HCASH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>이것보다 작은 수수료 (HCASH/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3972,10 +3972,10 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>이 제품은 OpenSSL이 개발한 Open SSL 툴킷 &lt;https://www.openssl.org/&gt; 에서 사용하기 위한 프로젝트 소프트웨어, Eric Young이 개발한 암호화 소프트웨어, Thomas Bernard가 개발한 UPnP 소프트웨어가 포함되어 있습니다.</translation>
     </message>
     <message>
-        <source>To use GLPMd, or the -server option to GLPM-qt, you must set an rpcpassword in the configuration file:
+        <source>To use HCASHd, or the -server option to HCASH-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=GLPMrpc
+rpcuser=HCASHrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4004,12 +4004,12 @@ rpcpassword=%s
         <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 GLPM.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 GLPM과 일치하지 않음.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 HCASH.</source>
+        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 HCASH과 일치하지 않음.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 GLPM.</source>
-        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 GLPM와 같지 않음</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 HCASH.</source>
+        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 HCASH와 같지 않음</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4304,8 +4304,8 @@ rpcpassword=%s
         <translation>블록을 받아오는데 실패했습니다.</translation>
     </message>
     <message>
-        <source>Fee (in GLPM/kB) to add to transactions you send (default: %s)</source>
-        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (GLPM/kB) (기본값: %s)</translation>
+        <source>Fee (in HCASH/kB) to add to transactions you send (default: %s)</source>
+        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (HCASH/kB) (기본값: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>

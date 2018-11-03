@@ -2,8 +2,8 @@
 // Copyright (c) 2018 The Crypto Dezire Cash developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef GLPM_ACCUMULATORMAP_H
-#define GLPM_ACCUMULATORMAP_H
+#ifndef HCASH_ACCUMULATORMAP_H
+#define HCASH_ACCUMULATORMAP_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Coin.h"
@@ -25,4 +25,4 @@ public:
     void Reset();
     void Reset(libzerocoin::ZerocoinParams* params2);
 };
-#endif //GLPM_ACCUMULATORMAP_H
+#endif //HCASH_ACCUMULATORMAP_H

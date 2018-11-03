@@ -70,7 +70,7 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/GLPM.conf are parsed in qt/GLPM.cpp's main()
+    // If Qt is used, parameters/HCASH.conf are parsed in qt/HCASH.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
@@ -81,7 +81,7 @@ bool AppInit(int argc, char* argv[])
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  GLPMd [options]                     " + _("Start Crypto Dezire Cash Core Daemon") + "\n";
+                        "  HCASHd [options]                     " + _("Start Crypto Dezire Cash Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -117,17 +117,17 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "GLPM:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "HCASH:"))
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in GLPMd anymore. Use the GLPM-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in HCASHd anymore. Use the HCASH-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon) {
-            fprintf(stdout, "GLPM server starting\n");
+            fprintf(stdout, "HCASH server starting\n");
 
             // Daemonize
             pid_t pid = fork();
@@ -172,7 +172,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect GLPMd signal handlers
+    // Connect HCASHd signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

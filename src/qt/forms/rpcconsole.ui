@@ -449,7 +449,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../GLPM.qrc">
+            <iconset resource="../HCASH.qrc">
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="shortcut">
@@ -1354,7 +1354,7 @@
        <item row="4" column="0">
         <widget class="QLabel" name="wallet_customzcdzcbackuppath_label">
          <property name="text">
-          <string>Custom zGLPM Backup Path:</string>
+          <string>Custom zHCASH Backup Path:</string>
          </property>
          <property name="visible">
           <bool>false</bool>
@@ -1663,7 +1663,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../GLPM.qrc"/>
+  <include location="../HCASH.qrc"/>
  </resources>
  <connections/>
 </ui>

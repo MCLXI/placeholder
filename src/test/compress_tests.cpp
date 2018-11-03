@@ -16,10 +16,10 @@
 #define NUM_MULTIPLES_CENT 10000
 
 // amounts 1 .. 10000
-#define NUM_MULTIPLES_1GLPM 10000
+#define NUM_MULTIPLES_1HCASH 10000
 
 // amounts 50 .. 398360470
-#define NUM_MULTIPLES_50GLPM 420000
+#define NUM_MULTIPLES_50HCASH 420000
 
 BOOST_AUTO_TEST_SUITE(compress_tests)
 
@@ -51,10 +51,10 @@ BOOST_AUTO_TEST_CASE(compress_amounts)
     for (uint64_t i = 1; i <= NUM_MULTIPLES_CENT; i++)
         BOOST_CHECK(TestEncode(i * CENT));
 
-    for (uint64_t i = 1; i <= NUM_MULTIPLES_1GLPM; i++)
+    for (uint64_t i = 1; i <= NUM_MULTIPLES_1HCASH; i++)
         BOOST_CHECK(TestEncode(i * COIN));
 
-    for (uint64_t i = 1; i <= NUM_MULTIPLES_50GLPM; i++)
+    for (uint64_t i = 1; i <= NUM_MULTIPLES_50HCASH; i++)
         BOOST_CHECK(TestEncode(i * 50 * COIN));
 
     for (uint64_t i = 0; i < 100000; i++)

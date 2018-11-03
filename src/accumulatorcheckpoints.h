@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GLPM_ACCUMULATORCHECKPOINTS_H
-#define GLPM_ACCUMULATORCHECKPOINTS_H
+#ifndef HCASH_ACCUMULATORCHECKPOINTS_H
+#define HCASH_ACCUMULATORCHECKPOINTS_H
 
 #include <libzerocoin/bignum.h>
 #include <univalue/include/univalue.h>
@@ -19,4 +19,4 @@ namespace AccumulatorCheckpoints
     Checkpoint GetClosestCheckpoint(const int& nHeight, int& nHeightCheckpoint);
 }
 
-#endif //GLPM_ACCUMULATORCHECKPOINTS_H
+#endif //HCASH_ACCUMULATORCHECKPOINTS_H

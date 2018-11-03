@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GLPM_QT_MULTISENDDIALOG_H
-#define GLPM_QT_MULTISENDDIALOG_H
+#ifndef HCASH_QT_MULTISENDDIALOG_H
+#define HCASH_QT_MULTISENDDIALOG_H
 
 #include <QDialog>
 
@@ -39,4 +39,4 @@ private:
     WalletModel* model;
 };
 
-#endif // GLPM_QT_MULTISENDDIALOG_H
+#endif // HCASH_QT_MULTISENDDIALOG_H

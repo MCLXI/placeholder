@@ -8,521 +8,521 @@
 #else
 #define UNUSED
 #endif
-static const char UNUSED *GLPM_strings[] = {
-QT_TRANSLATE_NOOP("GLPM-core", " mints deleted\n"),
-QT_TRANSLATE_NOOP("GLPM-core", " mints updated, "),
-QT_TRANSLATE_NOOP("GLPM-core", " unconfirmed transactions removed\n"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+static const char UNUSED *HCASH_strings[] = {
+QT_TRANSLATE_NOOP("HCASH-core", " mints deleted\n"),
+QT_TRANSLATE_NOOP("HCASH-core", " mints updated, "),
+QT_TRANSLATE_NOOP("HCASH-core", " unconfirmed transactions removed\n"),
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "(1 = keep tx meta data e.g. account owner and payment request information, 2 "
 "= drop tx meta data)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Allow JSON-RPC connections from specified source. Valid for <ip> are a "
 "single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or "
 "a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Bind to given address and always listen on it. Use [host]:port notation for "
 "IPv6"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Bind to given address and whitelist peers connecting to it. Use [host]:port "
 "notation for IPv6"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Bind to given address to listen for JSON-RPC connections. Use [host]:port "
 "notation for IPv6. This option can be specified multiple times (default: "
 "bind to all interfaces)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Calculated accumulator checkpoint is not what is recorded by block index"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Cannot obtain a lock on data directory %s. Crypto Dezire Cash Core is probably already "
 "running."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Change automatic finalized budget voting behavior. mode=auto: Vote for only "
 "exact finalized budget match to my generated budget. (string, default: auto)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Continuously rate-limit free transactions to <n>*1000 bytes per minute "
 "(default:%u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Create new files with system default permissions, instead of umask 077 (only "
 "effective with disabled wallet functionality)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Delete all wallet transactions and only recover those parts of the "
 "blockchain through -rescan on startup"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Delete all zerocoin spends and mints that have been recorded to the "
 "blockchain database and reindex them (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Disable all Crypto Dezire Cash specific functionality (Masternodes, Zerocoin, SwiftX, "
 "Budgeting) (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Distributed under the MIT software license, see the accompanying file "
 "COPYING or <http://www.opensource.org/licenses/mit-license.php>."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Enable SwiftX, show confirmations for locked transactions (bool, default: %s)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
-"Enable automatic wallet backups triggered after each zGLPM minting (0-1, "
+QT_TRANSLATE_NOOP("HCASH-core", ""
+"Enable automatic wallet backups triggered after each zHCASH minting (0-1, "
 "default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
-"Enable or disable staking functionality for GLPM inputs (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
-"Enable or disable staking functionality for zGLPM inputs (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
+"Enable or disable staking functionality for HCASH inputs (0-1, default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", ""
+"Enable or disable staking functionality for zHCASH inputs (0-1, default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Enable spork administration functionality with the appropriate private key."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Enter regression test mode, which uses a special chain in which blocks can "
 "be solved instantly."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Error: Listening for incoming connections failed (listen returned error %s)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Error: The transaction is larger than the maximum allowed transaction size!"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Error: The transaction was rejected! This might happen if some of the coins "
 "in your wallet were already spent, such as if you used a copy of wallet.dat "
 "and coins were spent in the copy but not marked as spent here."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Error: This transaction requires a transaction fee of at least %s because of "
 "its amount, complexity, or use of recently received funds!"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Error: Unsupported argument -checklevel found. Checklevel must be level 4."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Error: Unsupported argument -socks found. Setting SOCKS version isn't "
 "possible anymore, only SOCKS5 proxies are supported."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Execute command when a relevant alert is received or we see a really long "
 "fork (%s in cmd is replaced by message)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Execute command when a wallet transaction changes (%s in cmd is replaced by "
 "TxID)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Execute command when the best block changes (%s in cmd is replaced by block "
 "hash)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Execute command when the best block changes and its size is over (%s in cmd "
 "is replaced by block hash, %d with the block size)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Failed to find coin set amongst held coins with less than maxNumber of Spends"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
-"Fees (in GLPM/Kb) smaller than this are considered zero fee for relaying "
+QT_TRANSLATE_NOOP("HCASH-core", ""
+"Fees (in HCASH/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
-"Fees (in GLPM/Kb) smaller than this are considered zero fee for transaction "
+QT_TRANSLATE_NOOP("HCASH-core", ""
+"Fees (in HCASH/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
 "(default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Found unconfirmed denominated outputs, will wait till they confirm to "
 "continue."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "If paytxfee is not set, include enough fee so transactions begin "
 "confirmation on average within n blocks (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "In rare cases, a spend with 7 coins exceeds our maximum allowable "
 "transaction size, please retry spend using 6 or less coins"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "In this mode -genproclimit controls how many blocks are generated "
 "immediately."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Insufficient or insufficient confirmed funds, you might need to wait a few "
 "minutes and try again."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Invalid amount for -maxtxfee=<amount>: '%s' (must be at least the minrelay "
 "fee of %s to prevent stuck transactions)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Keep the specified amount available for spending at all times (default: 0)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Log transaction priority and fee per kB when mining blocks (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Maintain a full transaction index, used by the getrawtransaction rpc call "
 "(default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Maximum size of data in data carrier transactions we relay and mine "
 "(default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Maximum total fees to use in a single wallet transaction, setting too low "
 "may abort large transactions (default: %s)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Number of seconds to keep misbehaving peers from reconnecting (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Obfuscation uses exact denominated amounts to send funds, you might simply "
 "need to anonymize some more coins."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Output debugging information (default: %u, supplying <category> is optional)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Preferred Denomination for automatically minted Zerocoin  "
 "(1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Query for peer addresses via DNS lookup, if low on addresses (default: 1 "
 "unless -connect)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Randomize credentials for every proxy connection. This enables Tor stream "
 "isolation (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Require high priority for relaying free or low-fee transactions (default:%u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Send trace/debug info to console instead of debug.log file (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Set maximum size of high-priority/low-fee transactions in bytes (default: %d)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Set the number of script verification threads (%u to %d, 0 = auto, <0 = "
 "leave that many cores free, default: %d)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Set the number of threads for coin generation if enabled (-1 = all cores, "
 "default: %d)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Show N confirmations for a successfully locked transaction (0-9999, default: "
 "%u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
-"Specify custom backup path to add a copy of any automatic zGLPM backup. If "
+QT_TRANSLATE_NOOP("HCASH-core", ""
+"Specify custom backup path to add a copy of any automatic zHCASH backup. If "
 "set as dir, every backup generates a timestamped file. If set as file, will "
 "rewrite to that file every backup. If backuppath is set as well, 4 backups "
 "will happen"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Specify custom backup path to add a copy of any wallet backup. If set as "
 "dir, every backup generates a timestamped file. If set as file, will rewrite "
 "to that file every backup."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Support filtering of blocks and transaction with bloom filters (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "SwiftX requires inputs with at least 6 confirmations, you might need to wait "
 "a few minutes and try again."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "This is a pre-release test build - use at your own risk - do not use for "
 "staking or merchant applications!"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "This product includes software developed by the OpenSSL Project for use in "
 "the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software "
 "written by Eric Young and UPnP software written by Thomas Bernard."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Unable to bind to %s on this computer. Crypto Dezire Cash Core is probably already running."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 GLPM."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+"transaction that are not equal 10000 HCASH."),
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
-"GLPM."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+"HCASH."),
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Warning: -maxtxfee is set very high! Fees this large could be paid on a "
 "single transaction."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Warning: -paytxfee is set very high! This is the transaction fee you will "
 "pay if you send a transaction."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Warning: Please check that your computer's date and time are correct! If "
 "your clock is wrong Crypto Dezire Cash Core will not work properly."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Warning: The network does not appear to fully agree! Some miners appear to "
 "be experiencing issues."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Warning: We do not appear to fully agree with our peers! You may need to "
 "upgrade, or other nodes may need to upgrade."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Warning: error reading wallet.dat! All keys read correctly, but transaction "
 "data or address book entries might be missing or incorrect."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as "
 "wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect "
 "you should restore from a backup."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Whitelist peers connecting from the given netmask or IP address. Can be "
 "specified multiple times."),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "Whitelisted peers cannot be DoS banned and their transactions are always "
 "relayed, even if they are already in the mempool, useful e.g. for a gateway"),
-QT_TRANSLATE_NOOP("GLPM-core", ""
+QT_TRANSLATE_NOOP("HCASH-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("GLPM-core", "(35601 could be used only on mainnet)"),
-QT_TRANSLATE_NOOP("GLPM-core", "(default: %s)"),
-QT_TRANSLATE_NOOP("GLPM-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("GLPM-core", "(must be 35601 for mainnet)"),
-QT_TRANSLATE_NOOP("GLPM-core", "<category> can be:"),
-QT_TRANSLATE_NOOP("GLPM-core", "Accept command line and JSON-RPC commands"),
-QT_TRANSLATE_NOOP("GLPM-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Accept public REST requests (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Add a node to connect to and attempt to keep the connection open"),
-QT_TRANSLATE_NOOP("GLPM-core", "Allow DNS lookups for -addnode, -seednode and -connect"),
-QT_TRANSLATE_NOOP("GLPM-core", "Already have that input."),
-QT_TRANSLATE_NOOP("GLPM-core", "Always query for peer addresses via DNS lookup (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Attempt to force blockchain corruption recovery"),
-QT_TRANSLATE_NOOP("GLPM-core", "Attempt to recover private keys from a corrupt wallet.dat"),
-QT_TRANSLATE_NOOP("GLPM-core", "Automatically create Tor hidden service (default: %d)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Block creation options:"),
-QT_TRANSLATE_NOOP("GLPM-core", "Calculating missing accumulators..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Can't denominate: no compatible inputs left."),
-QT_TRANSLATE_NOOP("GLPM-core", "Can't find random Masternode."),
-QT_TRANSLATE_NOOP("GLPM-core", "Can't mix while sync in progress."),
-QT_TRANSLATE_NOOP("GLPM-core", "Cannot downgrade wallet"),
-QT_TRANSLATE_NOOP("GLPM-core", "Cannot resolve -bind address: '%s'"),
-QT_TRANSLATE_NOOP("GLPM-core", "Cannot resolve -externalip address: '%s'"),
-QT_TRANSLATE_NOOP("GLPM-core", "Cannot resolve -whitebind address: '%s'"),
-QT_TRANSLATE_NOOP("GLPM-core", "Cannot write default address"),
-QT_TRANSLATE_NOOP("GLPM-core", "CoinSpend: Accumulator witness does not verify"),
-QT_TRANSLATE_NOOP("GLPM-core", "Collateral not valid."),
-QT_TRANSLATE_NOOP("GLPM-core", "Connect only to the specified node(s)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Connect through SOCKS5 proxy"),
-QT_TRANSLATE_NOOP("GLPM-core", "Connect to a node to retrieve peer addresses, and disconnect"),
-QT_TRANSLATE_NOOP("GLPM-core", "Connection options:"),
-QT_TRANSLATE_NOOP("GLPM-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
-QT_TRANSLATE_NOOP("GLPM-core", "Copyright (C) 2014-%i The Dash Core Developers"),
-QT_TRANSLATE_NOOP("GLPM-core", "Copyright (C) 2015-%i The PIVX Core Developers"),
-QT_TRANSLATE_NOOP("GLPM-core", "Copyright (C) %i The Crypto Dezire Cash Core Developers"),
-QT_TRANSLATE_NOOP("GLPM-core", "Corrupted block database detected"),
-QT_TRANSLATE_NOOP("GLPM-core", "Could not parse masternode.conf"),
-QT_TRANSLATE_NOOP("GLPM-core", "Debugging/Testing options:"),
-QT_TRANSLATE_NOOP("GLPM-core", "Delete blockchain folders and resync from scratch"),
-QT_TRANSLATE_NOOP("GLPM-core", "Disable OS notifications for incoming transactions (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Disable safemode, override a real safe mode event (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Discover own IP address (default: 1 when listening and no -externalip)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Display the stake modifier calculations in the debug.log file."),
-QT_TRANSLATE_NOOP("GLPM-core", "Display verbose coin stake messages in the debug.log file."),
-QT_TRANSLATE_NOOP("GLPM-core", "Do not load the wallet and disable wallet RPC calls"),
-QT_TRANSLATE_NOOP("GLPM-core", "Do you want to rebuild the block database now?"),
-QT_TRANSLATE_NOOP("GLPM-core", "Done loading"),
-QT_TRANSLATE_NOOP("GLPM-core", "Enable automatic Zerocoin minting (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Enable publish hash block in <address>"),
-QT_TRANSLATE_NOOP("GLPM-core", "Enable publish hash transaction (locked via SwiftX) in <address>"),
-QT_TRANSLATE_NOOP("GLPM-core", "Enable publish hash transaction in <address>"),
-QT_TRANSLATE_NOOP("GLPM-core", "Enable publish raw block in <address>"),
-QT_TRANSLATE_NOOP("GLPM-core", "Enable publish raw transaction (locked via SwiftX) in <address>"),
-QT_TRANSLATE_NOOP("GLPM-core", "Enable publish raw transaction in <address>"),
-QT_TRANSLATE_NOOP("GLPM-core", "Enable staking functionality (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Enable the client to act as a masternode (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Entries are full."),
-QT_TRANSLATE_NOOP("GLPM-core", "Error connecting to Masternode."),
-QT_TRANSLATE_NOOP("GLPM-core", "Error initializing block database"),
-QT_TRANSLATE_NOOP("GLPM-core", "Error initializing wallet database environment %s!"),
-QT_TRANSLATE_NOOP("GLPM-core", "Error loading block database"),
-QT_TRANSLATE_NOOP("GLPM-core", "Error loading wallet.dat"),
-QT_TRANSLATE_NOOP("GLPM-core", "Error loading wallet.dat: Wallet corrupted"),
-QT_TRANSLATE_NOOP("GLPM-core", "Error loading wallet.dat: Wallet requires newer version of Crypto Dezire Cash Core"),
-QT_TRANSLATE_NOOP("GLPM-core", "Error opening block database"),
-QT_TRANSLATE_NOOP("GLPM-core", "Error reading from database, shutting down."),
-QT_TRANSLATE_NOOP("GLPM-core", "Error recovering public key."),
-QT_TRANSLATE_NOOP("GLPM-core", "Error writing zerocoinDB to disk"),
-QT_TRANSLATE_NOOP("GLPM-core", "Error"),
-QT_TRANSLATE_NOOP("GLPM-core", "Error: A fatal internal error occured, see debug.log for details"),
-QT_TRANSLATE_NOOP("GLPM-core", "Error: A fatal internal error occurred, see debug.log for details"),
-QT_TRANSLATE_NOOP("GLPM-core", "Error: Can't select current denominated inputs"),
-QT_TRANSLATE_NOOP("GLPM-core", "Error: Disk space is low!"),
-QT_TRANSLATE_NOOP("GLPM-core", "Error: No valid utxo!"),
-QT_TRANSLATE_NOOP("GLPM-core", "Error: Unsupported argument -tor found, use -onion."),
-QT_TRANSLATE_NOOP("GLPM-core", "Error: Wallet locked, unable to create transaction!"),
-QT_TRANSLATE_NOOP("GLPM-core", "Error: You already have pending entries in the Obfuscation pool"),
-QT_TRANSLATE_NOOP("GLPM-core", "Failed to calculate accumulator checkpoint"),
-QT_TRANSLATE_NOOP("GLPM-core", "Failed to create mint"),
-QT_TRANSLATE_NOOP("GLPM-core", "Failed to deserialize"),
-QT_TRANSLATE_NOOP("GLPM-core", "Failed to find Zerocoins in wallet.dat"),
-QT_TRANSLATE_NOOP("GLPM-core", "Failed to listen on any port. Use -listen=0 if you want this."),
-QT_TRANSLATE_NOOP("GLPM-core", "Failed to parse host:port string"),
-QT_TRANSLATE_NOOP("GLPM-core", "Failed to read block"),
-QT_TRANSLATE_NOOP("GLPM-core", "Failed to select a zerocoin"),
-QT_TRANSLATE_NOOP("GLPM-core", "Failed to wipe zerocoinDB"),
-QT_TRANSLATE_NOOP("GLPM-core", "Failed to write coin serial number into wallet"),
-QT_TRANSLATE_NOOP("GLPM-core", "Fee (in GLPM/kB) to add to transactions you send (default: %s)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Finalizing transaction."),
-QT_TRANSLATE_NOOP("GLPM-core", "Force safe mode (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Found enough users, signing ( waiting %s )"),
-QT_TRANSLATE_NOOP("GLPM-core", "Found enough users, signing ..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Generate coins (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "How many blocks to check at startup (default: %u, 0 = all)"),
-QT_TRANSLATE_NOOP("GLPM-core", "If <category> is not supplied, output all debugging information."),
-QT_TRANSLATE_NOOP("GLPM-core", "Importing..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Imports blocks from external blk000??.dat file"),
-QT_TRANSLATE_NOOP("GLPM-core", "Include IP addresses in debug output (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Incompatible mode."),
-QT_TRANSLATE_NOOP("GLPM-core", "Incompatible version."),
-QT_TRANSLATE_NOOP("GLPM-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
-QT_TRANSLATE_NOOP("GLPM-core", "Information"),
-QT_TRANSLATE_NOOP("GLPM-core", "Initialization sanity check failed. Crypto Dezire Cash Core is shutting down."),
-QT_TRANSLATE_NOOP("GLPM-core", "Input is not valid."),
-QT_TRANSLATE_NOOP("GLPM-core", "Insufficient funds"),
-QT_TRANSLATE_NOOP("GLPM-core", "Insufficient funds."),
-QT_TRANSLATE_NOOP("GLPM-core", "Invalid -onion address or hostname: '%s'"),
-QT_TRANSLATE_NOOP("GLPM-core", "Invalid amount for -maxtxfee=<amount>: '%s'"),
-QT_TRANSLATE_NOOP("GLPM-core", "Invalid amount for -minrelaytxfee=<amount>: '%s'"),
-QT_TRANSLATE_NOOP("GLPM-core", "Invalid amount for -mintxfee=<amount>: '%s'"),
-QT_TRANSLATE_NOOP("GLPM-core", "Invalid amount for -paytxfee=<amount>: '%s' (must be at least %s)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Invalid amount for -paytxfee=<amount>: '%s'"),
-QT_TRANSLATE_NOOP("GLPM-core", "Invalid amount for -reservebalance=<amount>"),
-QT_TRANSLATE_NOOP("GLPM-core", "Invalid amount"),
-QT_TRANSLATE_NOOP("GLPM-core", "Invalid masternodeprivkey. Please see documenation."),
-QT_TRANSLATE_NOOP("GLPM-core", "Invalid netmask specified in -whitelist: '%s'"),
-QT_TRANSLATE_NOOP("GLPM-core", "Invalid port detected in masternode.conf"),
-QT_TRANSLATE_NOOP("GLPM-core", "Invalid private key."),
-QT_TRANSLATE_NOOP("GLPM-core", "Invalid script detected."),
-QT_TRANSLATE_NOOP("GLPM-core", "Keep at most <n> unconnectable transactions in memory (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Last Obfuscation was too recent."),
-QT_TRANSLATE_NOOP("GLPM-core", "Last successful Obfuscation action was too recent."),
-QT_TRANSLATE_NOOP("GLPM-core", "Limit size of signature cache to <n> entries (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Line: %d"),
-QT_TRANSLATE_NOOP("GLPM-core", "Listen for JSON-RPC connections on <port> (default: %u or testnet: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Listen for connections on <port> (default: %u or testnet: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Loading addresses..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Loading block index..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Loading budget cache..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Loading masternode cache..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Loading masternode payment cache..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Loading sporks..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Loading wallet... (%3.2f %%)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Loading wallet..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Location of the auth cookie (default: data dir)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Lock is already in place."),
-QT_TRANSLATE_NOOP("GLPM-core", "Lock masternodes from masternode configuration file (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Lookup(): Invalid -proxy address or hostname: '%s'"),
-QT_TRANSLATE_NOOP("GLPM-core", "Maintain at most <n> connections to peers (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Masternode options:"),
-QT_TRANSLATE_NOOP("GLPM-core", "Masternode queue is full."),
-QT_TRANSLATE_NOOP("GLPM-core", "Masternode:"),
-QT_TRANSLATE_NOOP("GLPM-core", "Maximum per-connection receive buffer, <n>*1000 bytes (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Maximum per-connection send buffer, <n>*1000 bytes (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Mint did not make it into blockchain"),
-QT_TRANSLATE_NOOP("GLPM-core", "Missing input transaction information."),
-QT_TRANSLATE_NOOP("GLPM-core", "Mixing in progress..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Need address because change is not exact"),
-QT_TRANSLATE_NOOP("GLPM-core", "Need to specify a port with -whitebind: '%s'"),
-QT_TRANSLATE_NOOP("GLPM-core", "No Masternodes detected."),
-QT_TRANSLATE_NOOP("GLPM-core", "No compatible Masternode found."),
-QT_TRANSLATE_NOOP("GLPM-core", "No funds detected in need of denominating."),
-QT_TRANSLATE_NOOP("GLPM-core", "No matching denominations found for mixing."),
-QT_TRANSLATE_NOOP("GLPM-core", "Node relay options:"),
-QT_TRANSLATE_NOOP("GLPM-core", "Non-standard public key detected."),
-QT_TRANSLATE_NOOP("GLPM-core", "Not compatible with existing transactions."),
-QT_TRANSLATE_NOOP("GLPM-core", "Not enough file descriptors available."),
-QT_TRANSLATE_NOOP("GLPM-core", "Not in the Masternode list."),
-QT_TRANSLATE_NOOP("GLPM-core", "Number of automatic wallet backups (default: 10)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Number of custom location backups to retain (default: %d)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Obfuscation is idle."),
-QT_TRANSLATE_NOOP("GLPM-core", "Obfuscation request complete:"),
-QT_TRANSLATE_NOOP("GLPM-core", "Obfuscation request incomplete:"),
-QT_TRANSLATE_NOOP("GLPM-core", "Only accept block chain matching built-in checkpoints (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Only connect to nodes in network <net> (ipv4, ipv6 or onion)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Options:"),
-QT_TRANSLATE_NOOP("GLPM-core", "Password for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("GLPM-core", "Percentage of automatically minted Zerocoin  (1-100, default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Preparing for resync..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Prepend debug output with timestamp (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Print version and exit"),
-QT_TRANSLATE_NOOP("GLPM-core", "RPC server options:"),
-QT_TRANSLATE_NOOP("GLPM-core", "Randomly drop 1 of every <n> network messages"),
-QT_TRANSLATE_NOOP("GLPM-core", "Randomly fuzz 1 of every <n> network messages"),
-QT_TRANSLATE_NOOP("GLPM-core", "Rebuild block chain index from current blk000??.dat files"),
-QT_TRANSLATE_NOOP("GLPM-core", "Receive and display P2P network alerts (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Reindex the GLPM and zGLPM money supply statistics"),
-QT_TRANSLATE_NOOP("GLPM-core", "Reindex the accumulator database"),
-QT_TRANSLATE_NOOP("GLPM-core", "Reindexing zerocoin database..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Reindexing zerocoin failed"),
-QT_TRANSLATE_NOOP("GLPM-core", "Relay and mine data carrier transactions (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Relay non-P2SH multisig (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Rescan the block chain for missing wallet transactions"),
-QT_TRANSLATE_NOOP("GLPM-core", "Rescanning..."),
-QT_TRANSLATE_NOOP("GLPM-core", "ResetMintZerocoin finished: "),
-QT_TRANSLATE_NOOP("GLPM-core", "ResetSpentZerocoin finished: "),
-QT_TRANSLATE_NOOP("GLPM-core", "Run a thread to flush wallet periodically (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Run in the background as a daemon and accept commands"),
-QT_TRANSLATE_NOOP("GLPM-core", "Selected coins value is less than payment target"),
-QT_TRANSLATE_NOOP("GLPM-core", "Send transactions as zero-fee transactions if possible (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Session not complete!"),
-QT_TRANSLATE_NOOP("GLPM-core", "Session timed out."),
-QT_TRANSLATE_NOOP("GLPM-core", "Set database cache size in megabytes (%d to %d, default: %d)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Set external address:port to get to this masternode (example: %s)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Set key pool size to <n> (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Set maximum block size in bytes (default: %d)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Set minimum block size in bytes (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Set the Maximum reorg depth (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Set the masternode private key"),
-QT_TRANSLATE_NOOP("GLPM-core", "Set the number of threads to service RPC calls (default: %d)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Sets the DB_PRIVATE flag in the wallet db environment (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Show all debugging options (usage: --help -help-debug)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Shrink debug.log file on client startup (default: 1 when no -debug)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Signing failed."),
-QT_TRANSLATE_NOOP("GLPM-core", "Signing timed out."),
-QT_TRANSLATE_NOOP("GLPM-core", "Signing transaction failed"),
-QT_TRANSLATE_NOOP("GLPM-core", "Specify configuration file (default: %s)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Specify connection timeout in milliseconds (minimum: 1, default: %d)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Specify data directory"),
-QT_TRANSLATE_NOOP("GLPM-core", "Specify masternode configuration file (default: %s)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Specify pid file (default: %s)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Specify wallet file (within data directory)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Specify your own public address"),
-QT_TRANSLATE_NOOP("GLPM-core", "Spend Valid"),
-QT_TRANSLATE_NOOP("GLPM-core", "Spend unconfirmed change when sending transactions (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Staking options:"),
-QT_TRANSLATE_NOOP("GLPM-core", "Stop running after importing blocks from disk (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Submitted following entries to masternode: %u / %d"),
-QT_TRANSLATE_NOOP("GLPM-core", "Submitted to masternode, waiting for more entries ( %u / %d ) %s"),
-QT_TRANSLATE_NOOP("GLPM-core", "Submitted to masternode, waiting in queue %s"),
-QT_TRANSLATE_NOOP("GLPM-core", "SwiftX options:"),
-QT_TRANSLATE_NOOP("GLPM-core", "Synchronization failed"),
-QT_TRANSLATE_NOOP("GLPM-core", "Synchronization finished"),
-QT_TRANSLATE_NOOP("GLPM-core", "Synchronization pending..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Synchronizing budgets..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Synchronizing masternode winners..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Synchronizing masternodes..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Synchronizing sporks..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Syncing zGLPM wallet..."),
-QT_TRANSLATE_NOOP("GLPM-core", "The coin spend has been used"),
-QT_TRANSLATE_NOOP("GLPM-core", "The new spend coin transaction did not verify"),
-QT_TRANSLATE_NOOP("GLPM-core", "The selected mint coin is an invalid coin"),
-QT_TRANSLATE_NOOP("GLPM-core", "The transaction did not verify"),
-QT_TRANSLATE_NOOP("GLPM-core", "This help message"),
-QT_TRANSLATE_NOOP("GLPM-core", "This is experimental software."),
-QT_TRANSLATE_NOOP("GLPM-core", "This is intended for regression testing tools and app development."),
-QT_TRANSLATE_NOOP("GLPM-core", "This is not a Masternode."),
-QT_TRANSLATE_NOOP("GLPM-core", "Threshold for disconnecting misbehaving peers (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Too many spends needed"),
-QT_TRANSLATE_NOOP("GLPM-core", "Tor control port password (default: empty)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Tor control port to use if onion listening enabled (default: %s)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Transaction Created"),
-QT_TRANSLATE_NOOP("GLPM-core", "Transaction Mint Started"),
-QT_TRANSLATE_NOOP("GLPM-core", "Transaction amount too small"),
-QT_TRANSLATE_NOOP("GLPM-core", "Transaction amounts must be positive"),
-QT_TRANSLATE_NOOP("GLPM-core", "Transaction created successfully."),
-QT_TRANSLATE_NOOP("GLPM-core", "Transaction fees are too high."),
-QT_TRANSLATE_NOOP("GLPM-core", "Transaction not valid."),
-QT_TRANSLATE_NOOP("GLPM-core", "Transaction too large for fee policy"),
-QT_TRANSLATE_NOOP("GLPM-core", "Transaction too large"),
-QT_TRANSLATE_NOOP("GLPM-core", "Transmitting final transaction."),
-QT_TRANSLATE_NOOP("GLPM-core", "Try to spend with a higher security level to include more coins"),
-QT_TRANSLATE_NOOP("GLPM-core", "Trying to spend an already spent serial #, try again."),
-QT_TRANSLATE_NOOP("GLPM-core", "Unable to bind to %s on this computer (bind returned error %s)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Unable to find transaction containing mint"),
-QT_TRANSLATE_NOOP("GLPM-core", "Unable to sign spork message, wrong key?"),
-QT_TRANSLATE_NOOP("GLPM-core", "Unable to start HTTP server. See debug log for details."),
-QT_TRANSLATE_NOOP("GLPM-core", "Unknown network specified in -onlynet: '%s'"),
-QT_TRANSLATE_NOOP("GLPM-core", "Unknown state: id = %u"),
-QT_TRANSLATE_NOOP("GLPM-core", "Upgrade wallet to latest format"),
-QT_TRANSLATE_NOOP("GLPM-core", "Use UPnP to map the listening port (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Use UPnP to map the listening port (default: 1 when listening)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Use a custom max chain reorganization depth (default: %u)"),
-QT_TRANSLATE_NOOP("GLPM-core", "Use the test network"),
-QT_TRANSLATE_NOOP("GLPM-core", "Username for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("GLPM-core", "Value is below the smallest available denomination (= 1) of zGLPM"),
-QT_TRANSLATE_NOOP("GLPM-core", "Value more than Obfuscation pool maximum allows."),
-QT_TRANSLATE_NOOP("GLPM-core", "Verifying blocks..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Verifying wallet..."),
-QT_TRANSLATE_NOOP("GLPM-core", "Version 1 zGLPM require a security level of 100 to successfully spend."),
-QT_TRANSLATE_NOOP("GLPM-core", "Wallet %s resides outside data directory %s"),
-QT_TRANSLATE_NOOP("GLPM-core", "Wallet is locked."),
-QT_TRANSLATE_NOOP("GLPM-core", "Wallet needed to be rewritten: restart Crypto Dezire Cash Core to complete"),
-QT_TRANSLATE_NOOP("GLPM-core", "Wallet options:"),
-QT_TRANSLATE_NOOP("GLPM-core", "Wallet window title"),
-QT_TRANSLATE_NOOP("GLPM-core", "Warning"),
-QT_TRANSLATE_NOOP("GLPM-core", "Warning: This version is obsolete, upgrade required!"),
-QT_TRANSLATE_NOOP("GLPM-core", "Warning: Unsupported argument -benchmark ignored, use -debug=bench."),
-QT_TRANSLATE_NOOP("GLPM-core", "Warning: Unsupported argument -debugnet ignored, use -debug=net."),
-QT_TRANSLATE_NOOP("GLPM-core", "Will retry..."),
-QT_TRANSLATE_NOOP("GLPM-core", "You don't have enough Zerocoins in your wallet"),
-QT_TRANSLATE_NOOP("GLPM-core", "You need to rebuild the database using -reindex to change -txindex"),
-QT_TRANSLATE_NOOP("GLPM-core", "Your entries added successfully."),
-QT_TRANSLATE_NOOP("GLPM-core", "Your transaction was accepted into the pool!"),
-QT_TRANSLATE_NOOP("GLPM-core", "Zapping all transactions from wallet..."),
-QT_TRANSLATE_NOOP("GLPM-core", "ZeroMQ notification options:"),
-QT_TRANSLATE_NOOP("GLPM-core", "Zerocoin options:"),
-QT_TRANSLATE_NOOP("GLPM-core", "isValid(): Invalid -proxy address or hostname: '%s'"),
-QT_TRANSLATE_NOOP("GLPM-core", "on startup"),
-QT_TRANSLATE_NOOP("GLPM-core", "wallet.dat corrupt, salvage failed"),
+QT_TRANSLATE_NOOP("HCASH-core", "(35601 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("HCASH-core", "(default: %s)"),
+QT_TRANSLATE_NOOP("HCASH-core", "(default: 1)"),
+QT_TRANSLATE_NOOP("HCASH-core", "(must be 35601 for mainnet)"),
+QT_TRANSLATE_NOOP("HCASH-core", "<category> can be:"),
+QT_TRANSLATE_NOOP("HCASH-core", "Accept command line and JSON-RPC commands"),
+QT_TRANSLATE_NOOP("HCASH-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Accept public REST requests (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Add a node to connect to and attempt to keep the connection open"),
+QT_TRANSLATE_NOOP("HCASH-core", "Allow DNS lookups for -addnode, -seednode and -connect"),
+QT_TRANSLATE_NOOP("HCASH-core", "Already have that input."),
+QT_TRANSLATE_NOOP("HCASH-core", "Always query for peer addresses via DNS lookup (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Attempt to force blockchain corruption recovery"),
+QT_TRANSLATE_NOOP("HCASH-core", "Attempt to recover private keys from a corrupt wallet.dat"),
+QT_TRANSLATE_NOOP("HCASH-core", "Automatically create Tor hidden service (default: %d)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Block creation options:"),
+QT_TRANSLATE_NOOP("HCASH-core", "Calculating missing accumulators..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Can't denominate: no compatible inputs left."),
+QT_TRANSLATE_NOOP("HCASH-core", "Can't find random Masternode."),
+QT_TRANSLATE_NOOP("HCASH-core", "Can't mix while sync in progress."),
+QT_TRANSLATE_NOOP("HCASH-core", "Cannot downgrade wallet"),
+QT_TRANSLATE_NOOP("HCASH-core", "Cannot resolve -bind address: '%s'"),
+QT_TRANSLATE_NOOP("HCASH-core", "Cannot resolve -externalip address: '%s'"),
+QT_TRANSLATE_NOOP("HCASH-core", "Cannot resolve -whitebind address: '%s'"),
+QT_TRANSLATE_NOOP("HCASH-core", "Cannot write default address"),
+QT_TRANSLATE_NOOP("HCASH-core", "CoinSpend: Accumulator witness does not verify"),
+QT_TRANSLATE_NOOP("HCASH-core", "Collateral not valid."),
+QT_TRANSLATE_NOOP("HCASH-core", "Connect only to the specified node(s)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Connect through SOCKS5 proxy"),
+QT_TRANSLATE_NOOP("HCASH-core", "Connect to a node to retrieve peer addresses, and disconnect"),
+QT_TRANSLATE_NOOP("HCASH-core", "Connection options:"),
+QT_TRANSLATE_NOOP("HCASH-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
+QT_TRANSLATE_NOOP("HCASH-core", "Copyright (C) 2014-%i The Dash Core Developers"),
+QT_TRANSLATE_NOOP("HCASH-core", "Copyright (C) 2015-%i The PIVX Core Developers"),
+QT_TRANSLATE_NOOP("HCASH-core", "Copyright (C) %i The Crypto Dezire Cash Core Developers"),
+QT_TRANSLATE_NOOP("HCASH-core", "Corrupted block database detected"),
+QT_TRANSLATE_NOOP("HCASH-core", "Could not parse masternode.conf"),
+QT_TRANSLATE_NOOP("HCASH-core", "Debugging/Testing options:"),
+QT_TRANSLATE_NOOP("HCASH-core", "Delete blockchain folders and resync from scratch"),
+QT_TRANSLATE_NOOP("HCASH-core", "Disable OS notifications for incoming transactions (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Disable safemode, override a real safe mode event (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Discover own IP address (default: 1 when listening and no -externalip)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Display the stake modifier calculations in the debug.log file."),
+QT_TRANSLATE_NOOP("HCASH-core", "Display verbose coin stake messages in the debug.log file."),
+QT_TRANSLATE_NOOP("HCASH-core", "Do not load the wallet and disable wallet RPC calls"),
+QT_TRANSLATE_NOOP("HCASH-core", "Do you want to rebuild the block database now?"),
+QT_TRANSLATE_NOOP("HCASH-core", "Done loading"),
+QT_TRANSLATE_NOOP("HCASH-core", "Enable automatic Zerocoin minting (0-1, default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Enable publish hash block in <address>"),
+QT_TRANSLATE_NOOP("HCASH-core", "Enable publish hash transaction (locked via SwiftX) in <address>"),
+QT_TRANSLATE_NOOP("HCASH-core", "Enable publish hash transaction in <address>"),
+QT_TRANSLATE_NOOP("HCASH-core", "Enable publish raw block in <address>"),
+QT_TRANSLATE_NOOP("HCASH-core", "Enable publish raw transaction (locked via SwiftX) in <address>"),
+QT_TRANSLATE_NOOP("HCASH-core", "Enable publish raw transaction in <address>"),
+QT_TRANSLATE_NOOP("HCASH-core", "Enable staking functionality (0-1, default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Enable the client to act as a masternode (0-1, default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Entries are full."),
+QT_TRANSLATE_NOOP("HCASH-core", "Error connecting to Masternode."),
+QT_TRANSLATE_NOOP("HCASH-core", "Error initializing block database"),
+QT_TRANSLATE_NOOP("HCASH-core", "Error initializing wallet database environment %s!"),
+QT_TRANSLATE_NOOP("HCASH-core", "Error loading block database"),
+QT_TRANSLATE_NOOP("HCASH-core", "Error loading wallet.dat"),
+QT_TRANSLATE_NOOP("HCASH-core", "Error loading wallet.dat: Wallet corrupted"),
+QT_TRANSLATE_NOOP("HCASH-core", "Error loading wallet.dat: Wallet requires newer version of Crypto Dezire Cash Core"),
+QT_TRANSLATE_NOOP("HCASH-core", "Error opening block database"),
+QT_TRANSLATE_NOOP("HCASH-core", "Error reading from database, shutting down."),
+QT_TRANSLATE_NOOP("HCASH-core", "Error recovering public key."),
+QT_TRANSLATE_NOOP("HCASH-core", "Error writing zerocoinDB to disk"),
+QT_TRANSLATE_NOOP("HCASH-core", "Error"),
+QT_TRANSLATE_NOOP("HCASH-core", "Error: A fatal internal error occured, see debug.log for details"),
+QT_TRANSLATE_NOOP("HCASH-core", "Error: A fatal internal error occurred, see debug.log for details"),
+QT_TRANSLATE_NOOP("HCASH-core", "Error: Can't select current denominated inputs"),
+QT_TRANSLATE_NOOP("HCASH-core", "Error: Disk space is low!"),
+QT_TRANSLATE_NOOP("HCASH-core", "Error: No valid utxo!"),
+QT_TRANSLATE_NOOP("HCASH-core", "Error: Unsupported argument -tor found, use -onion."),
+QT_TRANSLATE_NOOP("HCASH-core", "Error: Wallet locked, unable to create transaction!"),
+QT_TRANSLATE_NOOP("HCASH-core", "Error: You already have pending entries in the Obfuscation pool"),
+QT_TRANSLATE_NOOP("HCASH-core", "Failed to calculate accumulator checkpoint"),
+QT_TRANSLATE_NOOP("HCASH-core", "Failed to create mint"),
+QT_TRANSLATE_NOOP("HCASH-core", "Failed to deserialize"),
+QT_TRANSLATE_NOOP("HCASH-core", "Failed to find Zerocoins in wallet.dat"),
+QT_TRANSLATE_NOOP("HCASH-core", "Failed to listen on any port. Use -listen=0 if you want this."),
+QT_TRANSLATE_NOOP("HCASH-core", "Failed to parse host:port string"),
+QT_TRANSLATE_NOOP("HCASH-core", "Failed to read block"),
+QT_TRANSLATE_NOOP("HCASH-core", "Failed to select a zerocoin"),
+QT_TRANSLATE_NOOP("HCASH-core", "Failed to wipe zerocoinDB"),
+QT_TRANSLATE_NOOP("HCASH-core", "Failed to write coin serial number into wallet"),
+QT_TRANSLATE_NOOP("HCASH-core", "Fee (in HCASH/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Finalizing transaction."),
+QT_TRANSLATE_NOOP("HCASH-core", "Force safe mode (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Found enough users, signing ( waiting %s )"),
+QT_TRANSLATE_NOOP("HCASH-core", "Found enough users, signing ..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Generate coins (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "How many blocks to check at startup (default: %u, 0 = all)"),
+QT_TRANSLATE_NOOP("HCASH-core", "If <category> is not supplied, output all debugging information."),
+QT_TRANSLATE_NOOP("HCASH-core", "Importing..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Imports blocks from external blk000??.dat file"),
+QT_TRANSLATE_NOOP("HCASH-core", "Include IP addresses in debug output (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Incompatible mode."),
+QT_TRANSLATE_NOOP("HCASH-core", "Incompatible version."),
+QT_TRANSLATE_NOOP("HCASH-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
+QT_TRANSLATE_NOOP("HCASH-core", "Information"),
+QT_TRANSLATE_NOOP("HCASH-core", "Initialization sanity check failed. Crypto Dezire Cash Core is shutting down."),
+QT_TRANSLATE_NOOP("HCASH-core", "Input is not valid."),
+QT_TRANSLATE_NOOP("HCASH-core", "Insufficient funds"),
+QT_TRANSLATE_NOOP("HCASH-core", "Insufficient funds."),
+QT_TRANSLATE_NOOP("HCASH-core", "Invalid -onion address or hostname: '%s'"),
+QT_TRANSLATE_NOOP("HCASH-core", "Invalid amount for -maxtxfee=<amount>: '%s'"),
+QT_TRANSLATE_NOOP("HCASH-core", "Invalid amount for -minrelaytxfee=<amount>: '%s'"),
+QT_TRANSLATE_NOOP("HCASH-core", "Invalid amount for -mintxfee=<amount>: '%s'"),
+QT_TRANSLATE_NOOP("HCASH-core", "Invalid amount for -paytxfee=<amount>: '%s' (must be at least %s)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Invalid amount for -paytxfee=<amount>: '%s'"),
+QT_TRANSLATE_NOOP("HCASH-core", "Invalid amount for -reservebalance=<amount>"),
+QT_TRANSLATE_NOOP("HCASH-core", "Invalid amount"),
+QT_TRANSLATE_NOOP("HCASH-core", "Invalid masternodeprivkey. Please see documenation."),
+QT_TRANSLATE_NOOP("HCASH-core", "Invalid netmask specified in -whitelist: '%s'"),
+QT_TRANSLATE_NOOP("HCASH-core", "Invalid port detected in masternode.conf"),
+QT_TRANSLATE_NOOP("HCASH-core", "Invalid private key."),
+QT_TRANSLATE_NOOP("HCASH-core", "Invalid script detected."),
+QT_TRANSLATE_NOOP("HCASH-core", "Keep at most <n> unconnectable transactions in memory (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Last Obfuscation was too recent."),
+QT_TRANSLATE_NOOP("HCASH-core", "Last successful Obfuscation action was too recent."),
+QT_TRANSLATE_NOOP("HCASH-core", "Limit size of signature cache to <n> entries (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Line: %d"),
+QT_TRANSLATE_NOOP("HCASH-core", "Listen for JSON-RPC connections on <port> (default: %u or testnet: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Listen for connections on <port> (default: %u or testnet: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Loading addresses..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Loading block index..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Loading budget cache..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Loading masternode cache..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Loading masternode payment cache..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Loading sporks..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Loading wallet... (%3.2f %%)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Loading wallet..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Location of the auth cookie (default: data dir)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Lock is already in place."),
+QT_TRANSLATE_NOOP("HCASH-core", "Lock masternodes from masternode configuration file (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Lookup(): Invalid -proxy address or hostname: '%s'"),
+QT_TRANSLATE_NOOP("HCASH-core", "Maintain at most <n> connections to peers (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Masternode options:"),
+QT_TRANSLATE_NOOP("HCASH-core", "Masternode queue is full."),
+QT_TRANSLATE_NOOP("HCASH-core", "Masternode:"),
+QT_TRANSLATE_NOOP("HCASH-core", "Maximum per-connection receive buffer, <n>*1000 bytes (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Maximum per-connection send buffer, <n>*1000 bytes (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Mint did not make it into blockchain"),
+QT_TRANSLATE_NOOP("HCASH-core", "Missing input transaction information."),
+QT_TRANSLATE_NOOP("HCASH-core", "Mixing in progress..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Need address because change is not exact"),
+QT_TRANSLATE_NOOP("HCASH-core", "Need to specify a port with -whitebind: '%s'"),
+QT_TRANSLATE_NOOP("HCASH-core", "No Masternodes detected."),
+QT_TRANSLATE_NOOP("HCASH-core", "No compatible Masternode found."),
+QT_TRANSLATE_NOOP("HCASH-core", "No funds detected in need of denominating."),
+QT_TRANSLATE_NOOP("HCASH-core", "No matching denominations found for mixing."),
+QT_TRANSLATE_NOOP("HCASH-core", "Node relay options:"),
+QT_TRANSLATE_NOOP("HCASH-core", "Non-standard public key detected."),
+QT_TRANSLATE_NOOP("HCASH-core", "Not compatible with existing transactions."),
+QT_TRANSLATE_NOOP("HCASH-core", "Not enough file descriptors available."),
+QT_TRANSLATE_NOOP("HCASH-core", "Not in the Masternode list."),
+QT_TRANSLATE_NOOP("HCASH-core", "Number of automatic wallet backups (default: 10)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Number of custom location backups to retain (default: %d)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Obfuscation is idle."),
+QT_TRANSLATE_NOOP("HCASH-core", "Obfuscation request complete:"),
+QT_TRANSLATE_NOOP("HCASH-core", "Obfuscation request incomplete:"),
+QT_TRANSLATE_NOOP("HCASH-core", "Only accept block chain matching built-in checkpoints (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Only connect to nodes in network <net> (ipv4, ipv6 or onion)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Options:"),
+QT_TRANSLATE_NOOP("HCASH-core", "Password for JSON-RPC connections"),
+QT_TRANSLATE_NOOP("HCASH-core", "Percentage of automatically minted Zerocoin  (1-100, default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Preparing for resync..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Prepend debug output with timestamp (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Print version and exit"),
+QT_TRANSLATE_NOOP("HCASH-core", "RPC server options:"),
+QT_TRANSLATE_NOOP("HCASH-core", "Randomly drop 1 of every <n> network messages"),
+QT_TRANSLATE_NOOP("HCASH-core", "Randomly fuzz 1 of every <n> network messages"),
+QT_TRANSLATE_NOOP("HCASH-core", "Rebuild block chain index from current blk000??.dat files"),
+QT_TRANSLATE_NOOP("HCASH-core", "Receive and display P2P network alerts (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Reindex the HCASH and zHCASH money supply statistics"),
+QT_TRANSLATE_NOOP("HCASH-core", "Reindex the accumulator database"),
+QT_TRANSLATE_NOOP("HCASH-core", "Reindexing zerocoin database..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Reindexing zerocoin failed"),
+QT_TRANSLATE_NOOP("HCASH-core", "Relay and mine data carrier transactions (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Relay non-P2SH multisig (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Rescan the block chain for missing wallet transactions"),
+QT_TRANSLATE_NOOP("HCASH-core", "Rescanning..."),
+QT_TRANSLATE_NOOP("HCASH-core", "ResetMintZerocoin finished: "),
+QT_TRANSLATE_NOOP("HCASH-core", "ResetSpentZerocoin finished: "),
+QT_TRANSLATE_NOOP("HCASH-core", "Run a thread to flush wallet periodically (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Run in the background as a daemon and accept commands"),
+QT_TRANSLATE_NOOP("HCASH-core", "Selected coins value is less than payment target"),
+QT_TRANSLATE_NOOP("HCASH-core", "Send transactions as zero-fee transactions if possible (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Session not complete!"),
+QT_TRANSLATE_NOOP("HCASH-core", "Session timed out."),
+QT_TRANSLATE_NOOP("HCASH-core", "Set database cache size in megabytes (%d to %d, default: %d)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Set external address:port to get to this masternode (example: %s)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Set key pool size to <n> (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Set maximum block size in bytes (default: %d)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Set minimum block size in bytes (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Set the Maximum reorg depth (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Set the masternode private key"),
+QT_TRANSLATE_NOOP("HCASH-core", "Set the number of threads to service RPC calls (default: %d)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Sets the DB_PRIVATE flag in the wallet db environment (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Show all debugging options (usage: --help -help-debug)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Shrink debug.log file on client startup (default: 1 when no -debug)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Signing failed."),
+QT_TRANSLATE_NOOP("HCASH-core", "Signing timed out."),
+QT_TRANSLATE_NOOP("HCASH-core", "Signing transaction failed"),
+QT_TRANSLATE_NOOP("HCASH-core", "Specify configuration file (default: %s)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Specify connection timeout in milliseconds (minimum: 1, default: %d)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Specify data directory"),
+QT_TRANSLATE_NOOP("HCASH-core", "Specify masternode configuration file (default: %s)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Specify pid file (default: %s)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Specify wallet file (within data directory)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Specify your own public address"),
+QT_TRANSLATE_NOOP("HCASH-core", "Spend Valid"),
+QT_TRANSLATE_NOOP("HCASH-core", "Spend unconfirmed change when sending transactions (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Staking options:"),
+QT_TRANSLATE_NOOP("HCASH-core", "Stop running after importing blocks from disk (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Submitted following entries to masternode: %u / %d"),
+QT_TRANSLATE_NOOP("HCASH-core", "Submitted to masternode, waiting for more entries ( %u / %d ) %s"),
+QT_TRANSLATE_NOOP("HCASH-core", "Submitted to masternode, waiting in queue %s"),
+QT_TRANSLATE_NOOP("HCASH-core", "SwiftX options:"),
+QT_TRANSLATE_NOOP("HCASH-core", "Synchronization failed"),
+QT_TRANSLATE_NOOP("HCASH-core", "Synchronization finished"),
+QT_TRANSLATE_NOOP("HCASH-core", "Synchronization pending..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Synchronizing budgets..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Synchronizing masternode winners..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Synchronizing masternodes..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Synchronizing sporks..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Syncing zHCASH wallet..."),
+QT_TRANSLATE_NOOP("HCASH-core", "The coin spend has been used"),
+QT_TRANSLATE_NOOP("HCASH-core", "The new spend coin transaction did not verify"),
+QT_TRANSLATE_NOOP("HCASH-core", "The selected mint coin is an invalid coin"),
+QT_TRANSLATE_NOOP("HCASH-core", "The transaction did not verify"),
+QT_TRANSLATE_NOOP("HCASH-core", "This help message"),
+QT_TRANSLATE_NOOP("HCASH-core", "This is experimental software."),
+QT_TRANSLATE_NOOP("HCASH-core", "This is intended for regression testing tools and app development."),
+QT_TRANSLATE_NOOP("HCASH-core", "This is not a Masternode."),
+QT_TRANSLATE_NOOP("HCASH-core", "Threshold for disconnecting misbehaving peers (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Too many spends needed"),
+QT_TRANSLATE_NOOP("HCASH-core", "Tor control port password (default: empty)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Tor control port to use if onion listening enabled (default: %s)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Transaction Created"),
+QT_TRANSLATE_NOOP("HCASH-core", "Transaction Mint Started"),
+QT_TRANSLATE_NOOP("HCASH-core", "Transaction amount too small"),
+QT_TRANSLATE_NOOP("HCASH-core", "Transaction amounts must be positive"),
+QT_TRANSLATE_NOOP("HCASH-core", "Transaction created successfully."),
+QT_TRANSLATE_NOOP("HCASH-core", "Transaction fees are too high."),
+QT_TRANSLATE_NOOP("HCASH-core", "Transaction not valid."),
+QT_TRANSLATE_NOOP("HCASH-core", "Transaction too large for fee policy"),
+QT_TRANSLATE_NOOP("HCASH-core", "Transaction too large"),
+QT_TRANSLATE_NOOP("HCASH-core", "Transmitting final transaction."),
+QT_TRANSLATE_NOOP("HCASH-core", "Try to spend with a higher security level to include more coins"),
+QT_TRANSLATE_NOOP("HCASH-core", "Trying to spend an already spent serial #, try again."),
+QT_TRANSLATE_NOOP("HCASH-core", "Unable to bind to %s on this computer (bind returned error %s)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Unable to find transaction containing mint"),
+QT_TRANSLATE_NOOP("HCASH-core", "Unable to sign spork message, wrong key?"),
+QT_TRANSLATE_NOOP("HCASH-core", "Unable to start HTTP server. See debug log for details."),
+QT_TRANSLATE_NOOP("HCASH-core", "Unknown network specified in -onlynet: '%s'"),
+QT_TRANSLATE_NOOP("HCASH-core", "Unknown state: id = %u"),
+QT_TRANSLATE_NOOP("HCASH-core", "Upgrade wallet to latest format"),
+QT_TRANSLATE_NOOP("HCASH-core", "Use UPnP to map the listening port (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Use UPnP to map the listening port (default: 1 when listening)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Use a custom max chain reorganization depth (default: %u)"),
+QT_TRANSLATE_NOOP("HCASH-core", "Use the test network"),
+QT_TRANSLATE_NOOP("HCASH-core", "Username for JSON-RPC connections"),
+QT_TRANSLATE_NOOP("HCASH-core", "Value is below the smallest available denomination (= 1) of zHCASH"),
+QT_TRANSLATE_NOOP("HCASH-core", "Value more than Obfuscation pool maximum allows."),
+QT_TRANSLATE_NOOP("HCASH-core", "Verifying blocks..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Verifying wallet..."),
+QT_TRANSLATE_NOOP("HCASH-core", "Version 1 zHCASH require a security level of 100 to successfully spend."),
+QT_TRANSLATE_NOOP("HCASH-core", "Wallet %s resides outside data directory %s"),
+QT_TRANSLATE_NOOP("HCASH-core", "Wallet is locked."),
+QT_TRANSLATE_NOOP("HCASH-core", "Wallet needed to be rewritten: restart Crypto Dezire Cash Core to complete"),
+QT_TRANSLATE_NOOP("HCASH-core", "Wallet options:"),
+QT_TRANSLATE_NOOP("HCASH-core", "Wallet window title"),
+QT_TRANSLATE_NOOP("HCASH-core", "Warning"),
+QT_TRANSLATE_NOOP("HCASH-core", "Warning: This version is obsolete, upgrade required!"),
+QT_TRANSLATE_NOOP("HCASH-core", "Warning: Unsupported argument -benchmark ignored, use -debug=bench."),
+QT_TRANSLATE_NOOP("HCASH-core", "Warning: Unsupported argument -debugnet ignored, use -debug=net."),
+QT_TRANSLATE_NOOP("HCASH-core", "Will retry..."),
+QT_TRANSLATE_NOOP("HCASH-core", "You don't have enough Zerocoins in your wallet"),
+QT_TRANSLATE_NOOP("HCASH-core", "You need to rebuild the database using -reindex to change -txindex"),
+QT_TRANSLATE_NOOP("HCASH-core", "Your entries added successfully."),
+QT_TRANSLATE_NOOP("HCASH-core", "Your transaction was accepted into the pool!"),
+QT_TRANSLATE_NOOP("HCASH-core", "Zapping all transactions from wallet..."),
+QT_TRANSLATE_NOOP("HCASH-core", "ZeroMQ notification options:"),
+QT_TRANSLATE_NOOP("HCASH-core", "Zerocoin options:"),
+QT_TRANSLATE_NOOP("HCASH-core", "isValid(): Invalid -proxy address or hostname: '%s'"),
+QT_TRANSLATE_NOOP("HCASH-core", "on startup"),
+QT_TRANSLATE_NOOP("HCASH-core", "wallet.dat corrupt, salvage failed"),
 };

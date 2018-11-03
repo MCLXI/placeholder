@@ -324,7 +324,7 @@
     <name>ZCdzcControlDialog</name>
     </context>
 <context>
-    <name>GLPM-core</name>
+    <name>HCASH-core</name>
     <message>
         <source>Information</source>
         <translation>जानकारी</translation>

@@ -172,7 +172,7 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
+        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HCASHs from being stolen by malware infecting your computer.</source>
         <translation>Crypto Dezire Cash сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши Crypto Dezire Cash от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
@@ -180,8 +180,8 @@
         <translation>Вы действительно хотите зашифровать свой кошелек?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ GLPM&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HCASH&lt;/b&gt;!</source>
+        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ HCASH&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -602,7 +602,7 @@
         <translation>Отправить монеты на Crypto Dezire Cash адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and GLPM: URIs)</source>
+        <source>Request payments (generates QR codes and HCASH: URIs)</source>
         <translation>Запросить платежи (генерирует QR-код и Crypto Dezire Cash: URI)</translation>
     </message>
     <message>
@@ -809,8 +809,8 @@ MultiSend: %1</translation>
         <translation>Текстовая метка</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (GLPM.conf).</source>
-        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (GLPM.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (HCASH.conf).</source>
+        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (HCASH.conf).</translation>
     </message>
 </context>
 <context>
@@ -1504,32 +1504,32 @@ Please check the address and try again.</source>
         <translation>Выберите уровень конфиденциальности.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 GLPM</source>
-        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 GLPM</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 HCASH</source>
+        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 HCASH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 GLPM</source>
-        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 GLPM</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 HCASH</source>
+        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 HCASH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Используйте 16 разных мастернод</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 GLPM to anonymize 10000 GLPM</source>
-        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 GLPM для анонимизации 10000 GLPM</translation>
+        <source>This option is the quickest and will cost about ~0.025 HCASH to anonymize 10000 HCASH</source>
+        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 HCASH для анонимизации 10000 HCASH</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 GLPM to anonymize 10000 GLPM</source>
-        <translation>Это средний по скорости вариант и он будет стоить около 0.05 GLPM для анонимизации 10000 GLPM</translation>
+        <source>This option is moderately fast and will cost about 0.05 HCASH to anonymize 10000 HCASH</source>
+        <translation>Это средний по скорости вариант и он будет стоить около 0.05 HCASH для анонимизации 10000 HCASH</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Это самый медленный и безопасный вариант. Максимальная анонимность стоит</translation>
     </message>
     <message>
-        <source>0.1 GLPM per 10000 GLPM you anonymize.</source>
-        <translation>0.1 GLPM за 10000 GLPM которые вы собираетесь анонимизировать.</translation>
+        <source>0.1 HCASH per 10000 HCASH you anonymize.</source>
+        <translation>0.1 HCASH за 10000 HCASH которые вы собираетесь анонимизировать.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1663,9 +1663,9 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/GLPM/GLPM-translations</source>
+https://www.transifex.com/HCASH/HCASH-translations</source>
         <translation>Отсутствует ваш язык или заметили незавершенный перевод? Вы можете помочь нам стать лучше:
-https://www.transifex.com/GLPM/GLPM-translations</translation>
+https://www.transifex.com/HCASH/HCASH-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1886,8 +1886,8 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>Неверный адрес оплаты %1</translation>
     </message>
     <message>
-        <source>Cannot start GLPM: click-to-pay handler</source>
-        <translation>Не удалось запустить GLPM: обработчик click-to-pay </translation>
+        <source>Cannot start HCASH: click-to-pay handler</source>
+        <translation>Не удалось запустить HCASH: обработчик click-to-pay </translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Crypto Dezire Cash address or malformed URI parameters.</source>
@@ -2570,8 +2570,8 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>Изменить:</translation>
     </message>
     <message>
-        <source>0 GLPM</source>
-        <translation>0 GLPM</translation>
+        <source>0 HCASH</source>
+        <translation>0 HCASH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3069,7 +3069,7 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
     </message>
     </context>
 <context>
-    <name>GLPM-core</name>
+    <name>HCASH-core</name>
     <message>
         <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
         <translation>Для SwiftTX требуется как минимум 6 подтверждений, Вам нужно подождать несколько минут и попытаться снова.</translation>

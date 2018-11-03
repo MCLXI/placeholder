@@ -10,7 +10,7 @@
 #define BITCOIN_MAIN_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/GLPM-config.h"
+#include "config/HCASH-config.h"
 #endif
 
 #include "amount.h"
@@ -237,7 +237,7 @@ bool GetTransaction(const uint256& hash, CTransaction& tx, uint256& hashBlock, b
 bool DisconnectBlocksAndReprocess(int blocks);
 
 double ConvertBitsToDouble(unsigned int nBits);
-CAmount GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZGLPMStake);
+CAmount GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZHCASHStake);
 CAmount GetDevFundPayment(int nHeight, int64_t blockValue);
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock, bool fProofOfStake);
 
@@ -360,9 +360,9 @@ bool IsTransactionInChain(const uint256& txId, int& nHeightTx, CTransaction& tx)
 bool IsTransactionInChain(const uint256& txId, int& nHeightTx);
 bool IsBlockHashInChain(const uint256& hashBlock);
 bool ValidOutPoint(const COutPoint out, int nHeight);
-void RecalculateZGLPMSpent();
-void RecalculateZGLPMMinted();
-bool RecalculateGLPMSupply(int nHeightStart);
+void RecalculateZHCASHSpent();
+void RecalculateZHCASHMinted();
+bool RecalculateHCASHSupply(int nHeightStart);
 bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError);
 
 

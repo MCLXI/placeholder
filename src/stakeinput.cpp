@@ -41,7 +41,7 @@ uint32_t CZCdzcStake::GetChecksum()
     return nChecksum;
 }
 
-// The zGLPM block index is the first appearance of the accumulator checksum that was used in the spend
+// The zHCASH block index is the first appearance of the accumulator checksum that was used in the spend
 // note that this also means when staking that this checksum should be from a block that is beyond 60 minutes old and
 // 100 blocks deep.
 CBlockIndex* CZCdzcStake::GetIndexFrom()
@@ -94,7 +94,7 @@ bool CZCdzcStake::GetModifier(uint64_t& nStakeModifier)
 
 CDataStream CZCdzcStake::GetUniqueness()
 {
-    //The unique identifier for a zGLPM is a hash of the serial
+    //The unique identifier for a zHCASH is a hash of the serial
     CDataStream ss(SER_GETHASH, 0);
     ss << hashSerial;
     return ss;
@@ -123,23 +123,23 @@ bool CZCdzcStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 
 bool CZCdzcStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
 {
-    //Create an output returning the zGLPM that was staked
+    //Create an output returning the zHCASH that was staked
     CTxOut outReward;
     libzerocoin::CoinDenomination denomStaked = libzerocoin::AmountToZerocoinDenomination(this->GetValue());
     CDeterministicMint dMint;
-    if (!pwallet->CreateZGLPMOutPut(denomStaked, outReward, dMint))
-        return error("%s: failed to create zGLPM output", __func__);
+    if (!pwallet->CreateZHCASHOutPut(denomStaked, outReward, dMint))
+        return error("%s: failed to create zHCASH output", __func__);
     vout.emplace_back(outReward);
 
     //Add new staked denom to our wallet
     if (!pwallet->DatabaseMint(dMint))
-        return error("%s: failed to database the staked zGLPM", __func__);
+        return error("%s: failed to database the staked zHCASH", __func__);
 
     for (unsigned int i = 0; i < 1; i++) {
         CTxOut out;
         CDeterministicMint dMintReward;
-        if (!pwallet->CreateZGLPMOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
-            return error("%s: failed to create zGLPM output", __func__);
+        if (!pwallet->CreateZHCASHOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
+            return error("%s: failed to create zHCASH output", __func__);
         vout.emplace_back(out);
 
         if (!pwallet->DatabaseMint(dMintReward))
@@ -156,7 +156,7 @@ bool CZCdzcStake::GetTxFrom(CTransaction& tx)
 
 bool CZCdzcStake::MarkSpent(CWallet *pwallet, const uint256& txid)
 {
-    CzGLPMTracker* zcdzcTracker = pwallet->zcdzcTracker.get();
+    CzHCASHTracker* zcdzcTracker = pwallet->zcdzcTracker.get();
     CMintMeta meta;
     if (!zcdzcTracker->GetMetaFromStakeHash(hashSerial, meta))
         return error("%s: tracker does not have serialhash", __func__);
@@ -165,7 +165,7 @@ bool CZCdzcStake::MarkSpent(CWallet *pwallet, const uint256& txid)
     return true;
 }
 
-//!GLPM Stake
+//!HCASH Stake
 bool CCdzcStake::SetInput(CTransaction txPrev, unsigned int n)
 {
     this->txFrom = txPrev;
@@ -241,7 +241,7 @@ bool CCdzcStake::GetModifier(uint64_t& nStakeModifier)
 
 CDataStream CCdzcStake::GetUniqueness()
 {
-    //The unique identifier for a GLPM stake is the outpoint
+    //The unique identifier for a HCASH stake is the outpoint
     CDataStream ss(SER_NETWORK, 0);
     ss << nPosition << txFrom.GetHash();
     return ss;

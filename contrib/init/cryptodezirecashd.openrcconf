@@ -1,25 +1,25 @@
-# /etc/conf.d/GLPMd: config file for /etc/init.d/GLPMd
+# /etc/conf.d/HCASHd: config file for /etc/init.d/HCASHd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/GLPM/GLPM.conf"
+#BITCOIND_CONFIGFILE="/etc/HCASH/HCASH.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/GLPMd"
+#BITCOIND_PIDDIR="/var/run/HCASHd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/GLPMd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/HCASHd.pid"
 
-# Where to write GLPMd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/GLPMd"
+# Where to write HCASHd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/HCASHd"
 
-# User and group to own GLPMd process
-#BITCOIND_USER="GLPM"
-#BITCOIND_GROUP="GLPM"
+# User and group to own HCASHd process
+#BITCOIND_USER="HCASH"
+#BITCOIND_GROUP="HCASH"
 
-# Path to GLPMd executable
-#BITCOIND_BIN="/usr/bin/GLPMd"
+# Path to HCASHd executable
+#BITCOIND_BIN="/usr/bin/HCASHd"
 
-# Nice value to run GLPMd under
+# Nice value to run HCASHd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

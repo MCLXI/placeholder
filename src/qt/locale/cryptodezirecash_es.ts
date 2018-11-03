@@ -176,16 +176,16 @@
         <translation>Confirme el cifrado del monedero</translation>
     </message>
     <message>
-        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
-        <translation>Crypto Dezire Cash se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus GLPMs no sean robados mediante malware de su ordenador.</translation>
+        <source>Crypto Dezire Cash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HCASHs from being stolen by malware infecting your computer.</source>
+        <translation>Crypto Dezire Cash se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus HCASHs no sean robados mediante malware de su ordenador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>¿Está seguro de que desea cifrar su monedero?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
-        <translation>Atención: Si cifra su monedero y pierde su contraseña, perderá &lt;b&gt; TODOS SUS GLPM&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HCASH&lt;/b&gt;!</source>
+        <translation>Atención: Si cifra su monedero y pierde su contraseña, perderá &lt;b&gt; TODOS SUS HCASH&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -610,7 +610,7 @@
         <translation>Enviar coins a una dirección Crypto Dezire Cash</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and GLPM: URIs)</source>
+        <source>Request payments (generates QR codes and HCASH: URIs)</source>
         <translation>Solicitud de pago (genera un código QR y URIs)</translation>
     </message>
     <message>
@@ -618,8 +618,8 @@
         <translation>&amp;Privacidad</translation>
     </message>
     <message>
-        <source>Privacy Action for zGLPM and Obfuscation</source>
-        <translation>Privacidad con zGLPM y Ofuscación</translation>
+        <source>Privacy Action for zHCASH and Obfuscation</source>
+        <translation>Privacidad con zHCASH y Ofuscación</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -833,8 +833,8 @@ MultiEnvío: %1</translation>
         <translation>EtiquetaDeTexto</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (GLPM.conf).</source>
-        <translation>No se muestran todas las transacciones. Para ver todas las transacciones introduzca la línea "txindex=1" en el archivo de configuración (GLPM.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (HCASH.conf).</source>
+        <translation>No se muestran todas las transacciones. Para ver todas las transacciones introduzca la línea "txindex=1" en el archivo de configuración (HCASH.conf).</translation>
     </message>
 </context>
 <context>
@@ -1528,32 +1528,32 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>Por favor selecciones un nivel de privacidad.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 GLPM</source>
-        <translation>Use 2 nodos maestros diferentes para mezclar los fondos hasta los 10000 GLPM</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 HCASH</source>
+        <translation>Use 2 nodos maestros diferentes para mezclar los fondos hasta los 10000 HCASH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 GLPM</source>
-        <translation>Use 8 nodos maestros diferentes para mezclar fondos hasta los 10000 GLPM</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 HCASH</source>
+        <translation>Use 8 nodos maestros diferentes para mezclar fondos hasta los 10000 HCASH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 nodos maestros diferentes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 GLPM to anonymize 10000 GLPM</source>
-        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 GLPM para anonimizar 10000 GLPM</translation>
+        <source>This option is the quickest and will cost about ~0.025 HCASH to anonymize 10000 HCASH</source>
+        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 HCASH para anonimizar 10000 HCASH</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 GLPM to anonymize 10000 GLPM</source>
-        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 GLPM para anonimizar 10000 GLPM.</translation>
+        <source>This option is moderately fast and will cost about 0.05 HCASH to anonymize 10000 HCASH</source>
+        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 HCASH para anonimizar 10000 HCASH.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Esta es la opción más lenta pero más segura. Usar el máximo anonimato costará</translation>
     </message>
     <message>
-        <source>0.1 GLPM per 10000 GLPM you anonymize.</source>
-        <translation>0.1 GLPM por 10000 GLPM que anonimizas.</translation>
+        <source>0.1 HCASH per 10000 HCASH you anonymize.</source>
+        <translation>0.1 HCASH por 10000 HCASH que anonimizas.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1635,11 +1635,11 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
-        <translation>Aceptar conezGLPMes del exterior</translation>
+        <translation>Aceptar conezHCASHes del exterior</translation>
     </message>
     <message>
         <source>Allow incoming connections</source>
-        <translation>Permitir conezGLPMes entrantes</translation>
+        <translation>Permitir conezHCASHes entrantes</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1687,25 +1687,25 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/GLPM/GLPM-translations</source>
+https://www.transifex.com/HCASH/HCASH-translations</source>
         <translation>¿Falta su lenguaje o la traducción está incompleta? Contribuya con las traducciones aquí:
-https://www.transifex.com/GLPM/GLPM-translations</translation>
+https://www.transifex.com/HCASH/HCASH-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapear un puerto utilizando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Percentage of incoming GLPM which get automatically converted to zGLPM via Zerocoin Protocol (min: 10%)</source>
-        <translation>Porcentaje de GLPMs entrantes que serán automáticamente convertidos a zGLPM a través del Protocolo Zerocoin (mín: 10%)</translation>
+        <source>Percentage of incoming HCASH which get automatically converted to zHCASH via Zerocoin Protocol (min: 10%)</source>
+        <translation>Porcentaje de HCASHs entrantes que serán automáticamente convertidos a zHCASH a través del Protocolo Zerocoin (mín: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zGLPM</source>
-        <translation>Porcentaje de zGLPM autogenerados</translation>
+        <source>Percentage of autominted zHCASH</source>
+        <translation>Porcentaje de zHCASH autogenerados</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough GLPM for this denomination is available</source>
-        <translation>Retrasar la conversión automática a Zerocoin hasta que hayan suficientes GLPM disponibles para esta denominación</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough HCASH for this denomination is available</source>
+        <translation>Retrasar la conversión automática a Zerocoin hasta que hayan suficientes HCASH disponibles para esta denominación</translation>
     </message>
     <message>
         <source>Connect to the Crypto Dezire Cash network through a SOCKS5 proxy.</source>
@@ -1839,8 +1839,8 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>GLPM Balances</source>
-        <translation>Balances GLPM</translation>
+        <source>HCASH Balances</source>
+        <translation>Balances HCASH</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1934,8 +1934,8 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>Dirección de pago inválida %1</translation>
     </message>
     <message>
-        <source>Cannot start GLPM: click-to-pay handler</source>
-        <translation>No se puede iniciar GLPM: módulo click-to-pay</translation>
+        <source>Cannot start HCASH: click-to-pay handler</source>
+        <translation>No se puede iniciar HCASH: módulo click-to-pay</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Crypto Dezire Cash address or malformed URI parameters.</source>
@@ -2226,7 +2226,7 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
     </message>
     <message>
         <source>Number of connections</source>
-        <translation>Número de conezGLPMes</translation>
+        <translation>Número de conezHCASHes</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -2741,8 +2741,8 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>Tamaño de UTXO:</translation>
     </message>
     <message>
-        <source>0 GLPM</source>
-        <translation>0 GLPM</translation>
+        <source>0 HCASH</source>
+        <translation>0 HCASH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2785,12 +2785,12 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>Tiempo de confirmación:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uGLPMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uGLPMs in fee,&lt;br /&gt;while "at least" pays 1000 uGLPMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uGLPMs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uGLPMs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uGLPMs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uHCASHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHCASHs in fee,&lt;br /&gt;while "at least" pays 1000 uHCASHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si la comisión personalizada se fija en 1000 uHCASHs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uHCASHs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uHCASHs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uGLPMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uGLPMs in fee,&lt;br /&gt;while "total at least" pays 1000 uGLPMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uGLPMs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uGLPMs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uGLPMs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uHCASHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHCASHs in fee,&lt;br /&gt;while "total at least" pays 1000 uHCASHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si la comisión personalizada se fija en 1000 uHCASHs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uHCASHs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uHCASHs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Crypto Dezire Cash transactions than the network can process.</source>
@@ -3761,8 +3761,8 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>Enviar Monedas</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 GLPM.</source>
-        <translation>SwiftTX no soporta el envío de importes tan altos todavía. Las transacciones están actualmente limitadas a %1 GLPM.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 HCASH.</source>
+        <translation>SwiftTX no soporta el envío de importes tan altos todavía. Las transacciones están actualmente limitadas a %1 HCASH.</translation>
     </message>
 </context>
 <context>
@@ -3812,14 +3812,14 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
     </message>
     </context>
 <context>
-    <name>GLPM-core</name>
+    <name>HCASH-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1= mantener los metadatos tx p.e. dueño de la cuenta e información de la solicitud de pago, 2 = ignorar metadatos tx)</translation>
     </message>
     <message>
         <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation>Permitir conezGLPMes JSON-RPC  desde la fuente especificada. Valido para &lt;ip&gt; sea una única IP (ej: 1.2.3.4), una red/mascara de red (ej: 1.2.3.4/255.255.255.0) o una red/CIDR (ej: 1.2.3.4/24). Esta opción puede ser especificada múltiples veces.</translation>
+        <translation>Permitir conezHCASHes JSON-RPC  desde la fuente especificada. Valido para &lt;ip&gt; sea una única IP (ej: 1.2.3.4), una red/mascara de red (ej: 1.2.3.4/255.255.255.0) o una red/CIDR (ej: 1.2.3.4/24). Esta opción puede ser especificada múltiples veces.</translation>
     </message>
     <message>
         <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
@@ -3835,7 +3835,7 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
     </message>
     <message>
         <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Escuchar únicamente a la tarjeta de red indicada para conezGLPMes JSON-RPC. Use la notación [host]:puerto para IPv6. Esta opción puede ser especificada varias veces (por defecto: escuchar en todas las tarjetas de red)</translation>
+        <translation>Escuchar únicamente a la tarjeta de red indicada para conezHCASHes JSON-RPC. Use la notación [host]:puerto para IPv6. Esta opción puede ser especificada varias veces (por defecto: escuchar en todas las tarjetas de red)</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. Crypto Dezire Cash Core is probably already running.</source>
@@ -3879,7 +3879,7 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation>Error: La escucha para conezGLPMes entrantes falló (la escucha retorno error %s)</translation>
+        <translation>Error: La escucha para conezHCASHes entrantes falló (la escucha retorno error %s)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
@@ -3898,12 +3898,12 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>Ejecutar comando cuando el mejor bloque cambie (%s en cmd es reemplazado por el block hash)</translation>
     </message>
     <message>
-        <source>Fees (in GLPM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Comisiones (en GLPM/Kb) menores a esta son consideradas gratuitas para la propagación de la transacción (default: %s)</translation>
+        <source>Fees (in HCASH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Comisiones (en HCASH/Kb) menores a esta son consideradas gratuitas para la propagación de la transacción (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in GLPM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Comisiones (en GLPM/Kb) menores a esta son consideradas gratuitas para la creación de la transacción (default: %s)</translation>
+        <source>Fees (in HCASH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Comisiones (en HCASH/Kb) menores a esta son consideradas gratuitas para la creación de la transacción (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4002,10 +4002,10 @@ https://www.transifex.com/GLPM/GLPM-translations</translation>
         <translation>Este producto incluye software desarrollado por el Proyecto OpenSSL para uso en OpenSSL Toolkit &lt;https://www.openssl.org/&gt; y software de cifrado escrito por Eric Young y software de UPnP escrito por Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use GLPMd, or the -server option to GLPM-qt, you must set an rpcpassword in the configuration file:
+        <source>To use HCASHd, or the -server option to HCASH-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=GLPMrpc
+rpcuser=HCASHrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4013,10 +4013,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "Crypto Dezire Cash Alert" admin@foo.com
 </source>
-        <translation>Para usar GLPMd, o la opción -server de GLPM-qt, debes definir un rpcpassword en el archivo de configuración:
+        <translation>Para usar HCASHd, o la opción -server de HCASH-qt, debes definir un rpcpassword en el archivo de configuración:
 %s
 Es recomendado que uses la siguiente contraseña aleatoria:
-rpcuser=GLPM
+rpcuser=HCASH
 rpcrpcpassword=%s
 (No necesitas recordar esta contraseña)
 El nombre de usuario y contraseña NO DEBEN ser los mismos.
@@ -4034,12 +4034,12 @@ por ejemplo: alertnotify=echo %%s | mail -s "Crypto Dezire Cash Alert" admin@foo
         <translation>Imposible localizar suficientes fondos denominados de Ofuscación para esta transacción.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 GLPM.</source>
-        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 10000 GLPM.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 HCASH.</source>
+        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 10000 HCASH.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 GLPM.</source>
-        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 10000 GLPM.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 HCASH.</source>
+        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 10000 HCASH.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4107,7 +4107,7 @@ por ejemplo: alertnotify=echo %%s | mail -s "Crypto Dezire Cash Alert" admin@foo
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Aceptar conezGLPMes desde afuera (predeterminado: 1 sin opción -proxy o -connect)</translation>
+        <translation>Aceptar conezHCASHes desde afuera (predeterminado: 1 sin opción -proxy o -connect)</translation>
     </message>
     <message>
         <source>Accept public REST requests (default: %u)</source>
@@ -4334,8 +4334,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Crypto Dezire Cash Alert" admin@foo
         <translation>Falló al leer el bloque</translation>
     </message>
     <message>
-        <source>Fee (in GLPM/kB) to add to transactions you send (default: %s)</source>
-        <translation>Comisión (en GLPM/kB) para agregar a la transacción que envías (predeterminado: %s)</translation>
+        <source>Fee (in HCASH/kB) to add to transactions you send (default: %s)</source>
+        <translation>Comisión (en HCASH/kB) para agregar a la transacción que envías (predeterminado: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4527,11 +4527,11 @@ por ejemplo: alertnotify=echo %%s | mail -s "Crypto Dezire Cash Alert" admin@foo
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Escuchar por conezGLPMes JSON-RPC en &lt;port&gt; (predeterminado: %u o testnet: %u)</translation>
+        <translation>Escuchar por conezHCASHes JSON-RPC en &lt;port&gt; (predeterminado: %u o testnet: %u)</translation>
     </message>
     <message>
         <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Escuchar por conezGLPMes en &lt;port&gt; (predeterminado: %u o testnet: %u)</translation>
+        <translation>Escuchar por conezHCASHes en &lt;port&gt; (predeterminado: %u o testnet: %u)</translation>
     </message>
     <message>
         <source>Loading addresses...</source>
@@ -4571,7 +4571,7 @@ por ejemplo: alertnotify=echo %%s | mail -s "Crypto Dezire Cash Alert" admin@foo
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
-        <translation>Mantener como máximo &lt;n&gt; conezGLPMes a pares (predeterminado: %u)</translation>
+        <translation>Mantener como máximo &lt;n&gt; conezHCASHes a pares (predeterminado: %u)</translation>
     </message>
     <message>
         <source>Masternode options:</source>
@@ -4671,7 +4671,7 @@ por ejemplo: alertnotify=echo %%s | mail -s "Crypto Dezire Cash Alert" admin@foo
     </message>
     <message>
         <source>Password for JSON-RPC connections</source>
-        <translation>Contraseña para conezGLPMes JSON-RPC</translation>
+        <translation>Contraseña para conezHCASHes JSON-RPC</translation>
     </message>
     <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
@@ -4691,7 +4691,7 @@ por ejemplo: alertnotify=echo %%s | mail -s "Crypto Dezire Cash Alert" admin@foo
     </message>
     <message>
         <source>RPC support for HTTP persistent connections (default: %d)</source>
-        <translation>Soporte RPC para conezGLPMes persistentes HTTP (predeterminado %d)</translation>
+        <translation>Soporte RPC para conezHCASHes persistentes HTTP (predeterminado %d)</translation>
     </message>
     <message>
         <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
@@ -4963,7 +4963,7 @@ por ejemplo: alertnotify=echo %%s | mail -s "Crypto Dezire Cash Alert" admin@foo
     </message>
     <message>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Usar OpenSSL (https) para conezGLPMes JSON-RPC</translation>
+        <translation>Usar OpenSSL (https) para conezHCASHes JSON-RPC</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: %u)</source>
@@ -4979,7 +4979,7 @@ por ejemplo: alertnotify=echo %%s | mail -s "Crypto Dezire Cash Alert" admin@foo
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
-        <translation>Nombre de usuario para conezGLPMes JSON-RPC</translation>
+        <translation>Nombre de usuario para conezHCASHes JSON-RPC</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>

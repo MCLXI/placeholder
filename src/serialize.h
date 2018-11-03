@@ -5,8 +5,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GLPM_SERIALIZE_H
-#define GLPM_SERIALIZE_H
+#ifndef HCASH_SERIALIZE_H
+#define HCASH_SERIALIZE_H
 
 #include <algorithm>
 #include <assert.h>
@@ -966,4 +966,4 @@ public:
     }
 };
 
-#endif // GLPM_SERIALIZE_H
+#endif // HCASH_SERIALIZE_H
